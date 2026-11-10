@@ -4,7 +4,8 @@
   var STORAGE_KEY = "cc_progreso_v1";
 
   var state = {
-    temas: [],
+    bloques: [], // [{ id, numero, titulo, carpeta, temas: [tema, ...] }]
+    temas: [], // lista plana de todos los temas (con _bloqueTitulo adjunto)
     quiz: {
       preguntas: [],
       indice: 0,
@@ -57,18 +58,38 @@
         return res.json();
       })
       .then(function (manifest) {
-        var archivos = manifest.temas || [];
+        var bloques = manifest.bloques || [];
         return Promise.all(
-          archivos.map(function (archivo) {
-            return fetch("datos/" + archivo).then(function (res) {
-              if (!res.ok) throw new Error("No se pudo leer datos/" + archivo);
-              return res.json();
+          bloques.map(function (bloque) {
+            var archivos = bloque.temas || [];
+            return Promise.all(
+              archivos.map(function (archivo) {
+                var ruta = "datos/" + bloque.carpeta + "/" + archivo;
+                return fetch(ruta).then(function (res) {
+                  if (!res.ok) throw new Error("No se pudo leer " + ruta);
+                  return res.json();
+                });
+              })
+            ).then(function (temas) {
+              return {
+                id: bloque.id,
+                numero: bloque.numero,
+                titulo: bloque.titulo,
+                temas: temas
+              };
             });
           })
         );
       })
-      .then(function (temas) {
-        state.temas = temas;
+      .then(function (bloques) {
+        state.bloques = bloques;
+        state.temas = [];
+        bloques.forEach(function (bloque) {
+          bloque.temas.forEach(function (tema) {
+            tema._bloqueTitulo = bloque.titulo;
+            state.temas.push(tema);
+          });
+        });
         estado.textContent = "";
       })
       .catch(function (err) {
@@ -98,27 +119,135 @@
     if (nombre === "estudiar") actualizarResumenProgreso();
   }
 
+  // ---------- Metadatos comunes (estado / revisor) ----------
+
+  function badgeEstado(tema) {
+    if (!tema.estado) return "";
+    var clases = { borrador: "badge-borrador", verificado: "badge-verificado", "revisado por cardiólogo": "badge-revisado" };
+    var clase = clases[tema.estado] || "badge-borrador";
+    return '<span class="badge ' + clase + '">' + escapeHtml(tema.estado) + "</span>";
+  }
+
   // ---------- Temas ----------
 
   function renderTemas() {
     var lista = document.getElementById("temas-lista");
     lista.innerHTML = "";
-    state.temas.forEach(function (tema) {
-      var card = document.createElement("div");
-      card.className = "card";
-      var estudiado = estaEstudiado(tema.id);
-      card.innerHTML =
-        '<div class="categoria">' + escapeHtml(tema.categoria || "") + "</div>" +
-        "<h3>" + escapeHtml(tema.titulo) + "</h3>" +
-        "<p>" + escapeHtml(tema.resumen || "") + "</p>" +
-        '<div class="estado' + (estudiado ? " estudiado" : "") + '">' +
-        (estudiado ? "✓ Estudiado" : "Sin estudiar") +
-        "</div>";
-      card.addEventListener("click", function () {
-        mostrarDetalleTema(tema);
-      });
-      lista.appendChild(card);
+
+    state.bloques.forEach(function (bloque) {
+      var seccion = document.createElement("div");
+      seccion.className = "bloque-seccion";
+
+      var encabezado = document.createElement("h2");
+      encabezado.className = "bloque-titulo";
+      encabezado.textContent =
+        (bloque.numero ? bloque.numero + ". " : "") + bloque.titulo + " (" + bloque.temas.length + ")";
+      seccion.appendChild(encabezado);
+
+      if (bloque.temas.length === 0) {
+        var vacio = document.createElement("p");
+        vacio.className = "bloque-vacio";
+        vacio.textContent = "Todavía no hay temas cargados en este bloque.";
+        seccion.appendChild(vacio);
+      } else {
+        bloque.temas.forEach(function (tema) {
+          var card = document.createElement("div");
+          card.className = "card";
+          var estudiado = estaEstudiado(tema.id);
+          card.innerHTML =
+            '<div class="categoria">' + escapeHtml(tema.categoria || tema._bloqueTitulo || "") + "</div>" +
+            "<h3>" + escapeHtml(tema.titulo) + " " + badgeEstado(tema) + "</h3>" +
+            "<p>" + escapeHtml(tema.resumen || "") + "</p>" +
+            '<div class="estado' + (estudiado ? " estudiado" : "") + '">' +
+            (estudiado ? "✓ Estudiado" : "Sin estudiar") +
+            "</div>";
+          card.addEventListener("click", function () {
+            mostrarDetalleTema(tema);
+          });
+          seccion.appendChild(card);
+        });
+      }
+
+      lista.appendChild(seccion);
     });
+  }
+
+  function renderBloqueTexto(titulo, contenido) {
+    if (!contenido) return "";
+    return '<section class="bloque"><h4>' + escapeHtml(titulo) + "</h4><p>" + escapeHtml(contenido) + "</p></section>";
+  }
+
+  function renderRecomendaciones(recomendaciones) {
+    if (!recomendaciones || recomendaciones.length === 0) return "";
+    var items = recomendaciones
+      .map(function (r) {
+        var tags = [];
+        if (r.clase) tags.push('<span class="tag tag-clase">Clase ' + escapeHtml(r.clase) + "</span>");
+        if (r.nivelEvidencia) tags.push('<span class="tag tag-nivel">Nivel ' + escapeHtml(r.nivelEvidencia) + "</span>");
+        if (r.guia) tags.push('<span class="tag tag-guia">' + escapeHtml(r.guia) + "</span>");
+        return (
+          '<li class="recomendacion"><p>' + escapeHtml(r.texto) + '</p><div class="tags">' + tags.join("") + "</div></li>"
+        );
+      })
+      .join("");
+    return '<section class="bloque"><h4>Recomendaciones</h4><ul class="recomendaciones-lista">' + items + "</ul></section>";
+  }
+
+  function renderDosis(dosis) {
+    if (!dosis || dosis.length === 0) return "";
+    var items = dosis
+      .map(function (d) {
+        var necesitaVerificar = !d.dosis || /verificar/i.test(d.dosis);
+        return (
+          '<li class="dosis-item' + (necesitaVerificar ? " dosis-sin-verificar" : "") + '">' +
+          "<strong>" + escapeHtml(d.farmaco) + ":</strong> " +
+          escapeHtml(d.dosis || "VERIFICAR") +
+          (necesitaVerificar ? ' <span class="tag tag-verificar">VERIFICAR</span>' : "") +
+          (d.fuente ? ' <span class="fuente-dosis">(' + escapeHtml(d.fuente) + ")</span>" : "") +
+          "</li>"
+        );
+      })
+      .join("");
+    return '<section class="bloque"><h4>Dosis</h4><ul class="dosis-lista">' + items + "</ul></section>";
+  }
+
+  function renderGuiasYFuentes(tema) {
+    var partes = [];
+    if (tema.guias && tema.guias.length > 0) {
+      var guias = tema.guias
+        .map(function (g) {
+          var nombre = [g.organizacion, g.nombre, g.anio].filter(Boolean).join(" · ");
+          return g.url ? '<li><a href="' + encodeURI(g.url) + '" target="_blank" rel="noopener">' + escapeHtml(nombre) + "</a></li>" : "<li>" + escapeHtml(nombre) + "</li>";
+        })
+        .join("");
+      partes.push('<section class="bloque"><h4>Guías utilizadas</h4><ul class="fuentes-lista">' + guias + "</ul></section>");
+    }
+    if (tema.fuentes && tema.fuentes.length > 0) {
+      var fuentes = tema.fuentes
+        .map(function (f) {
+          return f.url ? '<li><a href="' + encodeURI(f.url) + '" target="_blank" rel="noopener">' + escapeHtml(f.titulo || f.url) + "</a></li>" : "<li>" + escapeHtml(f.titulo || "") + "</li>";
+        })
+        .join("");
+      partes.push('<section class="bloque"><h4>Fuentes</h4><ul class="fuentes-lista">' + fuentes + "</ul></section>");
+    }
+    if (tema.braunwald && tema.braunwald.referencia) {
+      partes.push(
+        '<section class="bloque"><h4>Braunwald</h4><p>' +
+          escapeHtml(tema.braunwald.edicion || "") +
+          " — " +
+          escapeHtml(tema.braunwald.referencia) +
+          "</p></section>"
+      );
+    }
+    return partes.join("");
+  }
+
+  function renderMetaRevision(tema) {
+    var partes = [];
+    if (tema.revisor) partes.push("Revisor: " + escapeHtml(tema.revisor));
+    if (tema.fechaRevision) partes.push("Última revisión: " + escapeHtml(tema.fechaRevision));
+    if (partes.length === 0) return "";
+    return '<p class="meta-revision">' + partes.join(" · ") + "</p>";
   }
 
   function mostrarDetalleTema(tema) {
@@ -126,17 +255,17 @@
     var detalle = document.getElementById("tema-detalle");
     detalle.classList.remove("hidden");
 
-    var bloques = (tema.secciones || [])
+    var contenidoLegacy = (tema.secciones || [])
       .map(function (s) {
-        return (
-          '<section class="bloque"><h4>' +
-          escapeHtml(s.titulo) +
-          "</h4><p>" +
-          escapeHtml(s.contenido) +
-          "</p></section>"
-        );
+        return renderBloqueTexto(s.titulo, s.contenido);
       })
       .join("");
+
+    var contenidoNuevo =
+      renderBloqueTexto("Diagnóstico", tema.diagnostico) +
+      renderBloqueTexto("Tratamiento", tema.tratamiento) +
+      renderRecomendaciones(tema.recomendaciones) +
+      renderDosis(tema.dosis);
 
     var puntos = (tema.puntosClave || [])
       .map(function (p) {
@@ -148,12 +277,15 @@
 
     detalle.innerHTML =
       '<button class="btn-volver" type="button">&larr; Volver a Temas</button>' +
-      "<h2>" + escapeHtml(tema.titulo) + "</h2>" +
+      "<h2>" + escapeHtml(tema.titulo) + " " + badgeEstado(tema) + "</h2>" +
+      renderMetaRevision(tema) +
       '<p class="resumen">' + escapeHtml(tema.resumen || "") + "</p>" +
-      bloques +
+      contenidoLegacy +
+      contenidoNuevo +
       (puntos
         ? '<section class="bloque"><h4>Puntos clave</h4><ul class="puntos-clave">' + puntos + "</ul></section>"
         : "") +
+      renderGuiasYFuentes(tema) +
       '<label class="marcar-estudiado"><input type="checkbox" id="check-estudiado"' +
       (estudiado ? " checked" : "") +
       "> Marcar como estudiado</label>";
@@ -171,6 +303,49 @@
 
   // ---------- Algoritmos ----------
 
+  function renderPasosAlgoritmoLegacy(pasos) {
+    var items = pasos.map(function (p) { return "<li>" + escapeHtml(p) + "</li>"; }).join("");
+    return '<ol class="algoritmo-pasos">' + items + "</ol>";
+  }
+
+  function renderNodosAlgoritmo(algoritmo) {
+    var nodos = algoritmo.nodos || [];
+    var conexiones = algoritmo.conexiones || [];
+    if (nodos.length === 0) return "";
+
+    var salientes = {};
+    conexiones.forEach(function (c) {
+      if (!salientes[c.desde]) salientes[c.desde] = [];
+      salientes[c.desde].push(c);
+    });
+
+    var items = nodos
+      .map(function (n) {
+        var ramas = (salientes[n.id] || [])
+          .map(function (c) {
+            var destino = nodos.find(function (nd) { return nd.id === c.hasta; });
+            var textoDestino = destino ? destino.texto : c.hasta;
+            return (
+              '<li class="algoritmo-rama">&rarr; ' +
+              (c.etiqueta ? "<strong>" + escapeHtml(c.etiqueta) + ":</strong> " : "") +
+              escapeHtml(textoDestino) +
+              "</li>"
+            );
+          })
+          .join("");
+        return (
+          '<li class="algoritmo-nodo"><div class="algoritmo-nodo-texto">' +
+          escapeHtml(n.texto) +
+          "</div>" +
+          (ramas ? '<ul class="algoritmo-ramas">' + ramas + "</ul>" : "") +
+          "</li>"
+        );
+      })
+      .join("");
+
+    return '<ol class="algoritmo-pasos">' + items + "</ol>";
+  }
+
   function renderAlgoritmos() {
     var lista = document.getElementById("algoritmos-lista");
     lista.innerHTML = "";
@@ -186,15 +361,13 @@
     conAlgoritmo.forEach(function (tema) {
       var card = document.createElement("div");
       card.className = "card";
-      var pasos = tema.algoritmo.pasos
-        .map(function (p) {
-          return "<li>" + escapeHtml(p) + "</li>";
-        })
-        .join("");
+      var cuerpo = tema.algoritmo.pasos
+        ? renderPasosAlgoritmoLegacy(tema.algoritmo.pasos)
+        : renderNodosAlgoritmo(tema.algoritmo);
       card.innerHTML =
         '<div class="categoria">' + escapeHtml(tema.titulo) + "</div>" +
-        "<h3>" + escapeHtml(tema.algoritmo.titulo) + "</h3>" +
-        '<ol class="algoritmo-pasos">' + pasos + "</ol>";
+        "<h3>" + escapeHtml(tema.algoritmo.titulo || "") + "</h3>" +
+        cuerpo;
       lista.appendChild(card);
     });
   }

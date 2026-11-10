@@ -1,5 +1,69 @@
 {
-  "temas": [
-    "insuficiencia-cardiaca.json"
+  "bloques": [
+    {
+      "id": "fisiopatologia-epidemiologia",
+      "numero": 1,
+      "titulo": "Fisiopatología y epidemiología",
+      "carpeta": "01-fisiopatologia-epidemiologia",
+      "temas": []
+    },
+    {
+      "id": "diagnostico-cronica",
+      "numero": 2,
+      "titulo": "Cardiopatía isquémica crónica: diagnóstico",
+      "carpeta": "02-diagnostico-cronica",
+      "temas": []
+    },
+    {
+      "id": "tratamiento-medico-angina",
+      "numero": 3,
+      "titulo": "Angina crónica: tratamiento médico",
+      "carpeta": "03-tratamiento-medico-angina",
+      "temas": []
+    },
+    {
+      "id": "revascularizacion",
+      "numero": 4,
+      "titulo": "Revascularización",
+      "carpeta": "04-revascularizacion",
+      "temas": []
+    },
+    {
+      "id": "sca-diagnostico",
+      "numero": 5,
+      "titulo": "Síndrome coronario agudo: diagnóstico",
+      "carpeta": "05-sca-diagnostico",
+      "temas": []
+    },
+    {
+      "id": "iamcest",
+      "numero": 6,
+      "titulo": "IAM con elevación del ST (IAMCEST)",
+      "carpeta": "06-iamcest",
+      "temas": []
+    },
+    {
+      "id": "scasest",
+      "numero": 7,
+      "titulo": "SCA sin elevación del ST (IAMSEST / angina inestable)",
+      "carpeta": "07-scasest",
+      "temas": []
+    },
+    {
+      "id": "complicaciones-prevencion",
+      "numero": 8,
+      "titulo": "Complicaciones y prevención secundaria",
+      "carpeta": "08-complicaciones-prevencion",
+      "temas": []
+    },
+    {
+      "id": "otros",
+      "numero": 0,
+      "titulo": "Otros temas (fuera del programa de isquémica)",
+      "carpeta": "otros",
+      "temas": [
+        "insuficiencia-cardiaca.json"
+      ]
+    }
   ]
 }

@@ -79,6 +79,23 @@ main#app {
 .tab-panel { display: none; }
 .tab-panel.active { display: block; }
 
+.bloque-seccion {
+  margin-bottom: 1.4rem;
+}
+.bloque-titulo {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.bloque-vacio {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin: 0;
+}
+
 .card-list {
   display: flex;
   flex-direction: column;
@@ -134,6 +151,52 @@ main#app {
 
 .algoritmo-pasos { margin: 0; padding-left: 1.3rem; }
 .algoritmo-pasos li { margin-bottom: 0.5rem; font-size: 0.9rem; }
+.algoritmo-nodo-texto { font-weight: 600; }
+.algoritmo-ramas { margin: 0.3rem 0 0; padding-left: 1.1rem; list-style: none; }
+.algoritmo-rama { font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 0.2rem; }
+
+.badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+.badge-borrador { background: rgba(179,36,46,0.12); color: var(--color-primary); }
+.badge-verificado { background: rgba(15,110,94,0.12); color: var(--color-accent); }
+.badge-revisado { background: rgba(15,110,94,0.22); color: var(--color-accent); }
+
+.meta-revision { font-size: 0.78rem; color: var(--color-text-muted); margin: 0 0 0.6rem; }
+
+.recomendaciones-lista, .dosis-lista, .fuentes-lista {
+  margin: 0;
+  padding-left: 1.1rem;
+  list-style: none;
+}
+.recomendacion { margin-bottom: 0.7rem; font-size: 0.9rem; }
+.recomendacion p { margin: 0 0 0.3rem; }
+.tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+}
+.tag-clase { color: var(--color-primary-dark); border-color: var(--color-primary-dark); }
+.tag-nivel { color: var(--color-accent); border-color: var(--color-accent); }
+.tag-verificar { color: #fff; background: var(--color-primary); border-color: var(--color-primary); }
+
+.dosis-item { margin-bottom: 0.4rem; font-size: 0.88rem; }
+.dosis-sin-verificar { color: var(--color-text); }
+.fuente-dosis { font-size: 0.78rem; color: var(--color-text-muted); }
+.fuentes-lista li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+.fuentes-lista a { color: var(--color-primary-dark); }
 
 .search-input {
   width: 100%;

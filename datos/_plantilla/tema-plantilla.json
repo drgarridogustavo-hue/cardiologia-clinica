@@ -1,0 +1,59 @@
+{
+  "_comentario": "Plantilla de esquema para un tema. No se carga en la app (no figura en manifest.json). Copiar a la carpeta del bloque correspondiente, completar y agregar el nombre de archivo a datos/manifest.json.",
+
+  "id": "",
+  "titulo": "",
+  "bloque": "",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "13.ª edición",
+    "referencia": "VERIFICAR — completar parte y capítulo exactos con la edición consultada"
+  },
+
+  "guias": [
+    { "organizacion": "", "nombre": "", "anio": null, "url": "" }
+  ],
+
+  "resumen": "",
+  "diagnostico": "",
+  "tratamiento": "",
+
+  "recomendaciones": [
+    { "texto": "", "clase": "", "nivelEvidencia": "", "guia": "" }
+  ],
+
+  "algoritmo": {
+    "titulo": "",
+    "nodos": [
+      { "id": "n1", "texto": "" },
+      { "id": "n2", "texto": "" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "" }
+    ]
+  },
+
+  "dosis": [
+    { "farmaco": "", "dosis": "VERIFICAR", "fuente": "" }
+  ],
+
+  "glosario": [
+    { "termino": "", "definicion": "" }
+  ],
+
+  "fuentes": [
+    { "titulo": "", "url": "" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "",
+      "opciones": ["", "", "", ""],
+      "respuesta": 0,
+      "explicacion": ""
+    }
+  ]
+}
