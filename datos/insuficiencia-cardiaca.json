@@ -1,0 +1,72 @@
+{
+  "id": "insuficiencia-cardiaca",
+  "titulo": "Insuficiencia Cardíaca",
+  "categoria": "Síndromes clínicos",
+  "resumen": "Síndrome clínico causado por una anomalía estructural o funcional del corazón que eleva las presiones intracardíacas y/o reduce el gasto cardíaco en reposo o con el esfuerzo.",
+  "secciones": [
+    {
+      "titulo": "Definición y clasificación",
+      "contenido": "Se clasifica según la fracción de eyección del ventrículo izquierdo (FEVI):\n• IC con FEVI reducida (ICFEr): FEVI ≤ 40%\n• IC con FEVI levemente reducida (ICFElr): FEVI 41-49%\n• IC con FEVI preservada (ICFEp): FEVI ≥ 50%\nTambién se clasifica por tiempo de evolución (aguda/crónica) y por estadios (ACC/AHA A-D) o clase funcional (NYHA I-IV)."
+    },
+    {
+      "titulo": "Etiología",
+      "contenido": "Causas principales: cardiopatía isquémica, hipertensión arterial, valvulopatías, miocardiopatías (dilatada, hipertrófica, restrictiva), arritmias (FA, taquicardia sostenida), tóxicos (alcohol, quimioterápicos como antraciclinas), infecciosas (miocarditis, enfermedad de Chagas) e infiltrativas (amiloidosis, sarcoidosis)."
+    },
+    {
+      "titulo": "Clínica",
+      "contenido": "Síntomas: disnea de esfuerzo, ortopnea, disnea paroxística nocturna, fatiga, edemas. Signos: ingurgitación yugular, reflujo hepatoyugular, tercer ruido (R3), crepitantes pulmonares, edema periférico, hepatomegalia congestiva. Los criterios de Framingham combinan criterios mayores y menores para el diagnóstico clínico."
+    },
+    {
+      "titulo": "Diagnóstico",
+      "contenido": "Péptidos natriuréticos (BNP > 35 pg/mL o NT-proBNP > 125 pg/mL en IC crónica, umbrales más altos en IC aguda) orientan el diagnóstico y tienen alto valor predictivo negativo. El ecocardiograma transtorácico es el estudio clave para evaluar FEVI, dimensiones, función diastólica y valvulopatías. ECG, radiografía de tórax y laboratorio (función renal, iones, ferremia) completan la evaluación inicial."
+    },
+    {
+      "titulo": "Tratamiento (ICFEr)",
+      "contenido": "Cuatro pilares farmacológicos con beneficio pronóstico, a iniciar y titular de forma temprana (idealmente en simultáneo):\n1. IECA/ARA-II o sacubitril-valsartán (ARNI)\n2. Betabloqueantes (bisoprolol, carvedilol, succinato de metoprolol)\n3. Antagonistas del receptor de mineralocorticoides (espironolactona, eplerenona)\n4. iSGLT2 (dapagliflozina, empagliflozina)\nDiuréticos de asa para control de congestión sintomática. Considerar dispositivos (TRC, CDI) según criterios específicos en pacientes seleccionados."
+    }
+  ],
+  "algoritmo": {
+    "titulo": "Algoritmo diagnóstico simplificado ante sospecha de IC",
+    "pasos": [
+      "Sospecha clínica por síntomas y/o signos de IC",
+      "Solicitar péptido natriurético (BNP/NT-proBNP)",
+      "Si valores por debajo del umbral → IC poco probable, buscar diagnóstico alternativo",
+      "Si valores por encima del umbral → solicitar ecocardiograma",
+      "Ecocardiograma confirma anomalía estructural/funcional → clasificar por FEVI (ICFEr / ICFElr / ICFEp)",
+      "Buscar etiología y comorbilidades, e iniciar tratamiento dirigido por fenotipo"
+    ]
+  },
+  "puntosClave": [
+    "La FEVI define el fenotipo de IC y orienta el tratamiento farmacológico.",
+    "Los péptidos natriuréticos tienen alto valor predictivo negativo para descartar IC.",
+    "En ICFEr, los cuatro pilares deben iniciarse precozmente, no de forma escalonada estricta.",
+    "El ecocardiograma es el estudio de imagen inicial de elección."
+  ],
+  "glosario": [
+    { "termino": "FEVI", "definicion": "Fracción de eyección del ventrículo izquierdo; porcentaje de volumen sanguíneo expulsado en cada sístole." },
+    { "termino": "BNP", "definicion": "Péptido natriurético tipo B, liberado por el miocardio ventricular en respuesta al estrés de pared." },
+    { "termino": "ARNI", "definicion": "Inhibidor de la neprilisina y del receptor de angiotensina (ej. sacubitril-valsartán)." },
+    { "termino": "iSGLT2", "definicion": "Inhibidores del cotransportador sodio-glucosa tipo 2; fármacos con beneficio pronóstico en IC independientemente de la presencia de diabetes." },
+    { "termino": "TRC", "definicion": "Terapia de resincronización cardíaca; dispositivo indicado en pacientes seleccionados con ICFEr y trastorno de conducción (ej. BRI con QRS ancho)." }
+  ],
+  "preguntas": [
+    {
+      "pregunta": "¿Qué FEVI define a la insuficiencia cardíaca con fracción de eyección reducida (ICFEr)?",
+      "opciones": ["≥ 50%", "41-49%", "≤ 40%", "≥ 60%"],
+      "respuesta": 2,
+      "explicacion": "La ICFEr se define por una FEVI ≤ 40%."
+    },
+    {
+      "pregunta": "¿Cuál de los siguientes NO forma parte de los cuatro pilares farmacológicos de la ICFEr?",
+      "opciones": ["Betabloqueantes", "iSGLT2", "Antagonistas de mineralocorticoides", "Bloqueantes de los canales de calcio"],
+      "respuesta": 3,
+      "explicacion": "Los bloqueantes de los canales de calcio no forman parte de los cuatro pilares; de hecho, algunos están contraindicados en ICFEr."
+    },
+    {
+      "pregunta": "¿Qué estudio de imagen es de elección inicial ante la sospecha de insuficiencia cardíaca?",
+      "opciones": ["Resonancia magnética cardíaca", "Ecocardiograma transtorácico", "Tomografía computada de tórax", "SPECT miocárdico"],
+      "respuesta": 1,
+      "explicacion": "El ecocardiograma transtorácico es accesible, no invasivo y permite evaluar FEVI, estructura y función diastólica."
+    }
+  ]
+}

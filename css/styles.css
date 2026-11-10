@@ -1,0 +1,227 @@
+:root {
+  --color-bg: #f5f7fa;
+  --color-surface: #ffffff;
+  --color-text: #1b2430;
+  --color-text-muted: #5b6673;
+  --color-primary: #b3242e;
+  --color-primary-dark: #8c1c24;
+  --color-accent: #0f6e5e;
+  --color-border: #e2e6ea;
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #11161c;
+    --color-surface: #1a212a;
+    --color-text: #e7ebef;
+    --color-text-muted: #9aa5b1;
+    --color-primary: #e35b63;
+    --color-primary-dark: #c94852;
+    --color-accent: #3fcdb0;
+    --color-border: #2a333d;
+    --shadow: 0 1px 3px rgba(0,0,0,0.4);
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.app-header {
+  padding: 1.1rem 1rem 0.6rem;
+  text-align: center;
+}
+.app-header h1 { margin: 0; font-size: 1.3rem; color: var(--color-primary); }
+.app-header .subtitle { margin: 0.2rem 0 0; font-size: 0.85rem; color: var(--color-text-muted); }
+
+.tabs {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  overflow-x: auto;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  -webkit-overflow-scrolling: touch;
+}
+.tab-btn {
+  flex: 1 0 auto;
+  min-width: 90px;
+  padding: 0.75rem 0.5rem;
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+.tab-btn.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+main#app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem 1rem 3rem;
+}
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.card h3 { margin: 0 0 0.25rem; font-size: 1rem; }
+.card .categoria { font-size: 0.75rem; color: var(--color-accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.02em; }
+.card p { margin: 0.35rem 0 0; font-size: 0.85rem; color: var(--color-text-muted); }
+.card .estado { font-size: 0.75rem; margin-top: 0.4rem; color: var(--color-text-muted); }
+.card .estado.estudiado { color: var(--color-accent); font-weight: 600; }
+
+.detail {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-top: 0.8rem;
+}
+.detail.hidden, .hidden { display: none !important; }
+.detail .btn-volver {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.detail h2 { margin: 0 0 0.2rem; font-size: 1.15rem; }
+.detail .resumen { color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 0.8rem; }
+.detail section.bloque { margin-bottom: 0.9rem; }
+.detail section.bloque h4 { margin: 0 0 0.3rem; font-size: 0.95rem; color: var(--color-primary-dark); }
+.detail section.bloque p { margin: 0; font-size: 0.9rem; white-space: pre-line; }
+.detail ul.puntos-clave { margin: 0; padding-left: 1.2rem; font-size: 0.9rem; }
+
+.marcar-estudiado {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.algoritmo-pasos { margin: 0; padding-left: 1.3rem; }
+.algoritmo-pasos li { margin-bottom: 0.5rem; font-size: 0.9rem; }
+
+.search-input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.glossary-list dl { margin: 0; }
+.glossary-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.6rem;
+}
+.glossary-item dt { font-weight: 700; font-size: 0.9rem; color: var(--color-primary-dark); }
+.glossary-item dd { margin: 0.2rem 0 0; font-size: 0.85rem; color: var(--color-text-muted); }
+
+.progress-summary { margin-bottom: 1rem; }
+#progreso-texto { font-size: 0.9rem; color: var(--color-text-muted); margin: 0 0 0.4rem; }
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--color-border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.btn-primary, .btn-secondary {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0.6rem;
+}
+.btn-primary { background: var(--color-primary); color: #fff; }
+.btn-primary:active { background: var(--color-primary-dark); }
+.btn-secondary { background: transparent; color: var(--color-text-muted); border: 1px solid var(--color-border); }
+
+.quiz-pregunta { font-size: 1rem; margin-bottom: 0.9rem; }
+.quiz-opciones { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.9rem; }
+.quiz-opcion {
+  text-align: left;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.quiz-opcion.correcta { border-color: var(--color-accent); background: rgba(15,110,94,0.12); }
+.quiz-opcion.incorrecta { border-color: var(--color-primary); background: rgba(179,36,46,0.1); }
+.quiz-explicacion {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+  border-radius: var(--radius);
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.9rem;
+}
+.quiz-progreso { font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 0.5rem; }
+.quiz-resultado { text-align: center; padding: 1.5rem 0; }
+.quiz-resultado .puntaje { font-size: 2rem; font-weight: 700; color: var(--color-primary); }
+
+.estado-carga {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  padding: 0 1rem 1rem;
+}
+
+@media (min-width: 600px) {
+  .app-header h1 { font-size: 1.6rem; }
+  .tab-btn { min-width: 120px; }
+}
