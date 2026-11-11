@@ -1,0 +1,86 @@
+{
+  "id": "revascularizacion-poblaciones-especiales",
+  "titulo": "Revascularización en poblaciones especiales: diabetes, disfunción ventricular, enfermedad renal crónica, mujeres y ancianos",
+  "bloque": "revascularizacion",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Capítulo 40, «Cardiopatía isquémica estable», sección «Intervención coronaria percutánea en subgrupos específicos de pacientes con cardiopatía isquémica estable» y «Tratamiento quirúrgico en grupos especiales», p. 769-770, 773-774"
+  },
+
+  "guias": [
+    { "organizacion": "ACC/AHA", "nombre": "2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease", "anio": 2023, "url": "https://doi.org/10.1161/CIR.0000000000001168" }
+  ],
+
+  "resumen": "La decisión de revascularizar y la elección entre ICP e IDAC no son uniformes para todos los pacientes: la diabetes, la disfunción ventricular, la enfermedad renal crónica, el sexo y la edad avanzada modifican tanto el riesgo del procedimiento como el beneficio esperado, y en varios de estos subgrupos la evidencia de ensayos aleatorizados es más limitada que en la población general.",
+
+  "diagnostico": "No aplica como diagnóstico (ver temas de diagnóstico de cardiopatía isquémica crónica y de revascularización, bloques 2 y 4). La estratificación del riesgo quirúrgico en estos subgrupos se apoya en calculadoras validadas como la puntuación de riesgo de la Society of Thoracic Surgeons (STS, riskcalc.sts.org) o el EuroSCORE (www.euroscore.org), que integran factores cardíacos (número de vasos afectados, enfermedad del tronco principal izquierdo, disfunción VI, cirugía previa, inestabilidad hemodinámica), enfermedades no cardíacas asociadas (edad, diabetes, enfermedad renal y pulmonar), y factores intraoperatorios.",
+
+  "tratamiento": "Diabetes mellitus: los pacientes con diabetes tienen mayor riesgo de complicaciones tras la ICP, explicado en parte por una carga de aterosclerosis coronaria mayor, una respuesta biológica alterada a la lesión del balón o la endoprótesis, progresión más rápida de la enfermedad en los segmentos no revascularizados y mayor reactividad plaquetaria. En la mayoría de los pacientes diabéticos con cardiopatía isquémica estable, el tratamiento médico óptimo inicial sigue siendo razonable; cuando hay enfermedad multivaso, el IDAC se prefiere sobre la ICP (ver tema de revascularización, bloque 4: estudio FREEDOM). Disfunción del ventrículo izquierdo: la FEVI preoperatoria es uno de los factores predictivos más potentes de mortalidad tras el IDAC, tanto intrahospitalaria como a largo plazo; datos del Dynamic Registry del NHLBI muestran una mortalidad a 1 año del 11,0%, 4,5% y 1,9% para pacientes con FEVI ≤ 40%, 41-49% y ≥ 50%, respectivamente. El estudio aleatorizado STICH (cirugía + tratamiento médico frente a tratamiento médico solo en disfunción VI grave) no identificó con claridad qué pacientes se benefician más de un estudio de viabilidad miocárdica antes de decidir la revascularización. Enfermedad renal crónica: la enfermedad cardiovascular es la principal causa de muerte en pacientes con nefropatía terminal, responsable de más del 50% de las muertes; estos pacientes acumulan factores de riesgo adicionales (diabetes, hipertensión, hipertrofia VI, disfunción sistólica y diastólica, anemia, homocisteína elevada) que aceleran el desarrollo de EAC. Los datos observacionales sugieren que el IDAC sería la estrategia preferida sobre la ICP en pacientes con EAC de varios vasos y nefropatía terminal, aunque los datos aleatorizados específicos son escasos, y la mortalidad a 30 días del IDAC en esta población varía ampliamente (9 a 20% según las series). El ensayo aleatorizado ISCHEMIA-CKD evaluó específicamente a pacientes con ERC avanzada (TFGe < 30 ml/min/1,73 m² o diálisis) y EAC estable con isquemia moderada-grave en pruebas no invasivas: a 3 años no hubo diferencia en el criterio de valoración principal (muerte o IM: 36,4% con estrategia invasiva frente a 36,7% con tratamiento médico), se observó una tasa significativamente mayor de accidente cerebrovascular con la estrategia invasiva, y no se redujo el inicio de diálisis ni mejoró la calidad de vida con la revascularización sistemática. Mujeres y ancianos: las mujeres sometidas a ICP presentan más complicaciones (en particular hemorragias) que los hombres en estudios observacionales. En un análisis post hoc del estudio COURAGE, las mujeres mayores de 65 años tuvieron una mortalidad e incidencia de IM menores que las mujeres más jóvenes, sin diferencias claras por edad entre los grupos asignados a ICP o tratamiento médico; pese al riesgo teóricamente mayor de complicaciones en mujeres mayores sometidas a ICP, no se observó un aumento de complicaciones vasculares, hemorrágicas o de empeoramiento de la función renal en este análisis.",
+
+  "recomendaciones": [],
+
+  "algoritmo": {
+    "titulo": "Modificadores del riesgo y de la estrategia de revascularización en poblaciones especiales",
+    "nodos": [
+      { "id": "n1", "texto": "EAC con indicación potencial de revascularización" },
+      { "id": "n2", "texto": "Diabetes mellitus + enfermedad multivaso" },
+      { "id": "n3", "texto": "Disfunción ventricular izquierda significativa (FEVI ≤ 40%)" },
+      { "id": "n4", "texto": "Enfermedad renal crónica avanzada (TFGe < 30 o diálisis)" },
+      { "id": "n5", "texto": "Preferir IDAC sobre ICP (FREEDOM)" },
+      { "id": "n6", "texto": "Evaluar riesgo quirúrgico con puntuación STS/EuroSCORE; mortalidad perioperatoria significativamente mayor" },
+      { "id": "n7", "texto": "Priorizar tratamiento médico óptimo; estrategia invasiva sistemática no demostró beneficio y aumentó el riesgo de ACV (ISCHEMIA-CKD)" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n3", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n4", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n5", "etiqueta": "" },
+      { "desde": "n3", "hasta": "n6", "etiqueta": "" },
+      { "desde": "n4", "hasta": "n7", "etiqueta": "" }
+    ]
+  },
+
+  "dosis": [],
+
+  "glosario": [
+    { "termino": "Puntuación STS", "definicion": "Calculadora de riesgo quirúrgico de la Society of Thoracic Surgeons, que estima la mortalidad y morbilidad perioperatoria del IDAC a partir de factores cardíacos, enfermedades asociadas y factores intraoperatorios." },
+    { "termino": "EuroSCORE", "definicion": "Sistema europeo de evaluación del riesgo operatorio cardíaco, alternativo a la puntuación STS para estimar el riesgo quirúrgico del IDAC." },
+    { "termino": "ISCHEMIA-CKD", "definicion": "Ensayo aleatorizado que evaluó la estrategia invasiva frente al tratamiento médico en pacientes con enfermedad renal crónica avanzada y EAC estable con isquemia moderada-grave; no mostró beneficio de la estrategia invasiva y se asoció a más accidentes cerebrovasculares." }
+  ],
+
+  "fuentes": [
+    { "titulo": "Bangalore S, Maron DW, O'Brien SM, et al. Management of coronary disease in patients with advanced kidney disease (ISCHEMIA-CKD). N Engl J Med. 2020;382:1608-1618", "url": "" },
+    { "titulo": "Velazquez EJ, Lee KL, Jones RH, et al. Coronary-artery bypass surgery in patients with ischemic cardiomyopathy (STICH extension study). N Engl J Med. 2016;374:1511-1520", "url": "" },
+    { "titulo": "Farkouh ME, et al. Strategies for multivessel revascularization in patients with diabetes (FREEDOM). N Engl J Med. 2012;367:2375-2384", "url": "" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "Según el ensayo ISCHEMIA-CKD, ¿qué resultado tuvo la estrategia invasiva sistemática frente al tratamiento médico en pacientes con enfermedad renal crónica avanzada y EAC estable?",
+      "opciones": [
+        "Redujo claramente la mortalidad y el infarto",
+        "No mostró diferencia en muerte o IM, y se asoció a más accidentes cerebrovasculares",
+        "Eliminó la necesidad de diálisis en todos los pacientes",
+        "Mejoró la calidad de vida de forma significativa"
+      ],
+      "respuesta": 1,
+      "explicacion": "ISCHEMIA-CKD no encontró diferencias en el criterio de valoración principal (muerte o IM) entre la estrategia invasiva y el tratamiento médico, y observó más accidentes cerebrovasculares con la estrategia invasiva, sin mejoría en calidad de vida ni reducción de diálisis."
+    },
+    {
+      "pregunta": "¿Qué factor preoperatorio es uno de los predictores más potentes de mortalidad tras el IDAC?",
+      "opciones": ["El grupo sanguíneo del paciente", "La fracción de eyección del ventrículo izquierdo", "El color de la piel", "La altura del paciente"],
+      "respuesta": 1,
+      "explicacion": "La FEVI preoperatoria es uno de los predictores más potentes de mortalidad perioperatoria y a largo plazo tras el IDAC."
+    },
+    {
+      "pregunta": "¿Qué calculadoras de riesgo se usan habitualmente para estimar la mortalidad perioperatoria antes de un IDAC?",
+      "opciones": ["Puntuación TIMI y GRACE", "Puntuación STS y EuroSCORE", "Escala de Killip y Forrester", "Escala CHA2DS2-VASc"],
+      "respuesta": 1,
+      "explicacion": "Las puntuaciones STS (Society of Thoracic Surgeons) y EuroSCORE son las calculadoras validadas de riesgo quirúrgico perioperatorio para el IDAC; TIMI/GRACE son para SCA, Killip/Forrester para shock, y CHA2DS2-VASc para riesgo de ACV en fibrilación auricular."
+    }
+  ]
+}

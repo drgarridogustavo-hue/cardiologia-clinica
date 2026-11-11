@@ -198,12 +198,19 @@
     var items = dosis
       .map(function (d) {
         var necesitaVerificar = !d.dosis || /verificar/i.test(d.dosis);
+        var detalles = "";
+        if (d.indicacion) detalles += '<div class="dosis-detalle"><strong>Indicación:</strong> ' + escapeHtml(d.indicacion) + "</div>";
+        if (d.ajusteRenal) detalles += '<div class="dosis-detalle"><strong>Ajuste renal:</strong> ' + escapeHtml(d.ajusteRenal) + "</div>";
+        if (d.ajusteHepatico) detalles += '<div class="dosis-detalle"><strong>Ajuste hepático:</strong> ' + escapeHtml(d.ajusteHepatico) + "</div>";
+        if (d.contraindicaciones) detalles += '<div class="dosis-detalle"><strong>Contraindicaciones:</strong> ' + escapeHtml(d.contraindicaciones) + "</div>";
+        if (d.efectosAdversos) detalles += '<div class="dosis-detalle"><strong>Efectos adversos principales:</strong> ' + escapeHtml(d.efectosAdversos) + "</div>";
         return (
           '<li class="dosis-item' + (necesitaVerificar ? " dosis-sin-verificar" : "") + '">' +
           "<strong>" + escapeHtml(d.farmaco) + ":</strong> " +
           escapeHtml(d.dosis || "VERIFICAR") +
           (necesitaVerificar ? ' <span class="tag tag-verificar">VERIFICAR</span>' : "") +
           (d.fuente ? ' <span class="fuente-dosis">(' + escapeHtml(d.fuente) + ")</span>" : "") +
+          detalles +
           "</li>"
         );
       })

@@ -34,7 +34,8 @@
       "titulo": "Revascularización",
       "carpeta": "04-revascularizacion",
       "temas": [
-        "revascularizacion-pci-vs-cabg.json"
+        "revascularizacion-pci-vs-cabg.json",
+        "revascularizacion-poblaciones-especiales.json"
       ]
     },
     {
@@ -62,7 +63,8 @@
       "titulo": "SCA sin elevación del ST (IAMSEST / angina inestable)",
       "carpeta": "07-scasest",
       "temas": [
-        "manejo-scasest-riesgo-antitrombotico.json"
+        "manejo-scasest-riesgo-antitrombotico.json",
+        "antiagregacion-anticoagulacion-profundidad.json"
       ]
     },
     {

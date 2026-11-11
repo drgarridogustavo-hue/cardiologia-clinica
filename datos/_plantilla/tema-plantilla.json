@@ -37,7 +37,7 @@
   },
 
   "dosis": [
-    { "farmaco": "", "dosis": "VERIFICAR", "fuente": "" }
+    { "farmaco": "", "dosis": "VERIFICAR", "ajusteRenal": "", "ajusteHepatico": "", "contraindicaciones": "", "fuente": "" }
   ],
 
   "glosario": [

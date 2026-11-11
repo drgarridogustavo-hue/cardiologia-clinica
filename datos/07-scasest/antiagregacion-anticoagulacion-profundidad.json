@@ -1,0 +1,136 @@
+{
+  "id": "antiagregacion-anticoagulacion-sca-profundidad",
+  "titulo": "Antiagregación y anticoagulación en el SCA: cangrelor, GP IIb/IIIa, cambio entre P2Y12 y fibrilación auricular concomitante",
+  "bloque": "scasest",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Capítulo 39, «Síndromes coronarios agudos sin elevación del ST», secciones «Antiagregantes plaquetarios intravenosos», «Cambio entre inhibidores orales de P2Y12», «Pacientes con indicación de tratamiento anticoagulante oral y antiagregante» y «Hemorragias: evaluación del riesgo, prevención y tratamiento», p. 725-729. El algoritmo de duración antitrombótica del capítulo (fig. 39-8) cita la guía ESC 2020 de SCASEST; el marco general se mantiene en la guía ESC 2023 unificada de síndromes coronarios agudos."
+  },
+
+  "guias": [
+    { "organizacion": "ESC", "nombre": "2020 ESC Guidelines for the management of acute coronary syndromes in patients presenting without persistent ST-segment elevation (marco original del algoritmo de duración antitrombótica)", "anio": 2020, "url": "" },
+    { "organizacion": "ESC", "nombre": "2023 ESC Guidelines for the management of acute coronary syndromes", "anio": 2023, "url": "https://doi.org/10.1093/eurheartj/ehad191" }
+  ],
+
+  "resumen": "Más allá de «aspirina + un inhibidor del P2Y12», el tratamiento antitrombótico del SCA tiene matices importantes en la práctica diaria: cuándo usar un antiagregante intravenoso de acción rápida, cómo cambiar de un inhibidor del P2Y12 a otro sin perder cobertura antiagregante, cómo tratar a un paciente que además tiene indicación de anticoagulación oral crónica (p. ej., fibrilación auricular), y qué hacer ante una hemorragia activa bajo tratamiento antitrombótico.",
+
+  "diagnostico": "No aplica (tema de tratamiento). La decisión depende de evaluar en paralelo el riesgo isquémico y el riesgo hemorrágico de cada paciente con herramientas validadas (p. ej., puntuación ARC-HBR para alto riesgo hemorrágico), no solo del diagnóstico de SCA en sí.",
+
+  "tratamiento": "Antiagregantes plaquetarios intravenosos: el cangrelor es un inhibidor i.v. del P2Y12 de acción directa, inicio casi inmediato y semivida corta (3 a 6 minutos), útil en pacientes sometidos a ICP que no han recibido un inhibidor oral del P2Y12 antes del procedimiento (el estudio CHAMPION-PHOENIX mostró menores tasas de muerte, IM, revascularización y trombosis de endoprótesis con cangrelor frente a clopidogrel en este contexto). Los inhibidores de la glucoproteína IIb/IIIa (abciximab, eptifibatida, tirofibán) ya no se recomiendan de forma sistemática en el SCASEST: el beneficio isquémico observado en el conjunto de los ensayos es pequeño y se acompaña de más hemorragias graves; se reservan como opción razonable y selectiva en pacientes de alto riesgo isquémico (troponina muy elevada, trombo angiográfico) durante la ICP, no como pretratamiento sistemático antes de conocer la anatomía. Cambio entre inhibidores orales de P2Y12: puede ser necesario en tres escenarios clínicos: 1) de clopidogrel crónico a un inhibidor más potente (prasugrel o ticagrelor) tras confirmarse un SCA, mediante una dosis de carga del nuevo fármaco; 2) de ticagrelor a clopidogrel por intolerancia, efectos secundarios (p. ej., disnea) o motivos de costo, administrando una dosis de carga de clopidogrel de 600 mg si han pasado menos de 24 horas desde la última dosis de ticagrelor; 3) de un inhibidor potente a clopidogrel por razones electivas (p. ej., antes de una cirugía programada). El ensayo ISAR-REACT 5 comparó de forma aleatorizada una estrategia basada en prasugrel frente a una basada en ticagrelor en el SCA (el 59% con SCASEST), con una reducción relativa del ~40% en el criterio compuesto principal (muerte, IM o ACV) a favor de prasugrel, sin diferencias en hemorragia. Una estrategia de «reducción» (de-escalation) consiste en pasar de un inhibidor potente a clopidogrel (o reducir la dosis de prasugrel/ticagrelor) tras la fase aguda para disminuir el riesgo hemorrágico, con datos a favor en pacientes seleccionados. Pacientes con indicación de anticoagulación oral crónica (p. ej., fibrilación auricular): se trata de aproximadamente el 10% de los pacientes con SCASEST. El concepto central es un tratamiento triple inicial corto —anticoagulante oral (ACO) + inhibidor del P2Y12 + ácido acetilsalicílico 75-100 mg— mantenido hasta 1 semana (habitualmente durante la hospitalización), seguido de tratamiento doble (ACO + un inhibidor del P2Y12, preferentemente clopidogrel) hasta completar 1 año, y ACO en monoterapia después. Se prefiere un anticoagulante oral directo (ACOD) sobre un antagonista de la vitamina K por su menor riesgo hemorrágico (sobre todo intracraneal) y mayor facilidad de uso, a dosis específicamente estudiadas en combinación con antiagregantes (p. ej., apixabán 5 mg cada 12 h, o 2,5 mg cada 12 h si hay criterios de alto riesgo hemorrágico ARC-HBR; dabigatrán 110 o 150 mg cada 12 h; rivaroxabán 15 o 20 mg al día). La duración e intensidad del tratamiento combinado se individualiza según el riesgo hemorrágico (p. ej., puntuación PRECISE-DAPT o criterios ARC-HBR) y el riesgo isquémico (anatomía coronaria compleja, trombosis previa de endoprótesis). Manejo de la hemorragia grave bajo tratamiento antitrombótico: 1) interrumpir el tratamiento antitrombótico y antiagregante, salvo que la hemorragia pueda controlarse adecuadamente con medidas hemostáticas; 2) neutralizar el tratamiento anticoagulante cuando sea posible; 3) considerar transfusión de plaquetas si procede; 4) evitar transfusiones de sangre en pacientes hemodinámicamente estables con hemoglobina > 7 g/dl, dados sus posibles efectos deletéreos; 5) la eritropoyetina no está indicada para el tratamiento de la anemia aguda por pérdida de sangre; 6) las hemorragias leves deben tratarse, de ser posible, sin interrumpir los tratamientos antitrombóticos de base.",
+
+  "recomendaciones": [
+    {
+      "texto": "Usar cangrelor en pacientes sometidos a ICP que no han recibido previamente un inhibidor oral del P2Y12, por su inicio de acción rápido y beneficio demostrado en reducción de eventos isquémicos periprocedimiento.",
+      "clase": "IIa",
+      "nivelEvidencia": "VERIFICAR",
+      "guia": "ESC 2020/2023 (síndromes coronarios agudos)"
+    },
+    {
+      "texto": "No usar inhibidores de la glucoproteína IIb/IIIa de forma sistemática (pretratamiento) en el SCASEST; reservarlos de forma selectiva para pacientes de alto riesgo isquémico durante la ICP.",
+      "clase": "III (en contra del uso sistemático)",
+      "nivelEvidencia": "VERIFICAR",
+      "guia": "ESC 2020/2023 (síndromes coronarios agudos)"
+    },
+    {
+      "texto": "En pacientes con SCASEST y fibrilación auricular sometidos a ICP, limitar el tratamiento triple (ACO + doble antiagregación) a un período corto (hasta 1 semana) y continuar después con tratamiento doble (ACO + un inhibidor P2Y12, preferentemente clopidogrel).",
+      "clase": "I",
+      "nivelEvidencia": "VERIFICAR",
+      "guia": "ESC 2020/2023 (síndromes coronarios agudos)"
+    },
+    {
+      "texto": "Preferir un anticoagulante oral directo sobre un antagonista de la vitamina K en pacientes con SCA y fibrilación auricular que requieren tratamiento combinado, salvo contraindicación (p. ej., válvula mecánica, estenosis mitral moderada-grave).",
+      "clase": "I",
+      "nivelEvidencia": "VERIFICAR",
+      "guia": "ESC 2020/2023 (síndromes coronarios agudos)"
+    }
+  ],
+
+  "algoritmo": {
+    "titulo": "Tratamiento antitrombótico en el paciente con SCA y fibrilación auricular sometido a ICP",
+    "nodos": [
+      { "id": "n1", "texto": "SCA con indicación de anticoagulación oral crónica (p. ej., FA), sometido a ICP" },
+      { "id": "n2", "texto": "Tratamiento triple corto: ACO + AAS (75-100 mg) + inhibidor P2Y12, hasta 1 semana (habitualmente en el hospital)" },
+      { "id": "n3", "texto": "Tratamiento doble: ACO + un inhibidor P2Y12 (preferentemente clopidogrel), hasta completar 1 año" },
+      { "id": "n4", "texto": "Reevaluar riesgo hemorrágico (ARC-HBR/PRECISE-DAPT) e isquémico" },
+      { "id": "n5", "texto": "ACO en monoterapia (sin antiagregante) a partir de 1 año" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n3", "etiqueta": "" },
+      { "desde": "n3", "hasta": "n4", "etiqueta": "" },
+      { "desde": "n4", "hasta": "n5", "etiqueta": "" }
+    ]
+  },
+
+  "dosis": [
+    { "farmaco": "Clopidogrel (cambio desde ticagrelor)", "dosis": "Dosis de carga 600 mg si han pasado menos de 24 h desde la última dosis de ticagrelor", "fuente": "Braunwald 12.ª ed., cap. 39" },
+    { "farmaco": "Apixabán (en combinación con antiagregantes tras SCA + FA)", "dosis": "5 mg cada 12 h; reducir a 2,5 mg cada 12 h si hay criterios de alto riesgo hemorrágico (ARC-HBR)", "ajusteRenal": "Seguir los criterios estándar de reducción de dosis de apixabán (edad, peso, creatinina)", "fuente": "Braunwald 12.ª ed., cap. 39" },
+    { "farmaco": "Dabigatrán (en combinación con antiagregantes tras SCA + FA)", "dosis": "110 mg o 150 mg cada 12 h", "ajusteRenal": "Contraindicado en insuficiencia renal grave (ClCr < 30 ml/min)", "fuente": "Braunwald 12.ª ed., cap. 39" },
+    { "farmaco": "Rivaroxabán (en combinación con antiagregantes tras SCA + FA)", "dosis": "15 mg o 20 mg una vez al día", "ajusteRenal": "Ajustar dosis según función renal según ficha técnica estándar", "fuente": "Braunwald 12.ª ed., cap. 39" }
+  ],
+
+  "glosario": [
+    { "termino": "Cangrelor", "definicion": "Inhibidor intravenoso directo del P2Y12, de inicio y fin de acción muy rápidos (semivida de 3-6 min); útil en pacientes sometidos a ICP sin pretratamiento con un inhibidor oral del P2Y12." },
+    { "termino": "De-escalation (reducción)", "definicion": "Estrategia de cambiar de un inhibidor potente del P2Y12 (ticagrelor/prasugrel) a clopidogrel, o reducir su dosis, tras la fase aguda del SCA, para disminuir el riesgo hemorrágico manteniendo protección isquémica." },
+    { "termino": "ARC-HBR", "definicion": "Academic Research Consortium for High Bleeding Risk; conjunto de criterios estandarizados para identificar a los pacientes con alto riesgo hemorrágico tras ICP." },
+    { "termino": "Tratamiento triple corto", "definicion": "Combinación de anticoagulante oral + doble antiagregación, limitada a un período breve (p. ej., 1 semana) en pacientes con SCA y FA sometidos a ICP, para minimizar el riesgo hemorrágico del tratamiento combinado." }
+  ],
+
+  "fuentes": [
+    { "titulo": "Bhatt DL, Stone GW, Mahaffey KW, et al. Effect of platelet inhibition with cangrelor during PCI on ischemic events (CHAMPION-PHOENIX). N Engl J Med. 2013;368:1303-1313", "url": "" },
+    { "titulo": "Schüpke S, Neumann FJ, Menichelli M, et al. Ticagrelor or prasugrel in patients with acute coronary syndromes (ISAR-REACT 5). N Engl J Med. 2019;381:1524-1534", "url": "" },
+    { "titulo": "Collet JP, et al. 2020 ESC Guidelines for the management of acute coronary syndromes in patients presenting without persistent ST-segment elevation. Eur Heart J. 2020;42(14):1289-1367", "url": "" },
+    { "titulo": "Byrne RA, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J. 2023;44(38):3720-3826", "url": "https://doi.org/10.1093/eurheartj/ehad191" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "¿En qué escenario está particularmente indicado el uso de cangrelor en lugar de un inhibidor oral del P2Y12?",
+      "opciones": [
+        "En cualquier paciente con angina estable sin indicación de ICP",
+        "En pacientes sometidos a ICP que no recibieron previamente un inhibidor oral del P2Y12",
+        "Solo en pacientes con hemorragia activa",
+        "Como sustituto permanente de la aspirina"
+      ],
+      "respuesta": 1,
+      "explicacion": "El cangrelor es útil en pacientes que llegan a la sala de hemodinamia sin pretratamiento con un inhibidor oral del P2Y12, por su inicio de acción casi inmediato."
+    },
+    {
+      "pregunta": "¿Qué mostró el ensayo ISAR-REACT 5 al comparar una estrategia basada en prasugrel frente a una basada en ticagrelor en el SCA?",
+      "opciones": [
+        "Ticagrelor fue claramente superior en todos los criterios",
+        "Prasugrel redujo el criterio compuesto de muerte, IM o ACV sin aumentar la hemorragia",
+        "No hubo ninguna diferencia entre ambos fármacos",
+        "El estudio se detuvo por exceso de hemorragias con prasugrel"
+      ],
+      "respuesta": 1,
+      "explicacion": "ISAR-REACT 5 mostró una reducción relativa de aproximadamente el 40% en el criterio compuesto (muerte, IM o ACV) a favor de la estrategia basada en prasugrel, sin diferencias significativas en hemorragia."
+    },
+    {
+      "pregunta": "En un paciente con SCASEST y fibrilación auricular sometido a ICP, ¿cuál es el esquema antitrombótico habitual tras la primera semana?",
+      "opciones": [
+        "Triple terapia indefinida",
+        "Tratamiento doble: anticoagulante oral + un inhibidor del P2Y12 (preferentemente clopidogrel), hasta completar 1 año",
+        "Solo aspirina de por vida",
+        "Suspender todo tratamiento antitrombótico"
+      ],
+      "respuesta": 1,
+      "explicacion": "Tras el período corto de triple terapia (hasta 1 semana), se continúa con tratamiento doble (ACO + un inhibidor P2Y12, preferentemente clopidogrel) hasta completar 1 año, y después ACO en monoterapia."
+    },
+    {
+      "pregunta": "Ante una hemorragia grave en un paciente con tratamiento antitrombótico, ¿cuál de las siguientes NO es una medida recomendada de forma sistemática?",
+      "opciones": [
+        "Interrumpir el tratamiento antitrombótico salvo que la hemorragia se controle con medidas hemostáticas",
+        "Neutralizar el tratamiento anticoagulante cuando sea posible",
+        "Transfundir sangre de forma sistemática a todo paciente estable con hemoglobina > 7 g/dl",
+        "Considerar transfusión de plaquetas si procede"
+      ],
+      "respuesta": 2,
+      "explicacion": "En pacientes hemodinámicamente estables con hemoglobina > 7 g/dl se recomienda evitar la transfusión sistemática de sangre, por sus posibles efectos deletéreos."
+    }
+  ]
+}
