@@ -54,6 +54,17 @@ Esto viene del índice de capítulos (títulos, autores, páginas), no del texto
 - **Algoritmos**: se generan automáticamente a partir del campo `algoritmo` de cada tema (lista de pasos simple, o nodos con ramas/conexiones).
 - **Glosario**: se agrega automáticamente a partir del campo `glosario` de cada tema.
 - **Estudiar**: resumen de progreso + quiz armado con las `preguntas` de todos los temas.
+- **ECG**: banco de casos de electrocardiograma para practicar reconocimiento de patrones (ver sección siguiente).
+
+## Pestaña ECG
+
+Los trazados **no son imágenes reales escaneadas** (no hay forma legal de redistribuir ECGs de libros o bancos de imágenes en un repo público). Son trazados **sintéticos generados matemáticamente** por `js/ecg.js` a partir de parámetros de onda P-QRS-T-ST por derivación, definidos en `datos/ecg/casos/*.json`. El motor dibuja el papel cuadriculado y las 12 derivaciones + tira de ritmo en SVG, en tiempo real, en el navegador.
+
+Cada caso incluye: viñeta clínica, parámetros de las 12 derivaciones, `hallazgosClave`, `derivacionesAfectadas` (respuesta correcta de la pregunta 2), `opcionesDiagnostico` + `respuestaCorrecta` (pregunta 1), `explicacion` y `fuente`. El quiz corrige ambas preguntas, marca qué derivaciones se identificaron bien/mal/faltaron, y guarda en `localStorage` los intentos y aciertos consecutivos por caso (2 aciertos seguidos = "dominado"). Hay filtros para repasar solo los casos fallados.
+
+Para agregar un caso nuevo: copiar la estructura de `datos/ecg/casos/ecg-normal.json`, ajustar los parámetros de cada derivación (amplitudes en mV: `p`, `q`, `r`, `s`, `t`; `st` = desviación del ST en mV; `stShape`: `flat`, `concava`, `convexa`, `ascendente` o `descendente`), y agregar el nombre de archivo a `datos/ecg/manifest.json`.
+
+Si en algún momento se quiere incorporar ECGs reales (por ejemplo, de la propia práctica clínica, anonimizados), se puede sumar un modo alternativo que muestre una imagen subida en vez de generar el SVG — no implementado todavía.
 
 ## Esquema de un tema (bloques 1-8)
 

@@ -1,0 +1,40 @@
+{
+  "id": "scasest-descenso-difuso-01",
+  "titulo": "Caso 4 — Angina en reposo, mal estado general",
+  "dificultad": "avanzado",
+  "bloqueRelacionado": "scasest",
+  "contextoClinico": "Mujer de 70 años, con antecedente de enfermedad coronaria conocida, consulta por dolor torácico opresivo en reposo de 40 minutos, con mala perfusión periférica.",
+  "frecuenciaCardiaca": 95,
+  "ritmo": "Sinusal, taquicardia leve",
+  "qrsDurMs": 96,
+  "leads": {
+    "I":   { "p": 0.10, "q": 0,     "r": 0.50, "s": -0.10, "st": -1.0, "stShape": "horizontal", "t": -0.1 },
+    "II":  { "p": 0.15, "q": 0,     "r": 0.80, "s": -0.10, "st": -1.3, "stShape": "horizontal", "t": -0.2 },
+    "III": { "p": 0.05, "q": 0,     "r": 0.30, "s": -0.10, "st": -0.7, "stShape": "horizontal", "t": -0.1 },
+    "aVR": { "p": -0.10, "q": 0,    "r": -0.40, "s": 0,     "st": 1.0, "stShape": "flat", "t": 0.1 },
+    "aVL": { "p": 0.05, "q": 0,     "r": 0.30, "s": -0.10, "st": -0.8, "stShape": "horizontal", "t": -0.1 },
+    "aVF": { "p": 0.10, "q": 0,     "r": 0.50, "s": -0.10, "st": -1.0, "stShape": "horizontal", "t": -0.1 },
+    "V1":  { "p": 0.05, "q": 0,     "r": 0.15, "s": -0.60, "st": 0.2, "stShape": "flat", "t": -0.1 },
+    "V2":  { "p": 0.08, "q": 0,     "r": 0.40, "s": -0.80, "st": -1.5, "stShape": "horizontal", "t": -0.2 },
+    "V3":  { "p": 0.10, "q": 0,     "r": 0.80, "s": -0.50, "st": -1.8, "stShape": "horizontal", "t": -0.2 },
+    "V4":  { "p": 0.12, "q": -0.05, "r": 1.20, "s": -0.30, "st": -2.0, "stShape": "horizontal", "t": -0.3 },
+    "V5":  { "p": 0.12, "q": -0.08, "r": 1.40, "s": -0.15, "st": -1.8, "stShape": "horizontal", "t": -0.2 },
+    "V6":  { "p": 0.10, "q": -0.08, "r": 1.00, "s": -0.10, "st": -1.5, "stShape": "horizontal", "t": -0.2 }
+  },
+  "hallazgosClave": [
+    "Descenso difuso y horizontal del ST en 8 o más derivaciones",
+    "Elevación del ST en aVR (y a menudo en V1), de igual o mayor magnitud que el descenso en otras derivaciones",
+    "Ondas T aplanadas o negativas de forma generalizada",
+    "Patrón sugestivo de isquemia subendocárdica grave y difusa"
+  ],
+  "derivacionesAfectadas": ["I", "II", "III", "aVF", "aVL", "V2", "V3", "V4", "V5", "V6"],
+  "opcionesDiagnostico": [
+    "SCASEST con descenso difuso del ST y elevación en aVR (patrón de isquemia grave, sugestivo de enfermedad de tronco o multivaso severa)",
+    "IAMCEST inferior",
+    "ECG dentro de límites normales",
+    "Patrón de Wellens"
+  ],
+  "respuestaCorrecta": 0,
+  "explicacion": "El descenso difuso del segmento ST en ocho o más derivaciones, acompañado de elevación del ST en aVR, es un patrón de alarma: sugiere isquemia subendocárdica grave y extensa, clásicamente asociada a enfermedad del tronco coronario izquierdo o enfermedad multivaso severa. Es una de las presentaciones de «riesgo muy alto» dentro del SCASEST (ver tema de bloque 7) que justifica una estrategia intervencionista inmediata, no diferida.",
+  "fuente": "Criterios ECG consistentes con la categoría de riesgo muy alto de la guía ESC 2023 para síndromes coronarios agudos; patrón de elevación en aVR descrito originalmente en relación con enfermedad de tronco coronario izquierdo."
+}

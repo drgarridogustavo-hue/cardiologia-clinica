@@ -1,0 +1,40 @@
+{
+  "id": "iamcest-anterior-01",
+  "titulo": "Caso 2 — Dolor torácico agudo de 90 minutos",
+  "dificultad": "básico",
+  "bloqueRelacionado": "iamcest",
+  "contextoClinico": "Varón de 58 años, hipertenso y fumador, consulta por dolor torácico opresivo retroesternal de 90 minutos, irradiado a brazo izquierdo, con sudoración profusa.",
+  "frecuenciaCardiaca": 92,
+  "ritmo": "Sinusal, taquicardia leve",
+  "qrsDurMs": 96,
+  "leads": {
+    "I":   { "p": 0.10, "q": 0,     "r": 0.50, "s": -0.10, "st": 0.5, "stShape": "flat", "t": 0.3 },
+    "II":  { "p": 0.15, "q": 0,     "r": 0.80, "s": -0.10, "st": -0.6, "stShape": "horizontal", "t": 0.05 },
+    "III": { "p": 0.05, "q": 0,     "r": 0.30, "s": -0.10, "st": -0.9, "stShape": "horizontal", "t": -0.1 },
+    "aVR": { "p": -0.10, "q": 0,    "r": -0.40, "s": 0,     "st": 0, "stShape": "flat", "t": -0.20 },
+    "aVL": { "p": 0.05, "q": 0,     "r": 0.30, "s": -0.10, "st": 0.6, "stShape": "flat", "t": 0.3 },
+    "aVF": { "p": 0.10, "q": 0,     "r": 0.50, "s": -0.10, "st": -0.7, "stShape": "horizontal", "t": 0.0 },
+    "V1":  { "p": 0.05, "q": 0,     "r": 0.10, "s": -0.30, "st": 1.2, "stShape": "convexa", "t": 0.6 },
+    "V2":  { "p": 0.08, "q": -0.15, "r": 0.20, "s": -0.20, "st": 2.5, "stShape": "convexa", "t": 0.9 },
+    "V3":  { "p": 0.10, "q": -0.30, "r": 0.30, "s": -0.10, "st": 3.0, "stShape": "convexa", "t": 1.0 },
+    "V4":  { "p": 0.12, "q": -0.30, "r": 0.50, "s": 0,     "st": 2.2, "stShape": "convexa", "t": 0.8 },
+    "V5":  { "p": 0.12, "q": -0.08, "r": 1.40, "s": -0.15, "st": 0, "stShape": "flat", "t": 0.40 },
+    "V6":  { "p": 0.10, "q": -0.08, "r": 1.00, "s": -0.10, "st": 0, "stShape": "flat", "t": 0.30 }
+  },
+  "hallazgosClave": [
+    "Elevación convexa («en lomo de delfín») del ST ≥ 2 mm en V2-V4, con afectación de V1",
+    "Extensión a I y aVL (compromiso de la pared lateral alta)",
+    "Descenso recíproco del ST en II, III y aVF",
+    "Pérdida de progresión normal de R con ondas Q iniciales en V2-V4 (necrosis en evolución)"
+  ],
+  "derivacionesAfectadas": ["V1", "V2", "V3", "V4", "I", "aVL"],
+  "opcionesDiagnostico": [
+    "IAMCEST anterior extenso (sugestivo de oclusión proximal de la arteria descendente anterior)",
+    "Pericarditis aguda",
+    "SCASEST con descenso difuso del ST",
+    "Repolarización precoz benigna"
+  ],
+  "respuestaCorrecta": 0,
+  "explicacion": "Cumple criterio electrocardiográfico de IAMCEST: elevación del ST ≥ 2 mm en V2-V3 (umbral para hombres ≥ 40 años) con extensión a V1, V4, I y aVL, de morfología convexa, acompañada de descenso recíproco en la cara inferior (II, III, aVF) — el hallazgo recíproco es lo que más ayuda a distinguirlo de la pericarditis, que no suele dar cambios recíprocos verdaderos. La afectación combinada de precordiales anteriores más I/aVL sugiere oclusión proximal de la descendente anterior, antes del nacimiento de la primera diagonal.",
+  "fuente": "Criterios ECG según Thygesen K, et al. Fourth Universal Definition of Myocardial Infarction. Circulation. 2018;138(20):e618-e651; guía ESC 2023 para síndromes coronarios agudos."
+}

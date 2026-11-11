@@ -1,0 +1,40 @@
+{
+  "id": "iamcest-inferior-01",
+  "titulo": "Caso 3 — Dolor torácico con bradicardia",
+  "dificultad": "intermedio",
+  "bloqueRelacionado": "iamcest",
+  "contextoClinico": "Varón de 65 años, diabético, consulta por dolor torácico opresivo de 2 horas asociado a náuseas y sudoración; en la exploración llama la atención una frecuencia cardíaca algo baja para el cuadro.",
+  "frecuenciaCardiaca": 58,
+  "ritmo": "Sinusal, bradicardia",
+  "qrsDurMs": 96,
+  "leads": {
+    "I":   { "p": 0.10, "q": 0,     "r": 0.50, "s": -0.10, "st": -0.6, "stShape": "horizontal", "t": 0.0 },
+    "II":  { "p": 0.15, "q": 0,     "r": 0.60, "s": -0.10, "st": 1.5, "stShape": "convexa", "t": 0.5 },
+    "III": { "p": 0.05, "q": 0,     "r": 0.40, "s": -0.10, "st": 2.5, "stShape": "convexa", "t": 0.6 },
+    "aVR": { "p": -0.10, "q": 0,    "r": -0.40, "s": 0,     "st": 0, "stShape": "flat", "t": -0.20 },
+    "aVL": { "p": 0.05, "q": 0,     "r": 0.30, "s": -0.10, "st": -0.9, "stShape": "horizontal", "t": -0.2 },
+    "aVF": { "p": 0.10, "q": 0,     "r": 0.50, "s": -0.10, "st": 2.0, "stShape": "convexa", "t": 0.6 },
+    "V1":  { "p": 0.05, "q": 0,     "r": 0.15, "s": -0.60, "st": 0.3, "stShape": "flat", "t": -0.1 },
+    "V2":  { "p": 0.08, "q": 0,     "r": 0.40, "s": -0.80, "st": 0, "stShape": "flat", "t": 0.30 },
+    "V3":  { "p": 0.10, "q": 0,     "r": 0.80, "s": -0.50, "st": 0, "stShape": "flat", "t": 0.40 },
+    "V4":  { "p": 0.12, "q": -0.05, "r": 1.20, "s": -0.30, "st": 0, "stShape": "flat", "t": 0.50 },
+    "V5":  { "p": 0.12, "q": -0.08, "r": 1.40, "s": -0.15, "st": 0, "stShape": "flat", "t": 0.40 },
+    "V6":  { "p": 0.10, "q": -0.08, "r": 1.00, "s": -0.10, "st": 0, "stShape": "flat", "t": 0.30 }
+  },
+  "hallazgosClave": [
+    "Elevación convexa del ST en II, III y aVF, con III > II",
+    "Descenso recíproco del ST en I y aVL",
+    "Bradicardia sinusal (sugiere compromiso del nódulo sinusal/AV, irrigado habitualmente por la coronaria derecha)",
+    "Discreta elevación del ST en V1, compatible con posible extensión al ventrículo derecho (a confirmar con derivaciones derechas V3R-V4R)"
+  ],
+  "derivacionesAfectadas": ["II", "III", "aVF"],
+  "opcionesDiagnostico": [
+    "IAMCEST inferior (sugestivo de oclusión de la coronaria derecha)",
+    "IAMCEST anterior extenso",
+    "Pericarditis aguda",
+    "Patrón de Wellens"
+  ],
+  "respuestaCorrecta": 0,
+  "explicacion": "La elevación del ST en las tres derivaciones inferiores (II, III, aVF), con III más elevada que II y descenso recíproco en I/aVL, orienta a una oclusión de la coronaria derecha (más que de la circunfleja, donde II suele ser ≥ III). La bradicardia es un hallazgo clínico típico de este territorio, por la irrigación del nódulo sinusal y AV por la coronaria derecha en la mayoría de las personas. Ante todo IAMCEST inferior debe evaluarse el posible infarto de ventrículo derecho con derivaciones derechas, y evitar nitratos si hay hipotensión.",
+  "fuente": "Criterios ECG según Thygesen K, et al. Fourth Universal Definition of Myocardial Infarction. Circulation. 2018;138(20):e618-e651; guía ESC 2023 para síndromes coronarios agudos."
+}

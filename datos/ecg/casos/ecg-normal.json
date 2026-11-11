@@ -1,0 +1,40 @@
+{
+  "id": "ecg-normal-01",
+  "titulo": "Caso 1 — ECG de control",
+  "dificultad": "básico",
+  "bloqueRelacionado": "fisiopatologia-epidemiologia",
+  "contextoClinico": "Mujer de 34 años, asintomática, ECG de control preoperatorio.",
+  "frecuenciaCardiaca": 72,
+  "ritmo": "Sinusal normal",
+  "qrsDurMs": 96,
+  "leads": {
+    "I":   { "p": 0.10, "q": 0,     "r": 0.50, "s": -0.10, "st": 0, "stShape": "flat", "t": 0.20 },
+    "II":  { "p": 0.15, "q": 0,     "r": 0.80, "s": -0.10, "st": 0, "stShape": "flat", "t": 0.30 },
+    "III": { "p": 0.05, "q": 0,     "r": 0.30, "s": -0.10, "st": 0, "stShape": "flat", "t": 0.10 },
+    "aVR": { "p": -0.10, "q": 0,    "r": -0.40, "s": 0,     "st": 0, "stShape": "flat", "t": -0.20 },
+    "aVL": { "p": 0.05, "q": 0,     "r": 0.30, "s": -0.10, "st": 0, "stShape": "flat", "t": 0.10 },
+    "aVF": { "p": 0.10, "q": 0,     "r": 0.50, "s": -0.10, "st": 0, "stShape": "flat", "t": 0.20 },
+    "V1":  { "p": 0.05, "q": 0,     "r": 0.15, "s": -0.60, "st": 0, "stShape": "flat", "t": -0.10 },
+    "V2":  { "p": 0.08, "q": 0,     "r": 0.40, "s": -0.80, "st": 0, "stShape": "flat", "t": 0.30 },
+    "V3":  { "p": 0.10, "q": 0,     "r": 0.80, "s": -0.50, "st": 0, "stShape": "flat", "t": 0.40 },
+    "V4":  { "p": 0.12, "q": -0.05, "r": 1.20, "s": -0.30, "st": 0, "stShape": "flat", "t": 0.50 },
+    "V5":  { "p": 0.12, "q": -0.08, "r": 1.40, "s": -0.15, "st": 0, "stShape": "flat", "t": 0.40 },
+    "V6":  { "p": 0.10, "q": -0.08, "r": 1.00, "s": -0.10, "st": 0, "stShape": "flat", "t": 0.30 }
+  },
+  "hallazgosClave": [
+    "Ritmo sinusal, eje normal",
+    "Progresión normal de la onda R de V1 a V5",
+    "Segmento ST isoeléctrico en todas las derivaciones",
+    "Ondas T positivas y simétricas en la mayoría de las derivaciones"
+  ],
+  "derivacionesAfectadas": [],
+  "opcionesDiagnostico": [
+    "ECG dentro de límites normales",
+    "IAMCEST anterior",
+    "SCASEST con descenso difuso del ST",
+    "Patrón de Wellens"
+  ],
+  "respuestaCorrecta": 0,
+  "explicacion": "Este trazado sirve como referencia: no hay desviación del segmento ST en ninguna derivación, la onda R progresa de forma esperable de V1 a V5 y no hay ondas T negativas patológicas. Compará mentalmente cada caso nuevo contra este patrón de base.",
+  "fuente": "Patrón de referencia (no corresponde a un criterio diagnóstico específico)."
+}

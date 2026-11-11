@@ -1,0 +1,40 @@
+{
+  "id": "wellens-01",
+  "titulo": "Caso 5 — Dolor torácico ya resuelto en urgencias",
+  "dificultad": "avanzado",
+  "bloqueRelacionado": "diagnostico-cronica",
+  "contextoClinico": "Varón de 50 años consulta por un episodio de dolor torácico opresivo de 20 minutos, ya resuelto al momento de la consulta. Troponina levemente elevada. Se encuentra asintomático y hemodinámicamente estable.",
+  "frecuenciaCardiaca": 78,
+  "ritmo": "Sinusal normal",
+  "qrsDurMs": 96,
+  "leads": {
+    "I":   { "p": 0.10, "q": 0,     "r": 0.50, "s": -0.10, "st": 0, "stShape": "flat", "t": 0.20 },
+    "II":  { "p": 0.15, "q": 0,     "r": 0.80, "s": -0.10, "st": 0, "stShape": "flat", "t": 0.30 },
+    "III": { "p": 0.05, "q": 0,     "r": 0.30, "s": -0.10, "st": 0, "stShape": "flat", "t": 0.10 },
+    "aVR": { "p": -0.10, "q": 0,    "r": -0.40, "s": 0,     "st": 0, "stShape": "flat", "t": -0.20 },
+    "aVL": { "p": 0.05, "q": 0,     "r": 0.30, "s": -0.10, "st": 0, "stShape": "flat", "t": 0.10 },
+    "aVF": { "p": 0.10, "q": 0,     "r": 0.50, "s": -0.10, "st": 0, "stShape": "flat", "t": 0.20 },
+    "V1":  { "p": 0.05, "q": 0,     "r": 0.15, "s": -0.60, "st": 0, "stShape": "flat", "t": -0.10 },
+    "V2":  { "p": 0.08, "q": 0,     "r": 0.40, "s": -0.80, "st": 0.1, "stShape": "flat", "t": -0.6 },
+    "V3":  { "p": 0.10, "q": 0,     "r": 0.80, "s": -0.50, "st": 0.1, "stShape": "flat", "t": -0.5 },
+    "V4":  { "p": 0.12, "q": -0.05, "r": 1.20, "s": -0.30, "st": 0, "stShape": "flat", "t": 0.50 },
+    "V5":  { "p": 0.12, "q": -0.08, "r": 1.40, "s": -0.15, "st": 0, "stShape": "flat", "t": 0.40 },
+    "V6":  { "p": 0.10, "q": -0.08, "r": 1.00, "s": -0.10, "st": 0, "stShape": "flat", "t": 0.30 }
+  },
+  "hallazgosClave": [
+    "Ondas T profundamente negativas y simétricas en V2-V3 (patrón de Wellens tipo B)",
+    "Ausencia de elevación significativa del ST",
+    "Progresión de R conservada, sin ondas Q de necrosis establecida",
+    "Paciente asintomático en el momento del registro, tras un episodio de dolor ya resuelto"
+  ],
+  "derivacionesAfectadas": ["V2", "V3"],
+  "opcionesDiagnostico": [
+    "Patrón de Wellens (estenosis crítica proximal de la descendente anterior, alto riesgo de infarto anterior inminente)",
+    "IAMCEST anterior en curso",
+    "Pericarditis aguda",
+    "ECG dentro de límites normales"
+  ],
+  "respuestaCorrecta": 0,
+  "explicacion": "El patrón de Wellens se ve en pacientes que consultan tras un episodio de dolor torácico YA RESUELTO, con ECG sin elevación significativa del ST pero con ondas T profundamente invertidas y simétricas en V2-V3 (tipo B, como en este caso) o bifásicas (tipo A). Indica una estenosis crítica proximal de la arteria descendente anterior con alto riesgo de evolucionar a un infarto anterior extenso en los días siguientes si no se revasculariza. Es una indicación de angiografía temprana, y la prueba de esfuerzo está contraindicada en este contexto por el riesgo de precipitar un infarto.",
+  "fuente": "de Zwaan C, Bär FW, Wellens HJ. Characteristic electrocardiographic pattern indicating a critical stenosis high in left anterior descending coronary artery in patients admitted because of impending myocardial infarction. Am Heart J. 1982;103(4 Pt 2):730-736."
+}

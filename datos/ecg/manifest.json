@@ -1,0 +1,10 @@
+{
+  "casos": [
+    "ecg-normal.json",
+    "iamcest-anterior.json",
+    "iamcest-inferior.json",
+    "scasest-descenso-difuso.json",
+    "wellens.json",
+    "bri-sgarbossa.json"
+  ]
+}

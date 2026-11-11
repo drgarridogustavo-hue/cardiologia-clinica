@@ -1,0 +1,40 @@
+{
+  "id": "bri-sgarbossa-01",
+  "titulo": "Caso 6 — Dolor torácico con bloqueo de rama conocido",
+  "dificultad": "avanzado",
+  "bloqueRelacionado": "iamcest",
+  "contextoClinico": "Mujer de 72 años, con bloqueo de rama izquierda conocido desde hace años, consulta por dolor torácico opresivo de 1 hora de evolución.",
+  "frecuenciaCardiaca": 84,
+  "ritmo": "Sinusal, QRS ancho (bloqueo de rama izquierda)",
+  "qrsDurMs": 140,
+  "leads": {
+    "I":   { "p": 0.10, "q": 0,  "r": 0.80, "s": -0.10, "st": 0,    "stShape": "flat",     "t": -0.1 },
+    "II":  { "p": 0.15, "q": 0,  "r": 0.60, "s": -0.20, "st": 0,    "stShape": "flat",     "t": -0.1 },
+    "III": { "p": 0.05, "q": 0,  "r": 0.20, "s": -0.30, "st": 0,    "stShape": "flat",     "t": 0.1 },
+    "aVR": { "p": -0.10, "q": 0, "r": -0.30, "s": 0,     "st": 0,   "stShape": "flat",     "t": 0.1 },
+    "aVL": { "p": 0.05, "q": 0,  "r": 0.60, "s": -0.10, "st": 0.1,  "stShape": "flat",     "t": -0.1 },
+    "aVF": { "p": 0.10, "q": 0,  "r": 0.30, "s": -0.20, "st": 0,    "stShape": "flat",     "t": 0.1 },
+    "V1":  { "p": 0.05, "q": 0,  "r": 0,    "s": -1.20, "st": 0.4,  "stShape": "convexa",  "t": 0.4 },
+    "V2":  { "p": 0.08, "q": 0,  "r": 0,    "s": -1.00, "st": 0.35, "stShape": "convexa",  "t": 0.3 },
+    "V3":  { "p": 0.10, "q": 0,  "r": 0.10, "s": -0.80, "st": 0.2,  "stShape": "flat",     "t": 0.2 },
+    "V4":  { "p": 0.12, "q": 0,  "r": 0.40, "s": -0.40, "st": 0,    "stShape": "flat",     "t": 0.1 },
+    "V5":  { "p": 0.12, "q": 0,  "r": 0.90, "s": -0.10, "st": 0,    "stShape": "flat",     "t": -0.1 },
+    "V6":  { "p": 0.10, "q": 0,  "r": 1.30, "s": -0.10, "st": 0.15, "stShape": "flat",     "t": -0.1 }
+  },
+  "hallazgosClave": [
+    "QRS ancho (≥ 120 ms), morfología de bloqueo de rama izquierda (QS en V1, R ancha y empastada en I, aVL, V5-V6)",
+    "Elevación CONCORDANTE del ST ≥ 1 mm en V6 (misma dirección que el QRS predominantemente positivo) — criterio de mayor especificidad",
+    "Elevación discordante EXCESIVA del ST en V1-V2 (mayor del 25% de la profundidad de la onda S precedente)",
+    "Estos hallazgos NO se explican por el bloqueo de rama por sí solo"
+  ],
+  "derivacionesAfectadas": ["V6", "V1", "V2"],
+  "opcionesDiagnostico": [
+    "Bloqueo de rama izquierda con criterios de Sgarbossa positivos (sugestivo de isquemia aguda concomitante)",
+    "Bloqueo de rama izquierda sin cambios isquémicos agregados",
+    "Patrón de Wellens",
+    "ECG dentro de límites normales para la edad"
+  ],
+  "respuestaCorrecta": 0,
+  "explicacion": "El bloqueo de rama izquierda (BRI) normalmente produce cambios «discordantes» del ST y la onda T (en dirección opuesta al QRS), que son secundarios a la propia alteración de la despolarización y no implican isquemia. Los criterios de Sgarbossa ayudan a distinguir cuándo esos cambios son excesivos y sugieren un SCA sobreañadido: 1) elevación CONCORDANTE del ST ≥ 1 mm en una derivación con QRS predominantemente positivo (el criterio más específico, presente aquí en V6); 2) descenso concordante del ST ≥ 1 mm en V1-V3; 3) elevación discordante «excesiva» del ST, definida en la regla modificada de Smith como ≥ 25% de la profundidad de la onda S precedente (presente aquí en V1-V2). Un BRI con dolor torácico y estos hallazgos debe manejarse como un probable SCA, sin esperar a que el BRI se resuelva para decidir la reperfusión.",
+  "fuente": "Sgarbossa EB, Pinski SL, Barbagelata A, et al. Electrocardiographic diagnosis of evolving acute myocardial infarction in the presence of left bundle-branch block. N Engl J Med. 1996;334:481-487; Smith SW, Dodd KW, Henry TD, et al. Diagnosis of ST-elevation myocardial infarction in the presence of left bundle branch block with the ST-elevation to S-wave ratio in a modified Sgarbossa rule. Ann Emerg Med. 2012;60:766-776."
+}

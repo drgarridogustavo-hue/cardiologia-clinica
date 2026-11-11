@@ -585,5 +585,6 @@
       renderGlosario("");
       actualizarResumenProgreso();
     });
+    if (window.EcgModulo) window.EcgModulo.init();
   });
 })();
