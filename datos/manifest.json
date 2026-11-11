@@ -51,7 +51,10 @@
       "numero": 6,
       "titulo": "IAM con elevación del ST (IAMCEST)",
       "carpeta": "06-iamcest",
-      "temas": []
+      "temas": [
+        "definicion-fisiopatologia-diagnostico-iamcest.json",
+        "tratamiento-iamcest-reperfusion.json"
+      ]
     },
     {
       "id": "scasest",

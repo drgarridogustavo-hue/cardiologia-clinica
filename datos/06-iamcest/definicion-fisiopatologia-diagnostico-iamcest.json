@@ -1,0 +1,89 @@
+{
+  "id": "definicion-fisiopatologia-diagnostico-iamcest",
+  "titulo": "IAMCEST: definición universal de infarto, fisiopatología y diagnóstico electrocardiográfico",
+  "bloque": "iamcest",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Capítulo 37, «Infarto de miocardio con elevación del segmento ST: fisiopatología y evolución clínica» (Benjamin M. Scirica, Peter Libby, David A. Morrow), p. 636-659"
+  },
+
+  "guias": [
+    { "organizacion": "ESC/ACC/AHA/WHF", "nombre": "Fourth Universal Definition of Myocardial Infarction", "anio": 2018, "url": "https://doi.org/10.1161/CIR.0000000000000617" },
+    { "organizacion": "ESC", "nombre": "2023 ESC Guidelines for the management of acute coronary syndromes", "anio": 2023, "url": "https://doi.org/10.1093/eurheartj/ehad191" }
+  ],
+
+  "resumen": "El infarto de miocardio (IM) es la necrosis de células miocárdicas causada por isquemia, y se diagnostica con la combinación de un biomarcador cardíaco elevado (troponina de alta sensibilidad) con al menos un criterio clínico, electrocardiográfico o de imagen de isquemia. El IAMCEST es el subtipo en el que la oclusión trombótica total de una arteria epicárdica produce elevación persistente del segmento ST, y constituye una urgencia en la que «el tiempo es músculo»: cuanto antes se restablece el flujo, menor es el tamaño final del infarto.",
+
+  "diagnostico": "La «cuarta definición universal de infarto de miocardio» (2018) clasifica el IM en cinco tipos según su mecanismo: tipo 1 (rotura o erosión de una placa aterosclerótica con trombo, el mecanismo clásico del SCA), tipo 2 (desequilibrio entre aporte y demanda de oxígeno sin trombosis coronaria aguda, p. ej., por taquiarritmia, anemia grave, hipotensión o espasmo coronario), tipo 3 (muerte súbita con síntomas isquémicos antes de poder documentar biomarcadores), y tipos 4 y 5 (relacionados con intervención coronaria percutánea o con cirugía de derivación, respectivamente). El diagnóstico electrocardiográfico de IAMCEST exige nueva elevación del segmento ST en el punto J en dos derivaciones contiguas, con los siguientes puntos de corte: ≥ 1 mm en la mayoría de las derivaciones; en V2-V3, ≥ 2 mm en hombres ≥ 40 años, ≥ 2,5 mm en hombres < 40 años, y ≥ 1,5 mm en mujeres. El patrón de derivaciones con elevación del ST permite deducir la arteria responsable: V1-V2/V1-V6 orienta a la descendente anterior (septal/anterior), I-aVL/V5-V6 a la circunfleja (lateral), y II-III-aVF a la coronaria derecha o la circunfleja (inferior), con cambios recíprocos en las derivaciones opuestas. Un diagnóstico diferencial importante es el infarto de miocardio sin obstrucción arterial coronaria (MINOCA, 5-10% de los IM): troponina elevada con clínica de isquemia pero arterias angiográficamente «normales» o con estenosis < 50%; sus causas incluyen rotura de placa no obstructiva, espasmo coronario, disección arterial coronaria espontánea (DACE, más frecuente en mujeres jóvenes), tromboembolia coronaria y, como imitadores a descartar con resonancia magnética cardíaca, la miocarditis y la miocardiopatía de takotsubo (síndrome de abombamiento apical transitorio, típicamente desencadenado por estrés físico o emocional).",
+
+  "tratamiento": "No aplica (ver tema de tratamiento del IAMCEST). El concepto fisiopatológico clave que justifica el tratamiento urgente es que la necrosis miocárdica progresa como un «frente de onda» desde el subendocardio hacia el subepicardio a medida que pasa el tiempo sin reperfusión (ver tema de flujo coronario e isquemia miocárdica, bloque 1).",
+
+  "recomendaciones": [],
+
+  "algoritmo": {
+    "titulo": "Algoritmo diagnóstico del infarto de miocardio sin obstrucción arterial coronaria (MINOCA)",
+    "nodos": [
+      { "id": "n1", "texto": "Elevación/caída de troponina + síntomas isquémicos, con EAC no obstructiva (< 50%) en la angiografía" },
+      { "id": "n2", "texto": "Diagnóstico de trabajo: MINOCA" },
+      { "id": "n3", "texto": "Considerar diagnóstico alternativo no isquémico (sepsis, embolia pulmonar, contusión cardíaca, otra causa de troponina elevada)" },
+      { "id": "n4", "texto": "Revisar hallazgos angiográficos: EAC obstructiva pasada por alto, embolia/trombo coronario, disección arterial coronaria espontánea (DACE)" },
+      { "id": "n5", "texto": "Valoración funcional del VI (ecocardiograma/angiografía VI): síndrome de takotsubo u otra miocardiopatía" },
+      { "id": "n6", "texto": "RM cardíaca con contraste: miocarditis, o infarto confirmado por RMC" },
+      { "id": "n7", "texto": "Pruebas de imagen vascular coronaria (ecografía intravascular, OCT): rotura de placa, embolia/trombo, DACE" },
+      { "id": "n8", "texto": "Valoración funcional coronaria (± FFR): espasmo arterial coronario, enfermedad microvascular" },
+      { "id": "n9", "texto": "MINOCA no clasificado (si ninguna de las evaluaciones anteriores identifica una causa)" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n3", "etiqueta": "diagnóstico clínicamente manifiesto" },
+      { "desde": "n2", "hasta": "n4", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n5", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n6", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n7", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n8", "etiqueta": "" },
+      { "desde": "n7", "hasta": "n9", "etiqueta": "sin hallazgo" },
+      { "desde": "n8", "hasta": "n9", "etiqueta": "sin hallazgo" }
+    ]
+  },
+
+  "dosis": [],
+
+  "glosario": [
+    { "termino": "IM tipo 1", "definicion": "Infarto por rotura o erosión de una placa aterosclerótica con trombosis coronaria aguda; el mecanismo clásico del síndrome coronario agudo." },
+    { "termino": "IM tipo 2", "definicion": "Infarto por desequilibrio entre el aporte y la demanda miocárdica de oxígeno sin trombosis coronaria aguda (p. ej., taquiarritmia, anemia grave, hipotensión, espasmo coronario)." },
+    { "termino": "MINOCA", "definicion": "Infarto de miocardio con arterias coronarias angiográficamente normales o con estenosis < 50%; es un diagnóstico de trabajo que obliga a buscar la causa subyacente (rotura de placa no obstructiva, espasmo, disección, embolia, miocarditis, takotsubo)." },
+    { "termino": "DACE", "definicion": "Disección arterial coronaria espontánea; causa de SCA, más frecuente en mujeres jóvenes, no relacionada con aterosclerosis." },
+    { "termino": "Takotsubo", "definicion": "Miocardiopatía de estrés con abombamiento apical transitorio del ventrículo izquierdo, desencadenada típicamente por estrés físico o emocional, que puede simular un IAMCEST clínica y electrocardiográficamente." }
+  ],
+
+  "fuentes": [
+    { "titulo": "Thygesen K, Alpert JS, Jaffe AS, et al. Fourth Universal Definition of Myocardial Infarction (2018). Circulation. 2018;138(20):e618-e651", "url": "https://doi.org/10.1161/CIR.0000000000000617" },
+    { "titulo": "Byrne RA, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J. 2023;44(38):3720-3826", "url": "https://doi.org/10.1093/eurheartj/ehad191" },
+    { "titulo": "Tamis-Holland JE, et al. Contemporary Diagnosis and Management of Patients With Myocardial Infarction in the Absence of Obstructive Coronary Artery Disease (MINOCA). Circulation. 2019;139(18):e891-e908", "url": "" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "¿Qué tipo de infarto de miocardio, según la cuarta definición universal, corresponde a la rotura de una placa aterosclerótica con trombosis coronaria aguda?",
+      "opciones": ["Tipo 1", "Tipo 2", "Tipo 4a", "Tipo 5"],
+      "respuesta": 0,
+      "explicacion": "El IM tipo 1 es el mecanismo aterotrombótico clásico: rotura o erosión de placa con trombosis coronaria aguda."
+    },
+    {
+      "pregunta": "Un paciente con dolor torácico, troponina elevada y arterias coronarias sin estenosis significativa en la angiografía tiene un diagnóstico de trabajo de MINOCA. ¿Qué prueba ayuda a diferenciar un infarto confirmado de una miocarditis en este contexto?",
+      "opciones": ["Ecocardiograma en reposo únicamente", "Resonancia magnética cardíaca con contraste", "Radiografía de tórax", "Prueba de esfuerzo"],
+      "respuesta": 1,
+      "explicacion": "La RMC con contraste (realce tardío de gadolinio) distingue el patrón isquémico del infarto del patrón no isquémico de la miocarditis."
+    },
+    {
+      "pregunta": "¿Qué derivaciones del ECG orientan a una oclusión de la arteria descendente anterior en un IAMCEST anterior extenso?",
+      "opciones": ["II, III, aVF", "I y aVL", "V1 a V6", "V7-V9 únicamente"],
+      "respuesta": 2,
+      "explicacion": "La elevación del ST en V1-V6 (anterior extenso) orienta a una oclusión proximal de la arteria descendente anterior."
+    }
+  ]
+}

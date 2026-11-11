@@ -1,0 +1,141 @@
+{
+  "id": "tratamiento-iamcest-reperfusion",
+  "titulo": "Tratamiento del IAMCEST: reperfusión y manejo inicial",
+  "bloque": "iamcest",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Capítulo 38, «Infarto de miocardio con elevación del segmento ST: tratamiento» (Erin A. Bohula, David A. Morrow), p. 662-684"
+  },
+
+  "guias": [
+    { "organizacion": "ACCF/AHA", "nombre": "2013 ACCF/AHA Guideline for the Management of ST-Elevation Myocardial Infarction (marco clásico del algoritmo de reperfusión por tiempo)", "anio": 2013, "url": "" },
+    { "organizacion": "ESC", "nombre": "2023 ESC Guidelines for the management of acute coronary syndromes", "anio": 2023, "url": "https://doi.org/10.1093/eurheartj/ehad191" },
+    { "organizacion": "ACC/AHA", "nombre": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes", "anio": 2025, "url": "https://doi.org/10.1161/CIR.0000000000001309" }
+  ],
+
+  "resumen": "El manejo del IAMCEST está organizado en torno al tiempo: «el tiempo es músculo». La decisión central es elegir entre intervención coronaria percutánea (ICP) primaria y fibrinólisis según el tiempo que tardaría en lograrse la reperfusión mediante catéter, no según la disponibilidad teórica de uno u otro método en abstracto. El tratamiento inicial general (antiagregación, control del dolor, oxígeno solo si hay hipoxemia) acompaña a la estrategia de reperfusión elegida.",
+
+  "diagnostico": "No aplica (ver tema de definición, fisiopatología y diagnóstico del IAMCEST).",
+
+  "tratamiento": "Medidas generales: ácido acetilsalicílico masticado lo antes posible tras el primer contacto médico; control del dolor (morfina si no hay contraindicación); oxígeno complementario solo si la saturación es < 90% (no de rutina en normoxia, por riesgo de aumentar el tamaño del infarto); nitroglicerina sublingual salvo hipotensión (PAS < 90 mmHg) o sospecha de infarto de ventrículo derecho; betabloqueantes orales tempranos razonables en pacientes hemodinámicamente estables, evitando su uso rutinario intravenoso y evitándolos por completo si hay signos de insuficiencia cardíaca, hipotensión, bradicardia o bloqueo AV significativo. Estrategia de reperfusión: si el paciente es atendido inicialmente en un centro con capacidad de ICP, se realiza ICP primaria con el objetivo de un tiempo primer-contacto-médico-a-dispositivo ≤ 90 minutos. Si es atendido en un centro sin capacidad de ICP, se traslada para ICP primaria si ese tiempo puede lograrse en ≤ 120 minutos; si no, se administra fibrinólisis en los primeros 30 minutos desde la llegada (tiempo «puerta-aguja»), siempre que no existan contraindicaciones (hemorragia intracraneal previa, ACV isquémico reciente, neoplasia intracraneal, sospecha de disección aórtica, hemorragia activa, entre otras). Tras fibrinólisis exitosa, la estrategia «fármaco-invasiva» recomienda angiografía y revascularización sistemática entre 3 y 24 horas después, no de rutina inmediata. Si hay signos de fracaso de la reperfusión o reoclusión (persistencia de la elevación del ST, inestabilidad), se indica ICP de rescate urgente. En pacientes con IMEST hemodinámicamente estables y enfermedad coronaria multivaso (sin shock), la revascularización completa por etapas de las lesiones no culpables ha pasado de estar contraindicada a ser razonable (estudio COMPLETE), a diferencia del shock cardiogénico, donde se prefiere tratar solo la lesión culpable (ver tema de revascularización, bloque 4). El tratamiento anticoagulante (heparina no fraccionada, heparina de bajo peso molecular o bivalirudina) acompaña tanto a la fibrinólisis como a la ICP primaria para mantener la permeabilidad de la arteria relacionada con el infarto.",
+
+  "recomendaciones": [
+    {
+      "texto": "Realizar ICP primaria cuando el paciente es atendido inicialmente en un centro con capacidad de ICP y puede lograrse un tiempo primer contacto médico-dispositivo ≤ 90 minutos.",
+      "clase": "I",
+      "nivelEvidencia": "A",
+      "guia": "ACCF/AHA 2013 (marco clásico, vigente en guías posteriores)"
+    },
+    {
+      "texto": "Trasladar para ICP primaria cuando, atendido inicialmente en un centro sin capacidad de ICP, puede lograrse un tiempo primer contacto médico-dispositivo ≤ 120 minutos.",
+      "clase": "I",
+      "nivelEvidencia": "B",
+      "guia": "ACCF/AHA 2013 (marco clásico, vigente en guías posteriores)"
+    },
+    {
+      "texto": "Administrar fibrinólisis en los primeros 30 minutos desde la llegada cuando se prevé que el tiempo primer contacto médico-dispositivo superará los 120 minutos y no hay contraindicaciones.",
+      "clase": "I",
+      "nivelEvidencia": "B",
+      "guia": "ACCF/AHA 2013 (marco clásico, vigente en guías posteriores)"
+    },
+    {
+      "texto": "Trasladar de forma urgente para ICP a los pacientes con evidencia de fracaso de la reperfusión o reoclusión de la arteria relacionada con el infarto tras fibrinólisis.",
+      "clase": "IIa",
+      "nivelEvidencia": "B",
+      "guia": "ACCF/AHA 2013 (marco clásico, vigente en guías posteriores)"
+    },
+    {
+      "texto": "Realizar angiografía coronaria y revascularización, si procede, entre 3 y 24 horas tras una fibrinólisis satisfactoria (estrategia fármaco-invasiva), en lugar de angiografía inmediata de rutina.",
+      "clase": "I",
+      "nivelEvidencia": "B",
+      "guia": "ACCF/AHA 2013 (marco clásico, vigente en guías posteriores)"
+    }
+  ],
+
+  "algoritmo": {
+    "titulo": "Selección de la estrategia de reperfusión en el IAMCEST según el tiempo",
+    "nodos": [
+      { "id": "n1", "texto": "Paciente con IAMCEST candidato a reperfusión" },
+      { "id": "n2", "texto": "Atendido inicialmente en hospital CON capacidad de ICP" },
+      { "id": "n3", "texto": "Atendido inicialmente en hospital SIN capacidad de ICP" },
+      { "id": "n4", "texto": "ICP primaria (objetivo: tiempo PCM-dispositivo ≤ 90 min)" },
+      { "id": "n5", "texto": "Trasladar para ICP primaria (tiempo PCM-dispositivo previsto ≤ 120 min)" },
+      { "id": "n6", "texto": "Fibrinólisis en los primeros 30 min desde la llegada (si tiempo PCM-dispositivo previsto > 120 min)" },
+      { "id": "n7", "texto": "Fracaso de la reperfusión o reoclusión" },
+      { "id": "n8", "texto": "Reperfusión exitosa" },
+      { "id": "n9", "texto": "Traslado urgente para ICP de rescate" },
+      { "id": "n10", "texto": "Angiografía y revascularización programada entre 3 y 24 h (estrategia fármaco-invasiva)" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n3", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n4", "etiqueta": "" },
+      { "desde": "n3", "hasta": "n5", "etiqueta": "tiempo alcanzable" },
+      { "desde": "n3", "hasta": "n6", "etiqueta": "tiempo no alcanzable" },
+      { "desde": "n6", "hasta": "n7", "etiqueta": "" },
+      { "desde": "n6", "hasta": "n8", "etiqueta": "" },
+      { "desde": "n7", "hasta": "n9", "etiqueta": "" },
+      { "desde": "n8", "hasta": "n10", "etiqueta": "" }
+    ]
+  },
+
+  "dosis": [
+    { "farmaco": "Ácido acetilsalicílico (dosis de carga)", "dosis": "162-325 mg VO, masticado, dosis única inicial", "fuente": "Braunwald 12.ª ed., cap. 38, «Medidas terapéuticas generales»" },
+    { "farmaco": "Tenecteplasa (TNK, fibrinolítico)", "dosis": "Bolo IV único ajustado por peso: 30 mg (<60 kg), 35 mg (60-69 kg), 40 mg (70-79 kg), 45 mg (80-89 kg), 50 mg (≥90 kg)", "fuente": "Braunwald 12.ª ed., cap. 38, tabla 38-4" },
+    { "farmaco": "Reteplasa (fibrinolítico)", "dosis": "10 U + 10 U en bolo IV, con 30 minutos de diferencia entre ambas", "fuente": "Braunwald 12.ª ed., cap. 38, tabla 38-4" }
+  ],
+
+  "glosario": [
+    { "termino": "PCM", "definicion": "Primer contacto médico; momento de referencia desde el que se miden los objetivos de tiempo hasta la reperfusión (PCM-dispositivo, PCM-aguja)." },
+    { "termino": "Puerta-balón / puerta-aguja", "definicion": "Tiempos de referencia desde la llegada al hospital hasta la ICP (puerta-balón, objetivo ≤ 90 min) o hasta el inicio del fibrinolítico (puerta-aguja, objetivo ≤ 30 min)." },
+    { "termino": "Estrategia fármaco-invasiva", "definicion": "Abordaje que combina fibrinólisis inicial con angiografía y revascularización sistemática programada entre 3 y 24 horas después, no inmediata." },
+    { "termino": "ICP de rescate", "definicion": "Intervención coronaria percutánea urgente tras el fracaso de la fibrinólisis (ausencia de resolución del segmento ST, inestabilidad clínica)." },
+    { "termino": "Flujo TIMI", "definicion": "Escala angiográfica (grados 0 a 3) que describe el flujo en la arteria relacionada con el infarto; el grado 3 (flujo normal) se asocia a la menor mortalidad." }
+  ],
+
+  "fuentes": [
+    { "titulo": "O'Gara PT, Kushner FG, Ascheim DD, et al. 2013 ACCF/AHA Guideline for the Management of ST-Elevation Myocardial Infarction. J Am Coll Cardiol. 2013;61(4):e78-e140", "url": "" },
+    { "titulo": "Byrne RA, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J. 2023;44(38):3720-3826", "url": "https://doi.org/10.1093/eurheartj/ehad191" },
+    { "titulo": "Mehta SR, et al. Complete Revascularization with Multivessel PCI for Myocardial Infarction (COMPLETE). N Engl J Med. 2019;381:1411-1421", "url": "" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "Un paciente con IAMCEST es atendido inicialmente en un hospital sin capacidad de ICP. Si se prevé que el tiempo hasta la ICP superará los 120 minutos, ¿qué conducta es la recomendada?",
+      "opciones": [
+        "Esperar igual el traslado para ICP, sin importar el tiempo",
+        "Administrar fibrinólisis en los primeros 30 minutos desde la llegada, si no hay contraindicaciones",
+        "No dar ningún tratamiento de reperfusión",
+        "Indicar cirugía de derivación coronaria de urgencia"
+      ],
+      "respuesta": 1,
+      "explicacion": "Cuando el tiempo hasta la ICP no puede lograrse en ≤ 120 minutos, se prefiere la fibrinólisis temprana (objetivo de tiempo puerta-aguja ≤ 30 min)."
+    },
+    {
+      "pregunta": "Tras una fibrinólisis exitosa en el IAMCEST, ¿cuál es la estrategia recomendada respecto a la angiografía coronaria?",
+      "opciones": [
+        "Angiografía inmediata de rutina en todos los casos",
+        "No realizar nunca angiografía si la fibrinólisis fue exitosa",
+        "Angiografía y revascularización programada entre 3 y 24 horas después (estrategia fármaco-invasiva)",
+        "Esperar al menos 7 días antes de cualquier angiografía"
+      ],
+      "respuesta": 2,
+      "explicacion": "La estrategia fármaco-invasiva recomienda angiografía sistemática entre 3 y 24 horas tras una fibrinólisis exitosa, no inmediata ni indefinidamente diferida."
+    },
+    {
+      "pregunta": "¿Por qué no se recomienda administrar oxígeno complementario de rutina a todos los pacientes con IAMCEST?",
+      "opciones": [
+        "Porque el oxígeno siempre es peligroso",
+        "Porque en ausencia de hipoxemia (saturación ≥ 90%), el oxígeno complementario no ha mostrado beneficio y se ha asociado a mayor tamaño del infarto en algunos estudios",
+        "Porque el oxígeno interfiere con la acción de la aspirina",
+        "Porque el oxígeno está contraindicado en cualquier síndrome coronario agudo"
+      ],
+      "respuesta": 1,
+      "explicacion": "El oxígeno complementario se reserva para pacientes con saturación < 90%; en pacientes normóxicos no ha demostrado beneficio y se ha vinculado a mayor tamaño del infarto en algún estudio."
+    }
+  ]
+}
