@@ -2,7 +2,7 @@
 
 Sitio estático de repaso de cardiología clínica, con progreso guardado en el navegador (localStorage). Sin frameworks: HTML, CSS y JavaScript puros.
 
-Foco actual: **cardiopatía isquémica**, organizado en 8 bloques siguiendo la estructura de Braunwald's Heart Disease (13.ª edición) y las guías ESC / ACC-AHA vigentes.
+Foco actual: **cardiopatía isquémica**, organizado en 8 bloques siguiendo la estructura de *Braunwald. Tratado de Cardiología* (12.ª edición, Libby/Bonow/Mann/Tomaselli/Bhatt/Solomon, Elsevier España 2024) y las guías ESC / ACC-AHA vigentes.
 
 ## Estructura
 
@@ -30,6 +30,23 @@ datos/otros/               Temas fuera del programa de isquémica (quedan aparte
 | 8 | Complicaciones y prevención secundaria | `08-complicaciones-prevencion` |
 
 El bloque `otros` (carpeta `otros/`) guarda temas que no son de isquémica (hoy: Insuficiencia Cardíaca, con el esquema anterior más simple).
+
+### Mapeo bloque → capítulo de Braunwald (12.ª edición)
+
+Según el índice de capítulos de la edición consultada (Parte IV "Cardiología preventiva" y Parte V "Enfermedad cardiovascular ateroesclerótica"):
+
+| Bloque | Capítulo(s) y página |
+|---|---|
+| 1. Fisiopatología y epidemiología | Cap. 24 "Biología vascular de la ateroesclerosis" (p. 425); Cap. 36 "Flujo sanguíneo coronario e isquemia miocárdica" (p. 609) |
+| 2. Diagnóstico crónica | Cap. 35 "Abordaje del paciente con dolor torácico" (p. 599); Cap. 40 "Cardiopatía isquémica estable" (p. 739) |
+| 3. Tratamiento médico angina | Cap. 40 "Cardiopatía isquémica estable" (p. 739) |
+| 4. Revascularización | Cap. 41 "Intervención coronaria percutánea" (p. 786). El libro no tiene un capítulo propio de cirugía de revascularización (CABG) en este índice: para esa parte del bloque el contenido se apoya más en guías (ESC/ACC-AHA) que en Braunwald. |
+| 5. SCA diagnóstico | Cap. 35 (p. 599); Cap. 39 (p. 714) |
+| 6. IAMCEST | Cap. 37 "IAMCEST: fisiopatología y evolución clínica" (p. 636); Cap. 38 "IAMCEST: tratamiento" (p. 662) |
+| 7. SCASEST | Cap. 39 "Síndromes coronarios agudos sin elevación del ST" (p. 714) |
+| 8. Complicaciones y prevención | Caps. 37/38 (complicaciones post-IAM); Cap. 25 "Prevención primaria de las enfermedades cardiovasculares" (p. 442) |
+
+Esto viene del índice de capítulos (títulos, autores, páginas), no del texto completo de cada capítulo. Sirve para citar `braunwald.referencia` con exactitud, pero el contenido clínico de cada tema (mecanismos, recomendaciones) se redacta sobre todo a partir de las guías ESC/ACC-AHA vigentes, verificadas al momento de escribir cada tema — no se parafrasea el texto del libro sin tenerlo a la vista.
 
 ## Pestañas
 
