@@ -70,7 +70,9 @@
       "numero": 8,
       "titulo": "Complicaciones y prevención secundaria",
       "carpeta": "08-complicaciones-prevencion",
-      "temas": []
+      "temas": [
+        "complicaciones-prevencion-secundaria.json"
+      ]
     },
     {
       "id": "otros",

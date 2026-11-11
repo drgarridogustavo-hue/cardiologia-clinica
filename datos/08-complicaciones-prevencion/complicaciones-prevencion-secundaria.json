@@ -1,0 +1,128 @@
+{
+  "id": "complicaciones-prevencion-secundaria-iam",
+  "titulo": "Complicaciones del infarto de miocardio y prevención secundaria",
+  "bloque": "complicaciones-prevencion",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Capítulo 38, «Infarto de miocardio con elevación del segmento ST: tratamiento», secciones «Trastornos hemodinámicos» y «Tratamiento farmacológico» (Erin A. Bohula, David A. Morrow), p. 679-694"
+  },
+
+  "guias": [
+    { "organizacion": "ACCF/AHA", "nombre": "2013 ACCF/AHA Guideline for the Management of ST-Elevation Myocardial Infarction (tabla de duración de DAPT y betabloqueantes)", "anio": 2013, "url": "" },
+    { "organizacion": "ACC/AHA", "nombre": "2016 ACC/AHA Guideline Focused Update on Duration of Dual Antiplatelet Therapy in Patients With Coronary Artery Disease", "anio": 2016, "url": "" }
+  ],
+
+  "resumen": "Las complicaciones del infarto de miocardio pueden ser hemodinámicas (insuficiencia ventricular izquierda, shock cardiogénico, infarto de ventrículo derecho) o mecánicas (rotura de la pared libre, comunicación interventricular, insuficiencia mitral aguda por rotura o disfunción del músculo papilar). Tras superar la fase aguda, la prevención secundaria farmacológica —doble antiagregación por un tiempo definido, betabloqueantes, inhibidores del sistema renina-angiotensina-aldosterona y estatinas de alta intensidad— es la que más reduce la mortalidad y el reinfarto a largo plazo.",
+
+  "diagnostico": "La gravedad hemodinámica se clasifica clínicamente con la escala de Killip (clase I: sin estertores ni tercer ruido; II: congestión pulmonar; III: edema pulmonar manifiesto; IV: shock) y, de forma invasiva, con la clasificación de Forrester (según índice cardíaco y presión de enclavamiento capilar pulmonar). El shock cardiogénico se define por hipotensión persistente con hipoperfusión de órganos terminales e índice cardíaco inadecuado pese a presiones de llenado suficientes; su causa más frecuente con diferencia es la insuficiencia ventricular izquierda extensa (alrededor del 80% de los casos), seguida por las complicaciones mecánicas (aproximadamente el 20% restante: rotura del tabique interventricular, insuficiencia mitral aguda, rotura de la pared libre, insuficiencia de ventrículo derecho y taponamiento cardíaco), cada una con su propio perfil de mortalidad. Las complicaciones mecánicas deben sospecharse ante cualquier deterioro hemodinámico brusco e inexplicado y se evalúan de urgencia con ecocardiografía.",
+
+  "tratamiento": "Shock cardiogénico: el tratamiento combina fármacos inótropos y vasopresores a las dosis mínimas eficaces, soporte circulatorio mecánico en casos seleccionados (balón de contrapulsación intraaórtico, dispositivos de asistencia ventricular percutánea) y, sobre todo, revascularización precoz de la arteria culpable (ver tema de revascularización, bloque 4: en el shock, solo la lesión culpable, no revascularización multivaso sistemática). Prevención secundaria farmacológica: la duración de la doble antiagregación depende de la vía de tratamiento inicial —mínimo 12 meses tras ICP con endoprótesis liberadora de fármacos, mínimo 14 días y hasta 12 meses tras fibrinólisis, 12 meses como mínimo con tratamiento médico sin reperfusión— y puede acortarse a 6 meses si aparece alto riesgo hemorrágico, o prolongarse más allá de 12 meses si el riesgo hemorrágico es bajo y no hay hemorragia relevante. Los betabloqueantes orales deben iniciarse en las primeras 24 horas en ausencia de insuficiencia cardíaca o signos de riesgo de shock cardiogénico, y mantenerse indefinidamente si se toleran. Los inhibidores de la enzima convertidora de angiotensina (o un ARA-II si no se toleran) reducen la mortalidad tras el infarto, con mayor beneficio absoluto en pacientes con disfunción ventricular izquierda o insuficiencia cardíaca clínica. El antagonista del receptor de mineralocorticoides (eplerenona) reduce la mortalidad en pacientes con FEVI < 40% e insuficiencia cardíaca clínica o diabetes, siempre que la función renal y el potasio sérico lo permitan. Las estatinas de alta intensidad se indican en todos los pacientes (ver tema de SCASEST, bloque 7). La derivación a un programa de rehabilitación cardíaca tras el alta es una recomendación estándar en la prevención secundaria.",
+
+  "recomendaciones": [
+    {
+      "texto": "Iniciar betabloqueantes orales en las primeras 24 h en pacientes con IAMCEST que no presenten insuficiencia cardíaca ni los elementos de riesgo de shock especificados (edad > 70 años, PAS < 120 mmHg, taquicardia sinusal > 110 lpm o FC < 60 lpm, mayor tiempo desde el inicio de los síntomas).",
+      "clase": "I",
+      "nivelEvidencia": "B",
+      "guia": "ACCF/AHA 2013 (tabla 38-6)"
+    },
+    {
+      "texto": "Mantener los betabloqueantes durante la hospitalización y después de ella en todos los pacientes con IAMCEST sin contraindicaciones para su uso.",
+      "clase": "I",
+      "nivelEvidencia": "B",
+      "guia": "ACCF/AHA 2013 (tabla 38-6)"
+    },
+    {
+      "texto": "Mantener la doble antiagregación un mínimo de 12 meses tras una ICP con endoprótesis liberadora de fármacos en un síndrome coronario agudo reciente, salvo alto riesgo hemorrágico.",
+      "clase": "I",
+      "nivelEvidencia": "VERIFICAR",
+      "guia": "ACC/AHA 2016 (actualización centrada en la duración del TAPD)"
+    },
+    {
+      "texto": "Considerar interrumpir la doble antiagregación a los 6 meses en pacientes con riesgo hemorrágico alto o hemorragia patente relevante.",
+      "clase": "IIb",
+      "nivelEvidencia": "VERIFICAR",
+      "guia": "ACC/AHA 2016 (actualización centrada en la duración del TAPD)"
+    }
+  ],
+
+  "algoritmo": {
+    "titulo": "Duración de la doble antiagregación con un inhibidor del P2Y12 según la vía de tratamiento inicial",
+    "nodos": [
+      { "id": "n1", "texto": "Síndrome coronario agudo reciente (SCASEST o IAMCEST)" },
+      { "id": "n2", "texto": "Vía: tratamiento médico, sin revascularización" },
+      { "id": "n3", "texto": "Vía: fibrinólisis (IAMCEST)" },
+      { "id": "n4", "texto": "Vía: ICP con endoprótesis" },
+      { "id": "n5", "texto": "Vía: IDAC (cirugía de derivación)" },
+      { "id": "n6", "texto": "DAPT mínimo 12 meses (clopidogrel o ticagrelor)" },
+      { "id": "n7", "texto": "DAPT mínimo 14 días y hasta 12 meses (clopidogrel)" },
+      { "id": "n8", "texto": "DAPT mínimo 12 meses (clopidogrel, prasugrel o ticagrelor)" },
+      { "id": "n9", "texto": "Reanudar el inhibidor P2Y12 tras la cirugía hasta completar 12 meses de DAPT" },
+      { "id": "n10", "texto": "Evaluar riesgo hemorrágico alto o hemorragia patente relevante" },
+      { "id": "n11", "texto": "Puede ser razonable suspender el inhibidor P2Y12 después de 6 meses" },
+      { "id": "n12", "texto": "Puede ser razonable continuar más de 12 meses" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n3", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n4", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n5", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n6", "etiqueta": "" },
+      { "desde": "n3", "hasta": "n7", "etiqueta": "" },
+      { "desde": "n4", "hasta": "n8", "etiqueta": "" },
+      { "desde": "n5", "hasta": "n9", "etiqueta": "" },
+      { "desde": "n6", "hasta": "n10", "etiqueta": "" },
+      { "desde": "n7", "hasta": "n10", "etiqueta": "" },
+      { "desde": "n8", "hasta": "n10", "etiqueta": "" },
+      { "desde": "n9", "hasta": "n10", "etiqueta": "" },
+      { "desde": "n10", "hasta": "n11", "etiqueta": "riesgo hemorrágico alto" },
+      { "desde": "n10", "hasta": "n12", "etiqueta": "riesgo hemorrágico bajo, sin hemorragia" }
+    ]
+  },
+
+  "dosis": [],
+
+  "glosario": [
+    { "termino": "Clasificación de Killip", "definicion": "Clasificación clínica de la gravedad hemodinámica del IAM (clases I a IV) basada en la exploración física (estertores, tercer ruido, shock), sin necesidad de monitorización invasiva." },
+    { "termino": "Clasificación de Forrester", "definicion": "Clasificación hemodinámica invasiva del IAM según el índice cardíaco y la presión de enclavamiento capilar pulmonar (PECP), en cuatro subgrupos." },
+    { "termino": "Shock cardiogénico", "definicion": "Hipoperfusión tisular por gasto cardíaco inadecuado a pesar de presiones de llenado suficientes; en el IAM, causado mayoritariamente por insuficiencia ventricular izquierda extensa, y en menor medida por complicaciones mecánicas." },
+    { "termino": "Comunicación interventricular post-IAM", "definicion": "Rotura del tabique interventricular como complicación mecánica del infarto; causa de deterioro hemodinámico brusco con soplo nuevo, que se confirma con ecocardiografía urgente." },
+    { "termino": "DAPT / TAPD", "definicion": "Doble (o triple) tratamiento antiagregante plaquetario; su duración tras un SCA depende de la vía de tratamiento (médico, fibrinólisis, ICP o cirugía) y del riesgo hemorrágico individual." }
+  ],
+
+  "fuentes": [
+    { "titulo": "O'Gara PT, Kushner FG, Ascheim DD, et al. 2013 ACCF/AHA Guideline for the Management of ST-Elevation Myocardial Infarction. J Am Coll Cardiol. 2013;61(4):e78-e140", "url": "" },
+    { "titulo": "Levine GN, et al. 2016 ACC/AHA Guideline Focused Update on Duration of Dual Antiplatelet Therapy in Patients With Coronary Artery Disease. J Am Coll Cardiol. 2016;68(10):1082-1115", "url": "" },
+    { "titulo": "Pitt B, et al. Eplerenone Post-Acute Myocardial Infarction Heart Failure Efficacy and Survival Study (EPHESUS). N Engl J Med. 2003;348:1309-1321", "url": "" },
+    { "titulo": "Thiele H, et al. PCI Strategies in Patients with Acute Myocardial Infarction and Cardiogenic Shock (CULPRIT-SHOCK). N Engl J Med. 2017;377:2419-2432", "url": "" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "¿Cuál es la causa más frecuente de shock cardiogénico en el contexto de un infarto agudo de miocardio?",
+      "opciones": ["Rotura del tabique interventricular", "Insuficiencia ventricular izquierda extensa", "Taponamiento cardíaco", "Insuficiencia mitral aguda"],
+      "respuesta": 1,
+      "explicacion": "La insuficiencia ventricular izquierda extensa explica aproximadamente el 80% de los casos de shock cardiogénico post-IAM; las complicaciones mecánicas explican el resto."
+    },
+    {
+      "pregunta": "Según el esquema clásico de duración de la doble antiagregación, ¿cuál es la duración mínima recomendada tras una ICP con endoprótesis liberadora de fármacos por un síndrome coronario agudo?",
+      "opciones": ["1 mes", "14 días", "12 meses", "5 años"],
+      "respuesta": 2,
+      "explicacion": "Tras ICP con endoprótesis liberadora de fármacos en un SCA, se recomienda un mínimo de 12 meses de doble antiagregación, salvo alto riesgo hemorrágico."
+    },
+    {
+      "pregunta": "¿En qué situación NO se recomienda iniciar betabloqueantes orales en las primeras 24 h de un IAMCEST?",
+      "opciones": [
+        "En un paciente sin insuficiencia cardíaca ni factores de riesgo de shock",
+        "En un paciente con taquicardia sinusal leve y presión arterial normal",
+        "En un paciente con signos de insuficiencia cardíaca o elementos de riesgo aumentado de shock cardiogénico",
+        "En cualquier paciente, sin excepción"
+      ],
+      "respuesta": 2,
+      "explicacion": "Los betabloqueantes orales tempranos se evitan cuando hay signos de insuficiencia cardíaca o factores que aumentan el riesgo de shock cardiogénico (edad > 70, PAS < 120, taquicardia sinusal > 110 o FC < 60, mayor tiempo de evolución)."
+    }
+  ]
+}
