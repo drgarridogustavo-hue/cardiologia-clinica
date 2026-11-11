@@ -33,7 +33,9 @@
       "numero": 4,
       "titulo": "Revascularización",
       "carpeta": "04-revascularizacion",
-      "temas": []
+      "temas": [
+        "revascularizacion-pci-vs-cabg.json"
+      ]
     },
     {
       "id": "sca-diagnostico",

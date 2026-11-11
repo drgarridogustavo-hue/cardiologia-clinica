@@ -1,0 +1,118 @@
+{
+  "id": "revascularizacion-pci-vs-cabg",
+  "titulo": "Revascularización coronaria: intervención coronaria percutánea (ICP) frente a cirugía de derivación (IDAC/CABG)",
+  "bloque": "revascularizacion",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Capítulo 41, «Intervención coronaria percutánea» (Dharam J. Kumbhani, Deepak L. Bhatt), p. 786-803"
+  },
+
+  "guias": [
+    { "organizacion": "ESC/EACTS", "nombre": "2018 ESC/EACTS Guidelines on myocardial revascularization", "anio": 2018, "url": "https://doi.org/10.1093/eurheartj/ehy394" }
+  ],
+
+  "resumen": "La elección entre intervención coronaria percutánea (ICP) e injerto de derivación arterial coronaria (IDAC, también llamado CABG) no es una decisión única: depende de la anatomía coronaria (número de vasos, afectación del tronco principal izquierdo, complejidad medida con la puntuación SYNTAX), de la función ventricular, de comorbilidades como la diabetes, y de las preferencias del paciente. La evaluación la hace idealmente un «equipo cardíaco» (cardiólogo clínico, intervencionista y cirujano cardíaco) cuando la anatomía es compleja.",
+
+  "diagnostico": "No aplica como diagnóstico (ver bloques de diagnóstico). La decisión de revascularizar parte de haber establecido ya el diagnóstico de EAC significativa y de haber evaluado su gravedad funcional (FFR/iFR o pruebas de isquemia; ver tema de flujo coronario) y anatómica (angiografía, puntuación SYNTAX).",
+
+  "tratamiento": "En la cardiopatía isquémica estable, la revascularización no reduce la muerte o el infarto frente al tratamiento médico óptimo en la mayoría de los pacientes (COURAGE, ISCHEMIA, ORBITA), pero sí mejora los síntomas anginosos y la calidad de vida con mayor eficacia que el tratamiento médico solo. Las excepciones donde la revascularización sí mejora el pronóstico incluyen la enfermedad del tronco principal izquierdo, la enfermedad multivaso con disfunción ventricular izquierda, y los síndromes coronarios agudos. Enfermedad del tronco principal izquierdo: en pacientes con puntuación SYNTAX baja o intermedia, la ICP es una alternativa razonable al IDAC (SYNTAX, PRECOMBAT, NOBLE, EXCEL mostraron mortalidad similar a mediano plazo, con más revascularización repetida en el brazo de ICP); con puntuación SYNTAX alta o enfermedad multivaso compleja asociada, se prefiere el IDAC. Enfermedad multivaso: el IDAC se asocia a menos infarto espontáneo y menos revascularización repetida que la ICP a mediano plazo (BEST, SYNTAX), especialmente en pacientes diabéticos (FREEDOM), a costa de más morbimortalidad perioperatoria temprana (incluido el accidente cerebrovascular). Shock cardiogénico con enfermedad multivaso: a diferencia de otros contextos, aquí se recomienda tratar solo la lesión «culpable» del infarto en el procedimiento inicial, no revascularizar de forma sistemática todos los vasos enfermos (CULPRIT-SHOCK).",
+
+  "recomendaciones": [
+    {
+      "texto": "En pacientes con enfermedad coronaria multivaso y diabetes mellitus, preferir el IDAC (CABG) sobre la ICP cuando el riesgo quirúrgico es aceptable.",
+      "clase": "I",
+      "nivelEvidencia": "VERIFICAR",
+      "guia": "ESC/EACTS 2018 (revascularización miocárdica, basado en el ensayo FREEDOM)"
+    },
+    {
+      "texto": "En el shock cardiogénico asociado a infarto con enfermedad multivaso, tratar en el procedimiento inicial solo la lesión culpable del infarto; no realizar revascularización percutánea sistemática de todas las lesiones en el mismo procedimiento.",
+      "clase": "III (en contra)",
+      "nivelEvidencia": "B",
+      "guia": "ESC/EACTS 2018 (basado en el ensayo CULPRIT-SHOCK)"
+    },
+    {
+      "texto": "En la enfermedad del tronco coronario principal izquierdo con puntuación SYNTAX baja o intermedia (≤ 32), considerar la ICP como alternativa razonable al IDAC.",
+      "clase": "IIa",
+      "nivelEvidencia": "B",
+      "guia": "ESC/EACTS 2018 (revascularización miocárdica)"
+    }
+  ],
+
+  "algoritmo": {
+    "titulo": "Selección de la estrategia de revascularización en EAC significativa",
+    "nodos": [
+      { "id": "n1", "texto": "EAC significativa confirmada (anatómica y/o funcionalmente)" },
+      { "id": "n2", "texto": "Enfermedad de 1-2 vasos, sin tronco principal izquierdo" },
+      { "id": "n3", "texto": "Enfermedad del tronco principal izquierdo" },
+      { "id": "n4", "texto": "Enfermedad multivaso (≥ 3 vasos) y/o diabetes mellitus" },
+      { "id": "n5", "texto": "Shock cardiogénico con enfermedad multivaso" },
+      { "id": "n6", "texto": "ICP razonable (tratamiento médico si no hay isquemia significativa ni síntomas limitantes)" },
+      { "id": "n7", "texto": "SYNTAX bajo-intermedio (≤ 32): ICP o IDAC, decisión compartida por el equipo cardíaco" },
+      { "id": "n8", "texto": "SYNTAX alto o anatomía compleja: preferir IDAC" },
+      { "id": "n9", "texto": "Preferir IDAC, en especial si hay diabetes" },
+      { "id": "n10", "texto": "ICP de la lesión culpable únicamente; no revascularización multivaso sistemática en el mismo procedimiento" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n3", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n4", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n5", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n6", "etiqueta": "" },
+      { "desde": "n3", "hasta": "n7", "etiqueta": "" },
+      { "desde": "n3", "hasta": "n8", "etiqueta": "" },
+      { "desde": "n4", "hasta": "n9", "etiqueta": "" },
+      { "desde": "n5", "hasta": "n10", "etiqueta": "" }
+    ]
+  },
+
+  "dosis": [],
+
+  "glosario": [
+    { "termino": "IDAC / CABG", "definicion": "Injerto de derivación arterial coronaria (coronary artery bypass graft); cirugía de revascularización que deriva el flujo alrededor de la estenosis mediante injertos arteriales o venosos." },
+    { "termino": "Puntuación SYNTAX", "definicion": "Escala angiográfica que cuantifica la complejidad y extensión de la enfermedad coronaria; orienta la elección entre ICP e IDAC, sobre todo en enfermedad del tronco principal izquierdo o multivaso." },
+    { "termino": "Equipo cardíaco (Heart Team)", "definicion": "Equipo multidisciplinario (cardiólogo clínico, cardiólogo intervencionista, cirujano cardíaco) que evalúa de forma conjunta la estrategia de revascularización en casos anatómicamente complejos." },
+    { "termino": "Endoprótesis liberadora de fármacos (ELF/DES)", "definicion": "Stent coronario que libera un fármaco antiproliferativo para reducir la reestenosis por hiperplasia de la íntima; ha reemplazado casi por completo a las endoprótesis metálicas desnudas (EPMD)." },
+    { "termino": "Shock cardiogénico", "definicion": "Estado de gasto cardíaco insuficiente para la perfusión tisular, definido hemodinámicamente por presión de enclavamiento pulmonar > 18 mmHg e índice cardíaco < 2,2 l/min/m² con presión arterial sistólica ≤ 90 mmHg." }
+  ],
+
+  "fuentes": [
+    { "titulo": "Neumann FJ, et al. 2018 ESC/EACTS Guidelines on myocardial revascularization. Eur Heart J. 2019;40(2):87-165", "url": "https://doi.org/10.1093/eurheartj/ehy394" },
+    { "titulo": "Farkouh ME, et al. Strategies for multivessel revascularization in patients with diabetes (FREEDOM). N Engl J Med. 2012;367:2375-2384", "url": "" },
+    { "titulo": "Thiele H, et al. PCI Strategies in Patients with Acute Myocardial Infarction and Cardiogenic Shock (CULPRIT-SHOCK). N Engl J Med. 2017;377:2419-2432", "url": "" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "En un paciente con diabetes mellitus y enfermedad coronaria de tres vasos, con riesgo quirúrgico aceptable, ¿qué estrategia de revascularización se prefiere según la evidencia actual?",
+      "opciones": ["ICP con un solo stent", "IDAC (CABG)", "Ninguna revascularización, solo tratamiento médico", "Angioplastia con balón sin stent"],
+      "respuesta": 1,
+      "explicacion": "El ensayo FREEDOM mostró menor mortalidad e infarto con IDAC que con ICP en pacientes diabéticos con enfermedad multivaso, por lo que las guías prefieren el IDAC en este escenario."
+    },
+    {
+      "pregunta": "En un paciente con shock cardiogénico por IAM y enfermedad coronaria multivaso, ¿qué estrategia de revascularización percutánea inicial recomienda la evidencia actual?",
+      "opciones": [
+        "Revascularizar todas las lesiones significativas en el mismo procedimiento",
+        "Tratar solo la lesión culpable del infarto en el procedimiento inicial",
+        "No revascularizar en absoluto",
+        "Indicar siempre cirugía de derivación urgente"
+      ],
+      "respuesta": 1,
+      "explicacion": "El ensayo CULPRIT-SHOCK mostró peores resultados con la revascularización multivaso sistemática inmediata; se recomienda tratar solo la lesión culpable inicialmente."
+    },
+    {
+      "pregunta": "¿Qué papel tiene la puntuación SYNTAX en la decisión de revascularización de la enfermedad del tronco principal izquierdo?",
+      "opciones": [
+        "No tiene ningún papel en esta decisión",
+        "Una puntuación baja o intermedia favorece considerar la ICP como alternativa al IDAC; una puntuación alta favorece el IDAC",
+        "Solo se usa para decidir la dosis de antiagregantes",
+        "Determina exclusivamente el tipo de stent a usar"
+      ],
+      "respuesta": 1,
+      "explicacion": "La puntuación SYNTAX cuantifica la complejidad anatómica y ayuda al equipo cardíaco a decidir entre ICP e IDAC, en especial en la enfermedad del tronco principal izquierdo."
+    }
+  ]
+}
