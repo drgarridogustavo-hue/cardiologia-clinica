@@ -15,14 +15,18 @@
       "numero": 2,
       "titulo": "Cardiopatía isquémica crónica: diagnóstico",
       "carpeta": "02-diagnostico-cronica",
-      "temas": []
+      "temas": [
+        "diagnostico-cardiopatia-isquemica-estable.json"
+      ]
     },
     {
       "id": "tratamiento-medico-angina",
       "numero": 3,
       "titulo": "Angina crónica: tratamiento médico",
       "carpeta": "03-tratamiento-medico-angina",
-      "temas": []
+      "temas": [
+        "tratamiento-medico-angina-cronica.json"
+      ]
     },
     {
       "id": "revascularizacion",

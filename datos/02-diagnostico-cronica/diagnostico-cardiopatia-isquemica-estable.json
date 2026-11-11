@@ -1,0 +1,106 @@
+{
+  "id": "diagnostico-cardiopatia-isquemica-estable",
+  "titulo": "Diagnóstico de la cardiopatía isquémica crónica (angina estable)",
+  "bloque": "diagnostico-cronica",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Capítulo 40, «Cardiopatía isquémica estable» (David A. Morrow, James de Lemos), sección «Evaluación y tratamiento», p. 742-749"
+  },
+
+  "guias": [
+    { "organizacion": "ESC", "nombre": "2024 ESC Guidelines for the management of chronic coronary syndromes", "anio": 2024, "url": "https://doi.org/10.1093/eurheartj/ehae177" },
+    { "organizacion": "ACC/AHA", "nombre": "2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease", "anio": 2023, "url": "https://doi.org/10.1161/CIR.0000000000001168" }
+  ],
+
+  "resumen": "La cardiopatía isquémica crónica (CIE) abarca desde la angina estable hasta la isquemia silente, y su causa más frecuente es la aterosclerosis coronaria epicárdica, aunque la disfunción microvascular y el vasoespasmo también pueden producir angina sin estenosis epicárdica obstructiva. El diagnóstico combina la estimación de la probabilidad pretest con pruebas no invasivas (funcionales o anatómicas) elegidas según esa probabilidad, reservando la evaluación invasiva para los casos de alta probabilidad o alto riesgo.",
+
+  "diagnostico": "El primer paso es estimar la probabilidad pretest de enfermedad arterial coronaria (EAC) a partir de la edad, el sexo y el tipo de dolor torácico (típico, atípico o no anginoso): por ejemplo, un varón de 60 años con angina típica tiene una probabilidad pretest > 80%, mientras que una mujer de 40 años con dolor no anginoso tiene una probabilidad < 10%. Según esa probabilidad se elige la estrategia: con probabilidad muy baja puede diferirse el estudio; con probabilidad baja-intermedia (>5-50%), la angiografía coronaria por tomografía computarizada (ACTC) es la prueba de elección por su alto valor predictivo negativo para descartar EAC obstructiva; con probabilidad alta o síntomas de riesgo, se prefieren las pruebas funcionales (ergometría, ecocardiograma de esfuerzo, SPECT, PET, RMC de estrés) o directamente la evaluación invasiva. Las pruebas no invasivas no son intercambiables: la ACTC tiene alta sensibilidad y buen valor predictivo negativo pero menor especificidad que las pruebas funcionales, mientras que el SPECT, el PET y la RMC permiten además estratificar el riesgo según la extensión de la isquemia inducible. La angiografía invasiva aporta el detalle anatómico más preciso, pero no es un buen indicador por sí sola de la gravedad funcional de una lesión: para eso se usan la reserva de flujo fraccional (FFR) o el índice instantáneo sin ondas (iFR; ver tema de fisiopatología del flujo coronario). Es importante recordar que buena parte de los infartos se originan en lesiones que antes de romperse no eran angiográficamente «significativas».",
+
+  "tratamiento": "No aplica (ver temas de tratamiento médico y de revascularización).",
+
+  "recomendaciones": [
+    {
+      "texto": "Usar la angiografía coronaria por tomografía computarizada (ACTC) como prueba diagnóstica de elección para descartar EAC obstructiva en pacientes con probabilidad pretest baja a moderada (> 5% - 50%).",
+      "clase": "I",
+      "nivelEvidencia": "B",
+      "guia": "ESC 2024 (síndromes coronarios crónicos)"
+    },
+    {
+      "texto": "Considerar el diferimiento de pruebas diagnósticas adicionales cuando la probabilidad pretest de EAC obstructiva es muy baja (< 5%).",
+      "clase": "IIa",
+      "nivelEvidencia": "VERIFICAR",
+      "guia": "ESC 2024 (síndromes coronarios crónicos)"
+    }
+  ],
+
+  "algoritmo": {
+    "titulo": "Estrategia diagnóstica según probabilidad pretest de EAC",
+    "nodos": [
+      { "id": "n1", "texto": "Estimar probabilidad pretest (edad, sexo, tipo de dolor torácico)" },
+      { "id": "n2", "texto": "Probabilidad muy baja (< 5%)" },
+      { "id": "n3", "texto": "Probabilidad baja-moderada (> 5% - 50%)" },
+      { "id": "n4", "texto": "Probabilidad alta o síntomas/signos de riesgo" },
+      { "id": "n5", "texto": "Considerar diferir estudios adicionales" },
+      { "id": "n6", "texto": "ACTC como prueba de elección" },
+      { "id": "n7", "texto": "Prueba funcional (ergometría, eco de esfuerzo, SPECT, PET o RMC de estrés) o evaluación invasiva" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n3", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n4", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n5", "etiqueta": "" },
+      { "desde": "n3", "hasta": "n6", "etiqueta": "" },
+      { "desde": "n4", "hasta": "n7", "etiqueta": "" }
+    ]
+  },
+
+  "dosis": [],
+
+  "glosario": [
+    { "termino": "Probabilidad pretest", "definicion": "Estimación de la probabilidad de EAC obstructiva antes de realizar una prueba diagnóstica, basada en edad, sexo y características del dolor torácico; determina qué prueba conviene pedir." },
+    { "termino": "ACTC", "definicion": "Angiografía coronaria por tomografía computarizada; prueba anatómica no invasiva con alto valor predictivo negativo para descartar EAC obstructiva." },
+    { "termino": "IPM (SPECT/PET)", "definicion": "Imagen de perfusión miocárdica; prueba funcional que detecta isquemia inducible y permite estratificar el riesgo según la extensión del defecto de perfusión." },
+    { "termino": "CCS", "definicion": "Canadian Cardiovascular Society; sistema de clasificación funcional de la angina de pecho (clases I a IV) según el umbral de esfuerzo que la desencadena." }
+  ],
+
+  "fuentes": [
+    { "titulo": "Vrints C, et al. 2024 ESC Guidelines for the management of chronic coronary syndromes. Eur Heart J. 2024;45(36):3415-3537", "url": "https://doi.org/10.1093/eurheartj/ehae177" },
+    { "titulo": "Virani SS, et al. 2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease. Circulation. 2023;148(9):e9-e119", "url": "https://doi.org/10.1161/CIR.0000000000001168" },
+    { "titulo": "Genders TS, et al. A clinical prediction rule for the diagnosis of coronary artery disease: validation, updating, and extension. Eur Heart J. 2011;32(11):1316-1330", "url": "" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "Un varón de 55 años con dolor torácico típico de esfuerzo tiene una probabilidad pretest alta de EAC. ¿Cuál es, en general, la estrategia diagnóstica más adecuada en ese escenario?",
+      "opciones": [
+        "Diferir cualquier estudio adicional",
+        "Prueba funcional (p. ej., ergometría, eco de esfuerzo, SPECT/PET) o evaluación invasiva según el riesgo",
+        "Solo medir el colesterol LDL",
+        "ACTC como única prueba siempre, independientemente del riesgo"
+      ],
+      "respuesta": 1,
+      "explicacion": "Con probabilidad pretest alta o características de riesgo, se prefieren las pruebas funcionales o la evaluación invasiva por sobre la ACTC."
+    },
+    {
+      "pregunta": "¿Qué prueba no invasiva se recomienda como de elección para descartar EAC obstructiva en un paciente con probabilidad pretest del 20%?",
+      "opciones": ["Angiografía invasiva", "Radiografía de tórax", "Angiografía coronaria por tomografía computarizada (ACTC)", "Resonancia magnética cerebral"],
+      "respuesta": 2,
+      "explicacion": "En el rango de probabilidad pretest baja-moderada (> 5%-50%), la ACTC es la prueba recomendada por su alto valor predictivo negativo (Clase I, Nivel B, ESC 2024)."
+    },
+    {
+      "pregunta": "¿Por qué la angiografía coronaria invasiva, por sí sola, no siempre refleja la gravedad funcional real de una estenosis intermedia?",
+      "opciones": [
+        "Porque no puede detectar estenosis en absoluto",
+        "Porque la angiografía muestra el grado anatómico de estrechamiento luminal, pero no mide directamente el impacto hemodinámico, para lo cual se usan índices como la FFR o el iFR",
+        "Porque la angiografía solo se usa para medir la presión arterial",
+        "Porque la angiografía no puede realizarse en absoluto en pacientes con angina estable"
+      ],
+      "respuesta": 1,
+      "explicacion": "La gravedad anatómica no siempre se corresponde con la gravedad funcional; la FFR y el iFR complementan la angiografía para decidir si una lesión intermedia justifica revascularización."
+    }
+  ]
+}

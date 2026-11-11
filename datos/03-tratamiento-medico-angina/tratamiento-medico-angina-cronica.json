@@ -1,0 +1,114 @@
+{
+  "id": "tratamiento-medico-angina-cronica",
+  "titulo": "Tratamiento farmacológico de la angina crónica",
+  "bloque": "tratamiento-medico-angina",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Capítulo 40, «Cardiopatía isquémica estable» (David A. Morrow, James de Lemos), sección «Tratamiento farmacológico de la angina», p. 757-764"
+  },
+
+  "guias": [
+    { "organizacion": "ESC", "nombre": "2024 ESC Guidelines for the management of chronic coronary syndromes", "anio": 2024, "url": "https://doi.org/10.1093/eurheartj/ehae177" },
+    { "organizacion": "ACC/AHA", "nombre": "2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease", "anio": 2023, "url": "https://doi.org/10.1161/CIR.0000000000001168" }
+  ],
+
+  "resumen": "El tratamiento antianginoso busca corregir el desequilibrio entre el aporte y la demanda miocárdica de oxígeno, ya sea reduciendo la demanda (frecuencia cardíaca, contractilidad, tensión parietal) o mejorando el aporte (dilatación coronaria, redistribución del flujo). Los betabloqueantes y los antagonistas del calcio son los fármacos de primera línea; los nitratos de acción corta se usan para el alivio inmediato y la profilaxis antes del esfuerzo; y existen fármacos de segunda línea (ranolazina, ivabradina, nicorandil) para los pacientes que no toleran o no responden a los anteriores.",
+
+  "diagnostico": "No aplica (ver tema de diagnóstico de cardiopatía isquémica crónica).",
+
+  "tratamiento": "Betabloqueantes: reducen la frecuencia cardíaca, la contractilidad y la presión arterial, lo que disminuye el consumo miocárdico de oxígeno; además prolongan la diástole y así mejoran la perfusión coronaria. Siguen siendo el pilar del tratamiento, en particular en pacientes con disfunción ventricular izquierda o infarto previo, donde también reducen la mortalidad. Antagonistas del calcio: las dihidropiridinas (amlodipino, nifedipino) actúan sobre todo como vasodilatadores con poco efecto cronotrópico o inotrópico negativo, mientras que las no dihidropiridinas (verapamilo, diltiazem) reducen también la frecuencia cardíaca y la contractilidad —de forma similar a los betabloqueantes— y deben combinarse con ellos con precaución por el riesgo de bradicardia excesiva o bloqueo auriculoventricular. Nitratos: producen venodilatación (reducen la precarga) y dilatan las arterias coronarias epicárdicas, incluidas las zonas estenóticas; su principal limitación es el desarrollo de tolerancia, por lo que las pautas de administración deben incluir un intervalo libre de nitratos de 10 a 12 horas. La nitroglicerina sublingual de acción corta es el fármaco de elección para el alivio inmediato de un episodio de angina y para su uso profiláctico antes de una actividad que la desencadene. Fármacos de segunda línea: la ranolazina (inhibe la corriente tardía de sodio, no modifica la frecuencia cardíaca ni la presión arterial, útil en combinación) mejora los síntomas pero no ha demostrado reducir eventos cardiovasculares mayores; la ivabradina (inhibe la corriente If del nódulo sinusal, reduce la frecuencia cardíaca sin efecto inotrópico negativo) no se utiliza en angina sin indicación de insuficiencia cardíaca en EE. UU.; el nicorandil combina un efecto similar a los nitratos con la apertura de canales de potasio sensibles al ATP. La elección del tratamiento inicial depende de las comorbilidades del paciente (p. ej., evitar betabloqueantes no selectivos en el asma; evitar verapamilo/diltiazem en la enfermedad del sistema de conducción).",
+
+  "recomendaciones": [
+    {
+      "texto": "Usar un betabloqueante o un antagonista del calcio como tratamiento antianginoso inicial de primera línea, según las comorbilidades del paciente.",
+      "clase": "I",
+      "nivelEvidencia": "A",
+      "guia": "ESC 2024 / ACC-AHA 2023 (síndromes/enfermedad coronaria crónica)"
+    },
+    {
+      "texto": "Usar nitroglicerina sublingual de acción corta para el alivio inmediato de los episodios de angina y como profilaxis antes de actividades que habitualmente la desencadenan.",
+      "clase": "I",
+      "nivelEvidencia": "B",
+      "guia": "ESC 2024 / ACC-AHA 2023 (síndromes/enfermedad coronaria crónica)"
+    },
+    {
+      "texto": "Añadir un segundo fármaco antianginoso de primera línea (o considerar ranolazina) cuando la angina persiste con monoterapia optimizada.",
+      "clase": "IIa",
+      "nivelEvidencia": "VERIFICAR",
+      "guia": "ESC 2024 / ACC-AHA 2023 (síndromes/enfermedad coronaria crónica)"
+    }
+  ],
+
+  "algoritmo": {
+    "titulo": "Selección escalonada del tratamiento antianginoso",
+    "nodos": [
+      { "id": "n1", "texto": "Evaluar comorbilidades (asma/EPOC, trastornos de conducción, disfunción VI, hipotensión)" },
+      { "id": "n2", "texto": "Iniciar betabloqueante o antagonista del calcio según comorbilidad, + nitroglicerina sublingual para alivio/profilaxis" },
+      { "id": "n3", "texto": "Angina persiste pese a monoterapia optimizada" },
+      { "id": "n4", "texto": "Añadir segundo fármaco de primera línea (el otro grupo) o ranolazina" },
+      { "id": "n5", "texto": "Angina persiste pese a tratamiento combinado" },
+      { "id": "n6", "texto": "Reevaluar isquemia y considerar revascularización (ver bloque de revascularización)" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n3", "etiqueta": "si persiste angina" },
+      { "desde": "n3", "hasta": "n4", "etiqueta": "" },
+      { "desde": "n4", "hasta": "n5", "etiqueta": "si persiste angina" },
+      { "desde": "n5", "hasta": "n6", "etiqueta": "" }
+    ]
+  },
+
+  "dosis": [
+    { "farmaco": "Nitroglicerina sublingual (comprimidos)", "dosis": "VERIFICAR", "fuente": "" },
+    { "farmaco": "Metoprolol / bisoprolol / atenolol (dosis de mantenimiento)", "dosis": "VERIFICAR", "fuente": "" },
+    { "farmaco": "Amlodipino", "dosis": "VERIFICAR", "fuente": "" },
+    { "farmaco": "Ranolazina", "dosis": "VERIFICAR", "fuente": "" }
+  ],
+
+  "glosario": [
+    { "termino": "Dihidropiridinas", "definicion": "Subgrupo de antagonistas del calcio (p. ej., amlodipino, nifedipino) con efecto predominantemente vasodilatador y poca acción sobre la frecuencia cardíaca o la contractilidad." },
+    { "termino": "No dihidropiridinas", "definicion": "Antagonistas del calcio (verapamilo, diltiazem) que, además de vasodilatar, reducen la frecuencia cardíaca y la contractilidad; riesgo de bradicardia o bloqueo AV si se combinan con betabloqueantes." },
+    { "termino": "Tolerancia a nitratos", "definicion": "Pérdida progresiva del efecto antianginoso de los nitratos con la administración continua; se previene dejando un intervalo libre de nitrato de 10-12 horas al día." },
+    { "termino": "Ranolazina", "definicion": "Antianginoso que inhibe la corriente tardía de sodio en el miocito; mejora los síntomas sin modificar la frecuencia cardíaca ni la presión arterial, y sin beneficio demostrado en eventos cardiovasculares mayores." }
+  ],
+
+  "fuentes": [
+    { "titulo": "Vrints C, et al. 2024 ESC Guidelines for the management of chronic coronary syndromes. Eur Heart J. 2024;45(36):3415-3537", "url": "https://doi.org/10.1093/eurheartj/ehae177" },
+    { "titulo": "Virani SS, et al. 2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease. Circulation. 2023;148(9):e9-e119", "url": "https://doi.org/10.1161/CIR.0000000000001168" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "¿Cuáles son, en general, los fármacos antianginosos de primera línea para la angina crónica?",
+      "opciones": ["Ranolazina e ivabradina", "Betabloqueantes y antagonistas del calcio", "Estatinas y ezetimiba", "Antiagregantes plaquetarios"],
+      "respuesta": 1,
+      "explicacion": "Los betabloqueantes y los antagonistas del calcio son los fármacos antianginosos de primera línea, elegidos según las comorbilidades del paciente."
+    },
+    {
+      "pregunta": "¿Por qué debe combinarse con precaución un betabloqueante con verapamilo o diltiazem?",
+      "opciones": [
+        "Porque no tienen ningún efecto en común",
+        "Porque ambos reducen la frecuencia cardíaca y la conducción AV, con riesgo de bradicardia excesiva o bloqueo AV",
+        "Porque juntos siempre causan hipertensión grave",
+        "Porque esa combinación está prohibida en todos los pacientes sin excepción"
+      ],
+      "respuesta": 1,
+      "explicacion": "Los betabloqueantes y las no dihidropiridinas (verapamilo, diltiazem) comparten el efecto de frenar el nódulo sinusal y la conducción AV, por lo que su combinación exige vigilancia estrecha."
+    },
+    {
+      "pregunta": "¿Qué estrategia previene la tolerancia a los nitratos de acción prolongada?",
+      "opciones": [
+        "Aumentar la dosis progresivamente sin límite",
+        "Dejar un intervalo libre de nitrato de aproximadamente 10-12 horas al día",
+        "Administrarlos siempre junto con un inhibidor de la PDE5",
+        "Usarlos solo por vía intravenosa"
+      ],
+      "respuesta": 1,
+      "explicacion": "Un intervalo libre de nitrato de 10-12 horas (p. ej., sin parche durante la noche) es la estrategia habitual para prevenir o reducir la tolerancia."
+    }
+  ]
+}
