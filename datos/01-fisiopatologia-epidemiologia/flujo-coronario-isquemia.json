@@ -1,0 +1,90 @@
+{
+  "id": "flujo-coronario-isquemia-miocardica",
+  "titulo": "Flujo sanguíneo coronario e isquemia miocárdica",
+  "bloque": "fisiopatologia-epidemiologia",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Capítulo 36, «Flujo sanguíneo coronario e isquemia miocárdica» (Dirk J. Duncker, John M. Canty Jr.), p. 609-635"
+  },
+
+  "guias": [
+    { "organizacion": "ESC/EACTS", "nombre": "2018 ESC/EACTS Guidelines on myocardial revascularization", "anio": 2018, "url": "https://doi.org/10.1093/eurheartj/ehy394" }
+  ],
+
+  "resumen": "El flujo coronario normal se ajusta de forma continua al consumo miocárdico de oxígeno (autorregulación), que depende de la frecuencia cardíaca, la tensión de la pared y la contractilidad. Cuando una estenosis u otra enfermedad reduce la capacidad de aumentar el flujo frente a la demanda, aparece isquemia, cuyas consecuencias dependen de forma crítica del tiempo: desde la disfunción contráctil reversible (aturdimiento, hibernación) hasta la necrosis irreversible si la oclusión se mantiene.",
+
+  "diagnostico": "La gravedad funcional de una estenosis no se define solo por el porcentaje de diámetro en la angiografía, sino por índices invasivos que comparan la presión o el flujo a través de la lesión: la reserva de flujo fraccional (RFF/FFR) y el índice instantáneo sin ondas (iFR) son los más usados en la práctica clínica para decidir si una lesión intermedia justifica revascularización. Una RFF ≤ 0,80 (o un iFR ≤ 0,89) identifica lesiones hemodinámicamente significativas; por encima de ese umbral, el tratamiento médico aislado tiene resultados al menos tan buenos como la revascularización (estudio DEFER). Es importante recordar que la disfunción microvascular (frecuente en diabetes, hipertrofia ventricular o en mujeres con dolor torácico y arterias «normales») puede reducir la reserva de flujo incluso sin estenosis epicárdica significativa, y que esto no lo detecta la angiografía convencional.",
+
+  "tratamiento": "No aplica como tratamiento farmacológico directo (ver bloques de tratamiento médico y revascularización). El concepto clínico central de este capítulo es que, ante una oclusión coronaria aguda, «el tiempo es músculo»: la lesión irreversible del miocito comienza a los 20 minutos de oclusión total y progresa como un «frente de onda» desde el subendocardio hacia el subepicardio hasta completarse, en ausencia de reperfusión, entre las 4 y 6 horas. La reperfusión precoz sigue siendo la intervención más eficaz para limitar el tamaño del infarto; las estrategias de cardioprotección farmacológica o por acondicionamiento isquémico (pre- y postacondicionamiento) no han demostrado todavía un beneficio clínico consistente en ensayos aleatorizados grandes.",
+
+  "recomendaciones": [
+    {
+      "texto": "Usar la reserva de flujo fraccional (RFF ≤ 0,80) o el índice instantáneo sin ondas (iFR ≤ 0,89) para identificar lesiones coronarias intermedias hemodinámicamente significativas y guiar la decisión de revascularización, en ausencia de isquemia demostrada por otro método no invasivo.",
+      "clase": "I",
+      "nivelEvidencia": "A",
+      "guia": "ESC/EACTS 2018 (revascularización miocárdica)"
+    }
+  ],
+
+  "algoritmo": {
+    "titulo": "Progresión temporal de la lesión miocárdica tras oclusión coronaria total (fenómeno de «frente de onda»)",
+    "nodos": [
+      { "id": "n1", "texto": "Oclusión coronaria total" },
+      { "id": "n2", "texto": "< 20 minutos: isquemia reversible (sin necrosis) — aturdimiento posible tras reperfusión" },
+      { "id": "n3", "texto": "20 min - 1 h: inicio de necrosis subendocárdica" },
+      { "id": "n4", "texto": "1 - 6 h: progresión de la necrosis hacia el miocardio medio y subepicárdico" },
+      { "id": "n5", "texto": "> 6 h sin reperfusión: infarto transmural establecido" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "reperfusión antes de 20 min" },
+      { "desde": "n1", "hasta": "n3", "etiqueta": "oclusión mantenida" },
+      { "desde": "n3", "hasta": "n4", "etiqueta": "sin reperfusión" },
+      { "desde": "n4", "hasta": "n5", "etiqueta": "sin reperfusión" }
+    ]
+  },
+
+  "dosis": [],
+
+  "glosario": [
+    { "termino": "RFF / FFR", "definicion": "Reserva de flujo fraccional; cociente entre la presión coronaria distal a una estenosis y la presión aórtica durante vasodilatación máxima. Un valor ≤ 0,80 indica una lesión hemodinámicamente significativa." },
+    { "termino": "iFR", "definicion": "Índice instantáneo sin ondas; índice de gravedad de estenosis derivado de la presión que no requiere vasodilatador farmacológico. Umbral habitual ≤ 0,89." },
+    { "termino": "Aturdimiento miocárdico", "definicion": "Disfunción contráctil reversible que persiste horas a días después de un episodio breve de isquemia, a pesar de que el flujo sanguíneo ya se ha restablecido por completo." },
+    { "termino": "Miocardio hibernante", "definicion": "Disfunción contráctil crónica asociada a un flujo en reposo reducido (o en el límite), que mejora tras la revascularización; representa una adaptación del miocardio a la isquemia crónica de repetición." },
+    { "termino": "Fenómeno de frente de onda", "definicion": "Patrón de progresión de la necrosis miocárdica tras una oclusión coronaria total, que avanza desde el subendocardio hacia el subepicardio a medida que pasa el tiempo sin reperfusión." }
+  ],
+
+  "fuentes": [
+    { "titulo": "Neumann FJ, et al. 2018 ESC/EACTS Guidelines on myocardial revascularization. Eur Heart J. 2019;40(2):87-165", "url": "https://doi.org/10.1093/eurheartj/ehy394" },
+    { "titulo": "Zimmermann FM, et al. Fractional flow reserve-guided treatment: 15-year follow-up of the DEFER trial. Eur Heart J. 2015;36(45):3182-3188", "url": "" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "¿A partir de qué tiempo de oclusión coronaria total comienza la lesión miocárdica irreversible, según el modelo de «frente de onda»?",
+      "opciones": ["5 minutos", "20 minutos", "2 horas", "6 horas"],
+      "respuesta": 1,
+      "explicacion": "La necrosis irreversible comienza en el subendocardio alrededor de los 20 minutos de oclusión total, y progresa hacia el subepicardio si no hay reperfusión."
+    },
+    {
+      "pregunta": "¿Qué valor de reserva de flujo fraccional (RFF) se considera el umbral habitual para indicar revascularización de una lesión coronaria intermedia?",
+      "opciones": ["≤ 0,50", "≤ 0,80", "≤ 1,0", "≥ 1,2"],
+      "respuesta": 1,
+      "explicacion": "Un RFF ≤ 0,80 identifica lesiones hemodinámicamente significativas; por encima de ese valor, el tratamiento médico aislado tiene resultados comparables (estudio DEFER)."
+    },
+    {
+      "pregunta": "¿Cuál es la principal diferencia entre aturdimiento miocárdico y miocardio hibernante?",
+      "opciones": [
+        "El aturdimiento es una disfunción contráctil reversible con flujo en reposo ya normalizado; la hibernación cursa con flujo en reposo reducido de forma crónica",
+        "El aturdimiento solo ocurre en el ventrículo derecho",
+        "La hibernación es siempre irreversible",
+        "No hay diferencia; son sinónimos"
+      ],
+      "respuesta": 0,
+      "explicacion": "En el aturdimiento el flujo ya se normalizó pero la función contráctil tarda en recuperarse; en la hibernación crónica el flujo en reposo permanece reducido mientras persiste la isquemia repetida."
+    }
+  ]
+}
