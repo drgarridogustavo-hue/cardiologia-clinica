@@ -81,6 +81,34 @@
       "opciones": ["Puntuación TIMI y GRACE", "Puntuación STS y EuroSCORE", "Escala de Killip y Forrester", "Escala CHA2DS2-VASc"],
       "respuesta": 1,
       "explicacion": "Las puntuaciones STS (Society of Thoracic Surgeons) y EuroSCORE son las calculadoras validadas de riesgo quirúrgico perioperatorio para el IDAC; TIMI/GRACE son para SCA, Killip/Forrester para shock, y CHA2DS2-VASc para riesgo de ACV en fibrilación auricular."
+    },
+    {
+      "pregunta": "¿Por qué los pacientes diabéticos tienen mayor riesgo de complicaciones tras la ICP?",
+      "opciones": [
+        "Por una carga de aterosclerosis coronaria mayor, respuesta biológica alterada a la lesión del balón/endoprótesis, progresión más rápida de la enfermedad y mayor reactividad plaquetaria",
+        "Porque la diabetes no tiene ninguna relación con la enfermedad coronaria",
+        "Porque los diabéticos nunca pueden recibir antiagregantes",
+        "Porque la ICP está completamente contraindicada en diabéticos"
+      ],
+      "respuesta": 0,
+      "explicacion": "La diabetes se asocia a mayor carga aterosclerótica, respuesta alterada a la lesión vascular del procedimiento, progresión más rápida de la enfermedad no revascularizada y mayor reactividad plaquetaria, lo que explica el mayor riesgo de complicaciones tras la ICP."
+    },
+    {
+      "pregunta": "En un análisis post hoc del estudio COURAGE, ¿qué se observó en mujeres mayores de 65 años en comparación con mujeres más jóvenes?",
+      "opciones": [
+        "Mayor mortalidad e infarto en las mujeres mayores",
+        "Menor mortalidad e incidencia de infarto en las mujeres mayores, sin diferencias claras por edad entre los grupos de tratamiento",
+        "Las mujeres mayores no pudieron ser incluidas en el estudio",
+        "Un aumento claro de complicaciones vasculares y hemorrágicas en las mujeres mayores sometidas a ICP"
+      ],
+      "respuesta": 1,
+      "explicacion": "Ese análisis post hoc mostró menor mortalidad e IM en las mujeres mayores de 65 años frente a las más jóvenes, sin un aumento claro de complicaciones vasculares, hemorrágicas o de función renal con la ICP."
+    },
+    {
+      "pregunta": "¿Cuál es la principal causa de muerte en pacientes con nefropatía terminal?",
+      "opciones": ["Infecciones respiratorias", "Enfermedad cardiovascular", "Accidentes domésticos", "Neoplasias digestivas"],
+      "respuesta": 1,
+      "explicacion": "La enfermedad cardiovascular es la principal causa de muerte en pacientes con nefropatía terminal, responsable de más del 50% de las muertes en esta población."
     }
   ]
 }

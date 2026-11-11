@@ -85,6 +85,29 @@
       ],
       "respuesta": 0,
       "explicacion": "En el aturdimiento el flujo ya se normalizó pero la función contráctil tarda en recuperarse; en la hibernación crónica el flujo en reposo permanece reducido mientras persiste la isquemia repetida."
+    },
+    {
+      "pregunta": "¿Qué valor de iFR (índice instantáneo sin ondas) se considera el umbral habitual para indicar revascularización?",
+      "opciones": ["≤ 0,50", "≤ 0,89", "≤ 1,2", "≥ 2,0"],
+      "respuesta": 1,
+      "explicacion": "Un iFR ≤ 0,89 identifica lesiones hemodinámicamente significativas, de forma análoga al umbral de FFR ≤ 0,80, pero sin requerir vasodilatador farmacológico."
+    },
+    {
+      "pregunta": "¿Qué condición puede reducir la reserva de flujo coronario incluso en ausencia de una estenosis epicárdica significativa en la angiografía?",
+      "opciones": ["La disfunción microvascular", "La hipertrofia del músculo bíceps", "La anemia leve aislada", "El uso de aspirina en dosis bajas"],
+      "respuesta": 0,
+      "explicacion": "La disfunción microvascular (frecuente en diabetes, hipertrofia ventricular, o en mujeres con dolor torácico y arterias «normales») puede reducir la reserva de flujo coronario sin que la angiografía convencional detecte una estenosis epicárdica."
+    },
+    {
+      "pregunta": "¿Cuáles son los principales determinantes del consumo miocárdico de oxígeno que regula la autorregulación coronaria?",
+      "opciones": [
+        "La frecuencia cardíaca, la tensión de la pared ventricular y la contractilidad",
+        "Únicamente la presión arterial sistémica",
+        "Solo la saturación de oxígeno arterial",
+        "El nivel de colesterol LDL en sangre"
+      ],
+      "respuesta": 0,
+      "explicacion": "El consumo miocárdico de oxígeno depende principalmente de la frecuencia cardíaca, la tensión de la pared (precarga/poscarga) y la contractilidad; el flujo coronario se ajusta de forma continua a estos determinantes."
     }
   ]
 }

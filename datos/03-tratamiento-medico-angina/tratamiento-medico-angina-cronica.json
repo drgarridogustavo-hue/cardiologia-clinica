@@ -63,10 +63,48 @@
   },
 
   "dosis": [
-    { "farmaco": "Nitroglicerina sublingual (comprimidos)", "dosis": "VERIFICAR", "fuente": "" },
-    { "farmaco": "Metoprolol / bisoprolol / atenolol (dosis de mantenimiento)", "dosis": "VERIFICAR", "fuente": "" },
-    { "farmaco": "Amlodipino", "dosis": "VERIFICAR", "fuente": "" },
-    { "farmaco": "Ranolazina", "dosis": "VERIFICAR", "fuente": "" }
+    {
+      "farmaco": "Betabloqueantes (como grupo)",
+      "indicacion": "Tratamiento de primera línea salvo contraindicación o intolerancia; infarto de miocardio previo o disfunción sistólica VI; antecedentes de taquiarritmia; hipertensión",
+      "dosis": "VERIFICAR (dosis específica según el fármaco; ver metoprolol/bisoprolol/atenolol)",
+      "contraindicaciones": "Bradicardia grave o bloqueo cardíaco avanzado sin marcapasos; enfermedad obstructiva grave de la vía aérea (asma, EPOC grave); depresión grave; angina vasoespástica; diabetes con episodios hipoglucémicos",
+      "efectosAdversos": "Bradicardia grave o bloqueo AV, broncoconstricción, fatiga o letargo, depresión, disfunción sexual, hipoglucemia enmascarada, vasoconstricción, fenómeno de Raynaud (con los no selectivos)",
+      "fuente": "Braunwald 12.ª ed., cap. 40, e-figura 40-14"
+    },
+    {
+      "farmaco": "Antagonistas del calcio dihidropiridínicos (amlodipino, nifedipino, nicardipino)",
+      "indicacion": "A menudo como tratamiento de primera línea junto con betabloqueantes; hipertensión; fenómeno de Raynaud",
+      "dosis": "VERIFICAR (dosis específica según el fármaco; p. ej., amlodipino)",
+      "contraindicaciones": "Hipotensión; estenosis aórtica o insuficiencia cardíaca grave (nifedipino); no debe emplearse nifedipino de acción corta",
+      "efectosAdversos": "Edema de piernas, hipotensión, estreñimiento, cefalea o mareo, rubefacción o palpitaciones",
+      "fuente": "Braunwald 12.ª ed., cap. 40, e-figura 40-14"
+    },
+    {
+      "farmaco": "Antagonistas del calcio no dihidropiridínicos (verapamilo, diltiazem)",
+      "indicacion": "Fibrilación auricular con frecuencia ventricular rápida; taquicardia supraventricular; claudicación",
+      "dosis": "VERIFICAR",
+      "contraindicaciones": "Bradicardia o bloqueo cardíaco avanzado sin marcapasos; precaución si se combinan con un betabloqueante; disfunción sistólica ventricular izquierda",
+      "efectosAdversos": "Bradicardia o bloqueo AV; hiperplasia gingival (con verapamilo)",
+      "fuente": "Braunwald 12.ª ed., cap. 40, e-figura 40-14"
+    },
+    {
+      "farmaco": "Nitratos (acción corta y prolongada)",
+      "indicacion": "Acción corta: alivio del episodio anginoso y profilaxis antes del esfuerzo. Acción prolongada: tratamiento de segunda línea, a menudo junto con betabloqueantes y/o antagonistas del calcio",
+      "dosis": "VERIFICAR",
+      "contraindicaciones": "Estenosis aórtica grave; miocardiopatía hipertrófica con obstrucción; uso concomitante de inhibidores de la fosfodiesterasa 5",
+      "efectosAdversos": "Cefalea, rubefacción, hipotensión, tolerancia a nitratos",
+      "fuente": "Braunwald 12.ª ed., cap. 40, e-figura 40-14"
+    },
+    {
+      "farmaco": "Ranolazina",
+      "indicacion": "Tratamiento de segunda línea en angina resistente; útil si la frecuencia cardíaca o la presión arterial limitan el ajuste de otros fármacos; diabetes tipo 2 (desciende la HbA1c)",
+      "dosis": "VERIFICAR",
+      "ajusteHepatico": "Contraindicada en insuficiencia hepática grave",
+      "ajusteRenal": "Contraindicada en insuficiencia renal grave",
+      "contraindicaciones": "Intervalo QT prolongado; uso concomitante de ciertos antiarrítmicos",
+      "efectosAdversos": "Náuseas o estreñimiento, mareo, prolongación del QT",
+      "fuente": "Braunwald 12.ª ed., cap. 40, e-figura 40-14"
+    }
   ],
 
   "glosario": [
@@ -109,6 +147,34 @@
       ],
       "respuesta": 1,
       "explicacion": "Un intervalo libre de nitrato de 10-12 horas (p. ej., sin parche durante la noche) es la estrategia habitual para prevenir o reducir la tolerancia."
+    },
+    {
+      "pregunta": "¿En cuál de los siguientes pacientes estaría contraindicado o debería evitarse un betabloqueante?",
+      "opciones": [
+        "Paciente con infarto previo y FEVI reducida",
+        "Paciente con asma grave no controlada",
+        "Paciente hipertenso sin otra comorbilidad",
+        "Paciente con taquicardia sinusal por ansiedad"
+      ],
+      "respuesta": 1,
+      "explicacion": "La enfermedad obstructiva grave de la vía aérea (asma grave, EPOC grave) es una contraindicación relativa importante para los betabloqueantes por el riesgo de broncoconstricción."
+    },
+    {
+      "pregunta": "¿Por qué la ranolazina está contraindicada en pacientes con intervalo QT prolongado?",
+      "opciones": [
+        "Porque no tiene ningún efecto sobre la repolarización cardíaca",
+        "Porque la ranolazina puede prolongar aún más el QT",
+        "Porque interactúa con el metabolismo hepático de forma impredecible únicamente en ese contexto",
+        "Porque siempre causa hipertensión grave"
+      ],
+      "respuesta": 1,
+      "explicacion": "La ranolazina puede prolongar el intervalo QT, por lo que está contraindicada en pacientes que ya lo tienen prolongado o que usan otros fármacos que lo prolongan."
+    },
+    {
+      "pregunta": "¿Qué antagonista del calcio dihidropiridínico de acción corta NO debe emplearse en la angina crónica?",
+      "opciones": ["Amlodipino de acción prolongada", "Nifedipino de acción corta", "Nicardipino de liberación prolongada", "Ninguno; todos son igual de seguros"],
+      "respuesta": 1,
+      "explicacion": "El nifedipino de acción corta se ha asociado a un aumento del riesgo cardiovascular por la caída brusca de la presión arterial y taquicardia refleja, por lo que no debe emplearse en la angina crónica."
     }
   ]
 }

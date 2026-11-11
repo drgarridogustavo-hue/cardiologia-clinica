@@ -86,6 +86,39 @@
       "opciones": ["Ácido acetilsalicílico en dosis altas", "AINE y glucocorticoides", "Colchicina", "Paracetamol"],
       "respuesta": 1,
       "explicacion": "Los AINE y los glucocorticoides interfieren con la cicatrización del infarto y se han asociado a mayor riesgo de rotura miocárdica si se usan en las primeras semanas."
+    },
+    {
+      "pregunta": "¿Qué hallazgo clínico permite diferenciar la comunicación interventricular (CIV) de la insuficiencia mitral aguda por rotura de músculo papilar, mediante cateterismo derecho?",
+      "opciones": [
+        "La CIV muestra un «salto escalonado» de saturación de O2 entre la aurícula y el ventrículo derechos, ausente en la insuficiencia mitral aguda",
+        "Ambas producen exactamente el mismo patrón hemodinámico",
+        "Solo se puede diferenciar con una radiografía de tórax",
+        "La insuficiencia mitral siempre produce un soplo más intenso que la CIV"
+      ],
+      "respuesta": 0,
+      "explicacion": "El salto de saturación de oxígeno entre aurícula y ventrículo derechos (oximetría) es característico de la CIV, por el cortocircuito izquierda-derecha, y está ausente en la insuficiencia mitral aguda."
+    },
+    {
+      "pregunta": "¿Por qué no se recomienda la profilaxis sistemática con antiarrítmicos (p. ej., lidocaína) en el IAMCEST para prevenir la fibrilación ventricular primaria?",
+      "opciones": [
+        "Porque reduce la mortalidad global sin ningún riesgo",
+        "Porque puede aumentar la mortalidad por bradicardia y asistolia, a pesar de reducir algo la incidencia de FV",
+        "Porque los antiarrítmicos no existen",
+        "Porque la FV primaria nunca ocurre en las primeras horas del infarto"
+      ],
+      "respuesta": 1,
+      "explicacion": "La profilaxis antiarrítmica sistemática (p. ej., lidocaína) puede, en la práctica, aumentar la mortalidad por bradicardia y asistolia, por lo que no se recomienda de rutina."
+    },
+    {
+      "pregunta": "¿Cuál es la causa más frecuente de insuficiencia mitral aguda grave tras un IAM inferior?",
+      "opciones": [
+        "Rotura o disfunción del músculo papilar posteromedial, de irrigación única",
+        "Estenosis aórtica calcificada",
+        "Miocardiopatía hipertrófica",
+        "Prolapso mitral congénito"
+      ],
+      "respuesta": 0,
+      "explicacion": "El músculo papilar posteromedial tiene irrigación única (más vulnerable a la isquemia) y es el más frecuentemente afectado en la insuficiencia mitral aguda tras un IAM inferior."
     }
   ]
 }

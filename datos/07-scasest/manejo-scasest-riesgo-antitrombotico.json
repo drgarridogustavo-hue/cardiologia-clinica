@@ -105,6 +105,28 @@
       "opciones": ["Clopidogrel", "Ticagrelor", "Prasugrel", "Ácido acetilsalicílico"],
       "respuesta": 2,
       "explicacion": "El prasugrel está contraindicado en pacientes con antecedente de ACV o AIT por el mayor riesgo de hemorragia observado en el ensayo TRITON-TIMI 38."
+    },
+    {
+      "pregunta": "¿Cuáles son los siete factores que componen la puntuación de riesgo TIMI para el SCASEST?",
+      "opciones": [
+        "Edad ≥ 65 años, ≥ 3 factores de riesgo de EAC, EAC conocida > 50%, uso de AAS en los 7 días previos, ≥ 2 episodios de angina en 24 h, desviación del ST ≥ 0,5 mm, marcadores cardíacos elevados",
+        "Solo la edad y el sexo del paciente",
+        "Únicamente el nivel de troponina",
+        "El tipo de seguro médico del paciente"
+      ],
+      "respuesta": 0,
+      "explicacion": "La puntuación TIMI para SCASEST combina estos 7 factores clínicos sencillos (1 punto cada uno) para estimar el riesgo de muerte, infarto o revascularización urgente a 14 días."
+    },
+    {
+      "pregunta": "¿Qué caracteriza a los betabloqueantes como tratamiento contra la isquemia en el SCASEST, a diferencia de los antagonistas del calcio dihidropiridínicos de acción corta?",
+      "opciones": [
+        "Los betabloqueantes reducen la mortalidad; los antagonistas del calcio dihidropiridínicos de acción corta sin betabloqueante asociado pueden aumentar el reinfarto",
+        "Ambos tienen exactamente el mismo efecto sobre la mortalidad",
+        "Los antagonistas del calcio siempre son superiores en el SCASEST",
+        "Los betabloqueantes están contraindicados en el SCASEST"
+      ],
+      "respuesta": 0,
+      "explicacion": "Los betabloqueantes orales reducen la mortalidad en el SCASEST, mientras que los antagonistas del calcio dihidropiridínicos de acción corta usados sin un betabloqueante pueden aumentar el riesgo de reinfarto."
     }
   ]
 }

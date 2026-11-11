@@ -96,6 +96,39 @@
       "opciones": ["Angiografía coronaria inmediata", "SCA poco probable; buscar diagnóstico alternativo", "Repetir troponina en 6 horas obligatoriamente", "Iniciar fibrinolisis"],
       "respuesta": 1,
       "explicacion": "Con hs-cTn muy baja y dolor de más de 3 horas de evolución, el valor predictivo negativo es muy alto y el algoritmo orienta a descartar SCA y buscar causas alternativas."
+    },
+    {
+      "pregunta": "¿Por qué ningún hallazgo aislado (anamnesis, ECG o troponina) basta por sí solo para confirmar o descartar un SCA?",
+      "opciones": [
+        "Porque deben interpretarse en conjunto: cada uno tiene valor predictivo limitado por separado",
+        "Porque la troponina de alta sensibilidad nunca aporta información útil",
+        "Porque el ECG siempre es diagnóstico en el SCA",
+        "Porque la anamnesis no debe realizarse en el SCA"
+      ],
+      "respuesta": 0,
+      "explicacion": "La evaluación combina anamnesis/examen físico, ECG y biomarcadores porque ninguno por separado tiene suficiente valor predictivo para confirmar o excluir un SCA con seguridad."
+    },
+    {
+      "pregunta": "¿Qué papel tienen las escalas de riesgo como HEART o TIMI en la evaluación del dolor torácico agudo?",
+      "opciones": [
+        "Reemplazan por completo al juicio clínico y a los biomarcadores",
+        "Apoyan la decisión de alta, observación o ingreso, combinadas con el juicio clínico y los biomarcadores",
+        "Solo se usan en pacientes ya diagnosticados de IAMCEST",
+        "No tienen ninguna utilidad demostrada"
+      ],
+      "respuesta": 1,
+      "explicacion": "Las escalas de riesgo validadas (HEART, TIMI) apoyan la decisión de disposición del paciente, pero no sustituyen al juicio clínico ni a los biomarcadores."
+    },
+    {
+      "pregunta": "Ante un ECG diagnóstico de IAMCEST (elevación del ST / bloqueo de rama izquierda nuevo), ¿cuál es la conducta inmediata?",
+      "opciones": [
+        "Esperar el resultado de la troponina antes de decidir",
+        "Derivar de inmediato a la vía de reperfusión, sin esperar la troponina",
+        "Repetir el ECG en 6 horas",
+        "Dar de alta con seguimiento ambulatorio"
+      ],
+      "respuesta": 1,
+      "explicacion": "Un ECG diagnóstico de IAMCEST obliga a activar la vía de reperfusión inmediata (ver bloque 6); no se espera el resultado de la troponina para iniciar ese proceso."
     }
   ]
 }

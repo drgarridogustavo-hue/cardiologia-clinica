@@ -113,6 +113,28 @@
       ],
       "respuesta": 1,
       "explicacion": "La puntuación SYNTAX cuantifica la complejidad anatómica y ayuda al equipo cardíaco a decidir entre ICP e IDAC, en especial en la enfermedad del tronco principal izquierdo."
+    },
+    {
+      "pregunta": "En la cardiopatía isquémica estable, ¿qué mostraron de forma consistente los ensayos COURAGE e ISCHEMIA respecto a la revascularización frente al tratamiento médico óptimo?",
+      "opciones": [
+        "La revascularización reduce claramente la muerte y el infarto en la mayoría de los pacientes",
+        "La revascularización no reduce la muerte ni el infarto frente al tratamiento médico óptimo en la mayoría de los pacientes, pero mejora más los síntomas anginosos",
+        "El tratamiento médico está contraindicado en la cardiopatía isquémica estable",
+        "Ambos ensayos se interrumpieron por exceso de mortalidad en el grupo de ICP"
+      ],
+      "respuesta": 1,
+      "explicacion": "COURAGE e ISCHEMIA mostraron que la revascularización no mejora la supervivencia ni reduce el infarto frente al tratamiento médico óptimo en la mayoría de los pacientes con cardiopatía isquémica estable, aunque sí alivia más los síntomas anginosos."
+    },
+    {
+      "pregunta": "¿Qué papel tiene el «equipo cardíaco» (Heart Team) en la decisión de revascularización?",
+      "opciones": [
+        "Evalúa de forma conjunta (cardiólogo clínico, intervencionista y cirujano cardíaco) la estrategia más adecuada en casos anatómicamente complejos",
+        "Solo decide qué antibiótico usar en la endocarditis",
+        "Reemplaza la necesidad de consentimiento informado",
+        "Se reúne únicamente después de la cirugía"
+      ],
+      "respuesta": 0,
+      "explicacion": "El equipo cardíaco multidisciplinario evalúa conjuntamente la anatomía, el riesgo y las preferencias del paciente para elegir entre ICP e IDAC en casos complejos."
     }
   ]
 }

@@ -79,6 +79,39 @@
       "opciones": ["El receptor clásico de LDL", "Los receptores limpiadores (scavenger)", "El receptor de troponina", "El receptor de angiotensina II"],
       "respuesta": 1,
       "explicacion": "El receptor clásico de LDL está regulado a la baja por el colesterol intracelular; los receptores limpiadores no tienen ese freno, por lo que permiten la acumulación descontrolada de lípidos."
+    },
+    {
+      "pregunta": "¿Qué papel cumplen las trampas extracelulares de neutrófilos (NET) en la aterotrombosis?",
+      "opciones": [
+        "Contribuyen a la trombosis en la erosión superficial de la placa",
+        "Forman la cubierta fibrosa de la placa",
+        "Reducen la inflamación local",
+        "No participan en ningún mecanismo de trombosis"
+      ],
+      "respuesta": 0,
+      "explicacion": "Las NET son redes de ADN y proteínas liberadas por neutrófilos que se han implicado específicamente en la trombosis por erosión superficial del endotelio, a diferencia del mecanismo de rotura de placa."
+    },
+    {
+      "pregunta": "¿Qué distingue histológicamente a una placa que se complica por rotura de una que se complica por erosión superficial?",
+      "opciones": [
+        "La rotura ocurre en placas con cubierta fibrosa fina, núcleo necrótico lipídico e infiltrado de macrófagos; la erosión ocurre con cubierta fibrosa gruesa y pérdida focal del endotelio",
+        "Ambas tienen exactamente la misma histología",
+        "La erosión siempre afecta a placas con calcificación completa",
+        "La rotura nunca se asocia a trombosis"
+      ],
+      "respuesta": 0,
+      "explicacion": "La rotura clásica ocurre en placas vulnerables (cubierta fina, núcleo lipídico grande, macrófagos); la erosión ocurre sobre placas con cubierta fibrosa gruesa, sin rotura franca, con pérdida focal del endotelio."
+    },
+    {
+      "pregunta": "¿Qué papel tienen la inmunidad innata y adaptativa en la evolución del ateroma?",
+      "opciones": [
+        "Ninguno; la aterosclerosis es un proceso puramente mecánico",
+        "Participan activamente: el perfil Th1 proinflamatorio favorece la progresión, mientras que las células T reguladoras tienen un efecto antiinflamatorio",
+        "Solo intervienen anticuerpos específicos contra el colesterol",
+        "Solo intervienen células musculares lisas, sin ningún componente inmunitario"
+      ],
+      "respuesta": 1,
+      "explicacion": "La aterosclerosis combina inflamación de la inmunidad innata (monocitos/macrófagos) y adaptativa (linfocitos T y B), con subtipos celulares que pueden favorecer o frenar la progresión de la placa."
     }
   ]
 }

@@ -84,6 +84,24 @@
       "opciones": ["II, III, aVF", "I y aVL", "V1 a V6", "V7-V9 únicamente"],
       "respuesta": 2,
       "explicacion": "La elevación del ST en V1-V6 (anterior extenso) orienta a una oclusión proximal de la arteria descendente anterior."
+    },
+    {
+      "pregunta": "Un paciente con taquiarritmia sostenida y troponina elevada, sin trombosis coronaria aguda demostrada, ¿qué tipo de infarto de miocardio tiene según la cuarta definición universal?",
+      "opciones": ["Tipo 1", "Tipo 2", "Tipo 3", "Tipo 5"],
+      "respuesta": 1,
+      "explicacion": "El IM tipo 2 se debe a un desequilibrio entre el aporte y la demanda de oxígeno (p. ej., taquiarritmia, anemia grave, hipotensión) sin trombosis coronaria aguda demostrada."
+    },
+    {
+      "pregunta": "¿Cuál es el umbral de elevación del ST en V2-V3 para el diagnóstico de IAMCEST en un hombre de 45 años?",
+      "opciones": ["≥ 1 mm", "≥ 1,5 mm", "≥ 2 mm", "≥ 5 mm"],
+      "respuesta": 2,
+      "explicacion": "En V2-V3, el umbral es ≥ 2 mm en hombres ≥ 40 años (≥ 2,5 mm en hombres < 40 años, y ≥ 1,5 mm en mujeres)."
+    },
+    {
+      "pregunta": "¿Qué causa de MINOCA es más frecuente en mujeres jóvenes y no está relacionada con la aterosclerosis?",
+      "opciones": ["Disección arterial coronaria espontánea (DACE)", "Rotura de placa aterosclerótica clásica", "Hipercolesterolemia familiar homocigota", "Estenosis aórtica calcificada"],
+      "respuesta": 0,
+      "explicacion": "La disección arterial coronaria espontánea es una causa de SCA no aterosclerótica, más frecuente en mujeres jóvenes, y una de las causas a buscar en el diagnóstico diferencial del MINOCA."
     }
   ]
 }

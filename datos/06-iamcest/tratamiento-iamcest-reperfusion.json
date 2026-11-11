@@ -136,6 +136,29 @@
       ],
       "respuesta": 1,
       "explicacion": "El oxígeno complementario se reserva para pacientes con saturación < 90%; en pacientes normóxicos no ha demostrado beneficio y se ha vinculado a mayor tamaño del infarto en algún estudio."
+    },
+    {
+      "pregunta": "¿Cuál es el objetivo de tiempo «primer contacto médico-dispositivo» cuando el paciente es atendido inicialmente en un hospital con capacidad de ICP?",
+      "opciones": ["≤ 30 minutos", "≤ 90 minutos", "≤ 6 horas", "≤ 24 horas"],
+      "respuesta": 1,
+      "explicacion": "El objetivo de tiempo primer contacto médico-dispositivo cuando el centro tiene capacidad de ICP es de 90 minutos o menos."
+    },
+    {
+      "pregunta": "¿Qué cambio de recomendación introdujo el estudio COMPLETE respecto a la revascularización de lesiones no culpables en el IAMCEST estable con enfermedad multivaso (sin shock)?",
+      "opciones": [
+        "La revascularización completa por etapas pasó de estar contraindicada a ser razonable",
+        "Se prohibió definitivamente revascularizar cualquier lesión no culpable",
+        "Solo se recomienda revascularizar la aorta",
+        "No tuvo ningún impacto en la práctica clínica"
+      ],
+      "respuesta": 0,
+      "explicacion": "El estudio COMPLETE respaldó la revascularización completa por etapas de las lesiones no culpables en pacientes con IAMCEST hemodinámicamente estables y enfermedad multivaso, a diferencia del shock cardiogénico, donde se prefiere tratar solo la lesión culpable."
+    },
+    {
+      "pregunta": "¿Qué grado de flujo TIMI se asocia a la menor mortalidad tras la reperfusión de la arteria relacionada con el infarto?",
+      "opciones": ["TIMI 0", "TIMI 1", "TIMI 2", "TIMI 3"],
+      "respuesta": 3,
+      "explicacion": "El flujo TIMI grado 3 (flujo epicárdico normal) se asocia a la menor mortalidad; los grados 0-2 reflejan reperfusión ausente o incompleta."
     }
   ]
 }

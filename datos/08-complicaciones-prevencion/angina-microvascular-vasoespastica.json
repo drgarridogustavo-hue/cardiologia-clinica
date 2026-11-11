@@ -89,6 +89,39 @@
       ],
       "respuesta": 1,
       "explicacion": "El diagnóstico de angina microvascular requiere precisamente la AUSENCIA de EAC obstructiva significativa (estenosis < 50% o FFR > 0,80); una estenosis ≥ 70% orientaría a EAC epicárdica obstructiva clásica."
+    },
+    {
+      "pregunta": "¿En qué consiste la isquemia miocárdica silente?",
+      "opciones": [
+        "Episodios de isquemia demostrados objetivamente sin dolor torácico acompañante",
+        "Un tipo de arritmia ventricular",
+        "Isquemia que ocurre exclusivamente durante el sueño",
+        "Un sinónimo de infarto transmural"
+      ],
+      "respuesta": 0,
+      "explicacion": "La isquemia silente es la presencia de isquemia miocárdica objetivamente demostrada (ECG, imagen) sin angina ni otro síntoma acompañante; puede representar hasta un tercio de los episodios isquémicos en pacientes con cardiopatía isquémica estable."
+    },
+    {
+      "pregunta": "¿Qué prueba invasiva identifica específicamente el vasoespasmo coronario (epicárdico o microvascular)?",
+      "opciones": [
+        "Radiografía de tórax simple",
+        "Prueba de provocación con acetilcolina o ergonovina en dosis altas, con ECG de 12 derivaciones",
+        "Hemograma completo",
+        "Prueba de esfuerzo en cinta sin monitorización"
+      ],
+      "respuesta": 1,
+      "explicacion": "La prueba de provocación con acetilcolina o ergonovina en dosis altas, junto con registro electrocardiográfico, es la que identifica el vasoespasmo coronario, diferenciando la angina vasoespástica."
+    },
+    {
+      "pregunta": "¿Por qué la angina microvascular y la angina vasoespástica fueron durante mucho tiempo infradiagnosticadas o consideradas benignas?",
+      "opciones": [
+        "Porque la angiografía coronaria convencional no muestra una obstrucción epicárdica significativa, lo que llevaba a descartar una causa cardíaca",
+        "Porque no producen ningún síntoma",
+        "Porque solo afectan a hombres jóvenes",
+        "Porque siempre se acompañan de un IAMCEST franco"
+      ],
+      "respuesta": 0,
+      "explicacion": "Al no mostrar obstrucción epicárdica significativa en la angiografía, estos pacientes eran frecuentemente etiquetados como «sin EAC» y su riesgo cardiovascular subestimado, pese a que hoy se sabe que es mayor que el que sugeriría una angiografía normal."
     }
   ]
 }

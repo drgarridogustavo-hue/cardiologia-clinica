@@ -131,6 +131,28 @@
       ],
       "respuesta": 2,
       "explicacion": "En pacientes hemodinámicamente estables con hemoglobina > 7 g/dl se recomienda evitar la transfusión sistemática de sangre, por sus posibles efectos deletéreos."
+    },
+    {
+      "pregunta": "¿Por qué ya no se recomienda el uso sistemático (pretratamiento) de los inhibidores de la glucoproteína IIb/IIIa en el SCASEST?",
+      "opciones": [
+        "Porque nunca tuvieron ningún efecto antiagregante",
+        "Porque el beneficio isquémico observado es pequeño y se acompaña de más hemorragias graves cuando se usan de forma sistemática",
+        "Porque están contraindicados en absolutamente todos los pacientes",
+        "Porque solo pueden administrarse por vía oral"
+      ],
+      "respuesta": 1,
+      "explicacion": "El metaanálisis de los ensayos con inhibidores de la GP IIb/IIIa mostró un beneficio isquémico pequeño a costa de más hemorragias graves; hoy se reservan de forma selectiva para pacientes de alto riesgo durante la ICP."
+    },
+    {
+      "pregunta": "¿Qué anticoagulantes orales directos tienen dosis específicamente estudiadas para su uso combinado con antiagregantes tras un SCA con fibrilación auricular?",
+      "opciones": [
+        "Solo la warfarina",
+        "Apixabán, dabigatrán y rivaroxabán, en dosis específicas",
+        "Ningún anticoagulante oral directo se ha estudiado en este contexto",
+        "Solo la heparina no fraccionada"
+      ],
+      "respuesta": 1,
+      "explicacion": "Apixabán (5 mg o 2,5 mg cada 12 h según riesgo hemorrágico), dabigatrán (110 o 150 mg cada 12 h) y rivaroxabán (15 o 20 mg al día) tienen dosis específicamente estudiadas en combinación con antiagregantes tras un SCA con FA."
     }
   ]
 }

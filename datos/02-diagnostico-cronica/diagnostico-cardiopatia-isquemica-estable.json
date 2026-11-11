@@ -101,6 +101,34 @@
       ],
       "respuesta": 1,
       "explicacion": "La gravedad anatómica no siempre se corresponde con la gravedad funcional; la FFR y el iFR complementan la angiografía para decidir si una lesión intermedia justifica revascularización."
+    },
+    {
+      "pregunta": "Una mujer de 40 años con dolor torácico no anginoso tiene, en general, ¿qué tipo de probabilidad pretest de EAC?",
+      "opciones": ["Muy alta (> 85%)", "Muy baja (< 10%)", "Siempre del 50%", "No se puede estimar en mujeres"],
+      "respuesta": 1,
+      "explicacion": "La combinación de sexo femenino, edad joven y dolor no anginoso da, en general, una probabilidad pretest muy baja de EAC obstructiva."
+    },
+    {
+      "pregunta": "¿Qué ventaja tiene la imagen de perfusión miocárdica (SPECT/PET) frente a la angiografía coronaria por tomografía computarizada (ACTC)?",
+      "opciones": [
+        "Permite además estratificar el riesgo según la extensión de la isquemia inducible",
+        "Es siempre más barata",
+        "No requiere ningún tipo de estrés farmacológico o físico",
+        "Sustituye por completo a la angiografía invasiva en todos los casos"
+      ],
+      "respuesta": 0,
+      "explicacion": "A diferencia de la ACTC (prueba anatómica), la imagen de perfusión miocárdica es una prueba funcional que permite estratificar el riesgo según la magnitud del defecto de perfusión inducible."
+    },
+    {
+      "pregunta": "¿Qué papel cumple la clasificación funcional de la Canadian Cardiovascular Society (CCS) en la angina estable?",
+      "opciones": [
+        "Clasifica la gravedad de la angina según el umbral de esfuerzo que la desencadena (clases I a IV)",
+        "Determina el tipo de stent a implantar",
+        "Reemplaza a la troponina en el diagnóstico de SCA",
+        "Solo se aplica en insuficiencia cardíaca"
+      ],
+      "respuesta": 0,
+      "explicacion": "La clasificación CCS (clases I-IV) describe el grado de limitación funcional por angina según el nivel de esfuerzo que la provoca, independientemente de la causa."
     }
   ]
 }
