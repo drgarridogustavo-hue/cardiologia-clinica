@@ -1,0 +1,101 @@
+{
+  "id": "abordaje-dolor-toracico-sca",
+  "titulo": "Abordaje diagnóstico del paciente con dolor torácico agudo y sospecha de SCA",
+  "bloque": "sca-diagnostico",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Capítulo 35, «Abordaje del paciente con dolor torácico» (Bonaca MP, Sabatine MS), p. 599-608"
+  },
+
+  "guias": [
+    { "organizacion": "ESC", "nombre": "2023 ESC Guidelines for the management of acute coronary syndromes", "anio": 2023, "url": "https://doi.org/10.1093/eurheartj/ehad191" },
+    { "organizacion": "ACC/AHA", "nombre": "2021 AHA/ACC/ASE/CHEST/SAEM/SCCT/SCMR Guideline for the Evaluation and Diagnosis of Chest Pain", "anio": 2021, "url": "https://doi.org/10.1161/CIR.0000000000001029" },
+    { "organizacion": "ACC/AHA", "nombre": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes", "anio": 2025, "url": "https://doi.org/10.1161/CIR.0000000000001309" }
+  ],
+
+  "resumen": "El dolor torácico agudo es uno de los motivos de consulta más frecuentes en urgencias, pero solo una minoría de los casos corresponde a un síndrome coronario agudo (SCA). El objetivo inicial no es llegar a un diagnóstico definitivo, sino clasificar rápidamente el riesgo del paciente: descartar causas inmediatamente mortales (SCA, disección aórtica, tromboembolismo pulmonar, neumotórax a tensión, taponamiento) y decidir si necesita ingreso, observación o puede ser dado de alta con seguimiento ambulatorio.",
+
+  "diagnostico": "La evaluación combina tres elementos que se interpretan en conjunto, no de forma aislada: la anamnesis y el examen físico (características del dolor, factores de riesgo, signos de inestabilidad hemodinámica), el ECG de 12 derivaciones (debe obtenerse y leerse dentro de los primeros 10 minutos del contacto médico) y la medición seriada de troponina cardíaca de alta sensibilidad (hs-cTn), que es el biomarcador preferido de lesión miocárdica. Ningún elemento aislado — ni siquiera un ECG o una anamnesis «típica» — tiene suficiente valor predictivo por sí solo para confirmar o descartar un SCA. Cuando el ECG no es diagnóstico de IAMCEST, el paso siguiente es un algoritmo rápido de troponina de alta sensibilidad (habitualmente 0 h/1 h, o 0 h/2 h cuando no se dispone del primero) que permite excluir o confirmar infarto sin elevación del ST en la mayoría de los pacientes en pocas horas. Las escalas de riesgo validadas (p. ej., HEART, TIMI) pueden usarse como apoyo a la decisión de alta, observación o ingreso, combinadas con el juicio clínico — no reemplazan la evaluación clínica ni los biomarcadores.",
+
+  "tratamiento": "No aplica como tratamiento específico: esta es una vía diagnóstica de triage. Según el resultado, el paciente se deriva a la vía de IAMCEST, a la vía de SCASEST/angina inestable, a observación con pruebas no invasivas diferidas, o a alta con diagnóstico alternativo (no cardíaco) y seguimiento ambulatorio.",
+
+  "recomendaciones": [
+    {
+      "texto": "Usar la troponina cardíaca de alta sensibilidad (hs-cTn) como biomarcador preferido para el diagnóstico de lesión/infarto de miocardio, por sobre CK-MB u otros marcadores.",
+      "clase": "I",
+      "nivelEvidencia": "VERIFICAR",
+      "guia": "ACC/AHA 2021 (Guía de dolor torácico)"
+    },
+    {
+      "texto": "Aplicar un algoritmo rápido de exclusión/inclusión con hs-cTn (0 h/1 h, o 0 h/2 h como alternativa) en pacientes con sospecha de SCA sin elevación del ST y ECG no diagnóstico.",
+      "clase": "I",
+      "nivelEvidencia": "A",
+      "guia": "ESC 2023 (Guía de síndromes coronarios agudos)"
+    },
+    {
+      "texto": "Obtener e interpretar un ECG de 12 derivaciones dentro de los primeros 10 minutos desde el primer contacto médico en todo paciente con dolor torácico agudo sugestivo de SCA.",
+      "clase": "I",
+      "nivelEvidencia": "VERIFICAR",
+      "guia": "ESC 2023 / ACC-AHA 2025"
+    }
+  ],
+
+  "algoritmo": {
+    "titulo": "Triage inicial del dolor torácico agudo con sospecha de SCA",
+    "nodos": [
+      { "id": "n1", "texto": "Evaluar estabilidad clínica y obtener ECG de 12 derivaciones en ≤10 min" },
+      { "id": "n2", "texto": "ECG diagnóstico de IAMCEST (elevación del ST / BRI nuevo) → vía de reperfusión inmediata" },
+      { "id": "n3", "texto": "ECG no diagnóstico: medir hs-cTn (hora 0)" },
+      { "id": "n4", "texto": "hs-cTn muy baja + dolor de inicio > 3 h: SCA poco probable" },
+      { "id": "n5", "texto": "Repetir hs-cTn a la 1 h (o 2 h)" },
+      { "id": "n6", "texto": "Cambio significativo o valor alto: SCASEST probable" },
+      { "id": "n7", "texto": "Sin cambio relevante, valores bajos: observación clínica / pruebas no invasivas diferidas" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "ECG diagnóstico" },
+      { "desde": "n1", "hasta": "n3", "etiqueta": "ECG no diagnóstico" },
+      { "desde": "n3", "hasta": "n4", "etiqueta": "hs-cTn muy baja" },
+      { "desde": "n3", "hasta": "n5", "etiqueta": "hs-cTn intermedia o dolor < 3 h" },
+      { "desde": "n5", "hasta": "n6", "etiqueta": "Δ relevante" },
+      { "desde": "n5", "hasta": "n7", "etiqueta": "sin Δ relevante" }
+    ]
+  },
+
+  "glosario": [
+    { "termino": "hs-cTn", "definicion": "Troponina cardíaca de alta sensibilidad; biomarcador preferido para detectar lesión miocárdica, con alto valor predictivo negativo cuando el valor es muy bajo." },
+    { "termino": "SCA", "definicion": "Síndrome coronario agudo: espectro clínico que incluye IAMCEST, IAMSEST y angina inestable." },
+    { "termino": "Escala HEART", "definicion": "Escala de riesgo (historia, ECG, edad, factores de riesgo, troponina) usada como apoyo para decidir alta, observación o ingreso en pacientes con dolor torácico agudo." },
+    { "termino": "Puerta-ECG", "definicion": "Tiempo entre la llegada del paciente y la obtención del primer ECG de 12 derivaciones; se recomienda que sea ≤10 minutos." }
+  ],
+
+  "fuentes": [
+    { "titulo": "2023 ESC Guidelines for the management of acute coronary syndromes (Byrne RA, et al. Eur Heart J. 2023;44(38):3720-3826)", "url": "https://doi.org/10.1093/eurheartj/ehad191" },
+    { "titulo": "2021 AHA/ACC/ASE/CHEST/SAEM/SCCT/SCMR Guideline for the Evaluation and Diagnosis of Chest Pain (Circulation. 2021;144:e368-e454)", "url": "https://doi.org/10.1161/CIR.0000000000001029" },
+    { "titulo": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes (Circulation. 2025;151(13):e771-e862)", "url": "https://doi.org/10.1161/CIR.0000000000001309" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "¿Cuál es el biomarcador preferido para el diagnóstico de lesión miocárdica en un paciente con dolor torácico agudo?",
+      "opciones": ["CK-MB", "Troponina cardíaca de alta sensibilidad (hs-cTn)", "Mioglobina", "Dímero D"],
+      "respuesta": 1,
+      "explicacion": "La hs-cTn es el biomarcador preferido por su mayor sensibilidad y especificidad para lesión miocárdica frente a CK-MB o mioglobina."
+    },
+    {
+      "pregunta": "¿En qué plazo debe obtenerse e interpretarse el ECG de 12 derivaciones desde el primer contacto médico ante sospecha de SCA?",
+      "opciones": ["30 minutos", "10 minutos", "1 hora", "No es urgente si el paciente está estable"],
+      "respuesta": 1,
+      "explicacion": "El objetivo es un tiempo «puerta-ECG» de 10 minutos o menos, independientemente de la estabilidad clínica aparente."
+    },
+    {
+      "pregunta": "Un paciente con ECG no diagnóstico y hs-cTn muy baja en la hora 0, con dolor torácico que comenzó hace 4 horas, ¿qué conducta sugiere el algoritmo de exclusión rápida?",
+      "opciones": ["Angiografía coronaria inmediata", "SCA poco probable; buscar diagnóstico alternativo", "Repetir troponina en 6 horas obligatoriamente", "Iniciar fibrinolisis"],
+      "respuesta": 1,
+      "explicacion": "Con hs-cTn muy baja y dolor de más de 3 horas de evolución, el valor predictivo negativo es muy alto y el algoritmo orienta a descartar SCA y buscar causas alternativas."
+    }
+  ]
+}

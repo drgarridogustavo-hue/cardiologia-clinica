@@ -33,7 +33,9 @@
       "numero": 5,
       "titulo": "Síndrome coronario agudo: diagnóstico",
       "carpeta": "05-sca-diagnostico",
-      "temas": []
+      "temas": [
+        "abordaje-dolor-toracico.json"
+      ]
     },
     {
       "id": "iamcest",
