@@ -61,7 +61,9 @@
       "numero": 7,
       "titulo": "SCA sin elevación del ST (IAMSEST / angina inestable)",
       "carpeta": "07-scasest",
-      "temas": []
+      "temas": [
+        "manejo-scasest-riesgo-antitrombotico.json"
+      ]
     },
     {
       "id": "complicaciones-prevencion",

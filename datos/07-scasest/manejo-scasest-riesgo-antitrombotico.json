@@ -1,0 +1,110 @@
+{
+  "id": "manejo-scasest-riesgo-antitrombotico",
+  "titulo": "Síndrome coronario agudo sin elevación del ST (SCASEST): estratificación del riesgo y tratamiento",
+  "bloque": "scasest",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Capítulo 39, «Síndromes coronarios agudos sin elevación del ST» (Robert P. Giugliano, Eugene Braunwald), p. 714-735"
+  },
+
+  "guias": [
+    { "organizacion": "ESC", "nombre": "2023 ESC Guidelines for the management of acute coronary syndromes", "anio": 2023, "url": "https://doi.org/10.1093/eurheartj/ehad191" },
+    { "organizacion": "ACC/AHA", "nombre": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes", "anio": 2025, "url": "https://doi.org/10.1161/CIR.0000000000001309" }
+  ],
+
+  "resumen": "El SCASEST agrupa el infarto de miocardio sin elevación del ST (IAMSEST) y la angina inestable, que se distinguen por la presencia o ausencia de un biomarcador de necrosis miocárdica elevado. A diferencia del IAMCEST, el momento de la angiografía no depende de un plazo fijo sino de la estratificación del riesgo del paciente; el tratamiento combina doble antiagregación, anticoagulación parenteral y tratamiento contra la isquemia, ajustados según ese riesgo y el riesgo hemorrágico.",
+
+  "diagnostico": "La estratificación del riesgo usa escalas validadas: la puntuación TIMI (7 factores: edad ≥ 65 años, ≥ 3 factores de riesgo de EAC, EAC conocida con estenosis > 50%, uso de AAS en los 7 días previos, ≥ 2 episodios de angina en 24 h, desviación del ST ≥ 0,5 mm, marcadores cardíacos elevados; 1 punto cada uno) es sencilla de calcular a pie de cama, mientras que la puntuación GRACE, más compleja, tiene mejor capacidad discriminativa. Según el riesgo, la estrategia terapéutica se organiza en tres categorías: riesgo muy alto (inestabilidad hemodinámica o shock cardiogénico, dolor torácico recurrente o resistente al tratamiento médico, arritmias con riesgo vital, complicaciones mecánicas del infarto, insuficiencia cardíaca claramente relacionada con el SCASEST, depresión del ST > 1 mm en ≥ 6 derivaciones con elevación recíproca en aVR y/o V1) → estrategia intervencionista inmediata (< 2 horas); riesgo alto (diagnóstico establecido de IAMSEST, cambios dinámicos nuevos del segmento ST/onda T, parada cardíaca reanimada sin elevación del ST ni shock, puntuación GRACE > 140) → estrategia intervencionista temprana (< 24 horas); riesgo bajo (ninguna de las características anteriores) → estrategia intervencionista selectiva, guiada por isquemia.",
+
+  "tratamiento": "Tratamiento contra la isquemia: los betabloqueantes orales reducen la mortalidad y deben iniciarse de forma temprana en pacientes hemodinámicamente estables; los nitratos y los antagonistas del calcio alivian los síntomas isquémicos pero no han demostrado reducir la mortalidad (los antagonistas del calcio dihidropiridínicos de acción corta, además, pueden aumentar el reinfarto si se usan sin un betabloqueante). Tratamiento antiagregante: doble antiagregación con ácido acetilsalicílico más un inhibidor del receptor P2Y12 (clopidogrel, prasugrel o ticagrelor) en todos los pacientes sin contraindicación; se prefiere ticagrelor o prasugrel sobre clopidogrel por su mayor y más rápida inhibición plaquetaria, salvo alto riesgo hemorrágico, necesidad de anticoagulación oral concomitante, o contraindicaciones específicas (el prasugrel está contraindicado si hay antecedente de ACV/AIT). La duración habitual de la doble antiagregación es de 6 a 12 meses, acortándose en pacientes con alto riesgo hemorrágico y pudiendo prolongarse en pacientes con alto riesgo isquémico residual. Tratamiento anticoagulante: se añade un anticoagulante parenteral (heparina no fraccionada, enoxaparina, fondaparinux o bivalirudina) a la doble antiagregación desde el diagnóstico. En pacientes con indicación de anticoagulación oral crónica (p. ej., fibrilación auricular), el tratamiento combinado se acorta y se prefiere un anticoagulante oral directo sobre un antagonista de la vitamina K, con una duración de triple o doble terapia ajustada al riesgo hemorrágico e isquémico individual.",
+
+  "recomendaciones": [
+    {
+      "texto": "Estratificar el riesgo con una escala validada (TIMI o GRACE) y elegir el momento de la angiografía coronaria en consecuencia: estrategia intervencionista inmediata (< 2 h) en riesgo muy alto, temprana (< 24 h) en riesgo alto, selectiva/guiada por isquemia en riesgo bajo.",
+      "clase": "I",
+      "nivelEvidencia": "VERIFICAR",
+      "guia": "ESC 2023 (síndromes coronarios agudos)"
+    },
+    {
+      "texto": "Iniciar doble tratamiento antiagregante (AAS + inhibidor P2Y12) en todos los pacientes con SCASEST sin contraindicación, prefiriendo ticagrelor o prasugrel sobre clopidogrel cuando no hay contraindicación específica.",
+      "clase": "I",
+      "nivelEvidencia": "VERIFICAR",
+      "guia": "ESC 2023 (síndromes coronarios agudos)"
+    },
+    {
+      "texto": "Añadir tratamiento anticoagulante parenteral (heparina no fraccionada, enoxaparina, fondaparinux o bivalirudina) a la doble antiagregación en todos los pacientes con SCASEST.",
+      "clase": "I",
+      "nivelEvidencia": "VERIFICAR",
+      "guia": "ESC 2023 (síndromes coronarios agudos)"
+    }
+  ],
+
+  "algoritmo": {
+    "titulo": "Selección de la estrategia terapéutica según la estratificación del riesgo en el SCASEST",
+    "nodos": [
+      { "id": "n1", "texto": "Primer contacto médico → diagnóstico de SCASEST" },
+      { "id": "n2", "texto": "Riesgo muy alto (inestabilidad hemodinámica/shock, dolor refractario, arritmias con riesgo vital, complicaciones mecánicas, IC relacionada, depresión ST > 1 mm en ≥ 6 derivaciones)" },
+      { "id": "n3", "texto": "Riesgo alto (IAMSEST establecido, cambios dinámicos de ST/T, parada cardíaca reanimada sin shock, GRACE > 140)" },
+      { "id": "n4", "texto": "Riesgo bajo (ninguna característica de riesgo alto o muy alto)" },
+      { "id": "n5", "texto": "Estrategia intervencionista inmediata (< 2 h)" },
+      { "id": "n6", "texto": "Estrategia intervencionista temprana (< 24 h)" },
+      { "id": "n7", "texto": "Estrategia intervencionista selectiva, guiada por isquemia" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n3", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n4", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n5", "etiqueta": "" },
+      { "desde": "n3", "hasta": "n6", "etiqueta": "" },
+      { "desde": "n4", "hasta": "n7", "etiqueta": "" }
+    ]
+  },
+
+  "dosis": [
+    { "farmaco": "Clopidogrel", "dosis": "Dosis de carga 600 mg (300 mg en algunos contextos), mantenimiento 75 mg/día", "fuente": "Braunwald 12.ª ed., cap. 39" },
+    { "farmaco": "Prasugrel", "dosis": "Dosis de carga 60 mg, mantenimiento 10 mg/día (5 mg/día si peso < 60 kg o edad ≥ 75 años); contraindicado si hay antecedente de ACV/AIT", "fuente": "Braunwald 12.ª ed., cap. 39 (ensayo TRITON-TIMI 38)" },
+    { "farmaco": "Ticagrelor", "dosis": "Dosis de carga 180 mg, mantenimiento 90 mg dos veces al día (puede reducirse a 60 mg dos veces al día después de 1 año)", "fuente": "Braunwald 12.ª ed., cap. 39 (ensayos PLATO y PEGASUS-TIMI 54)" },
+    { "farmaco": "Enoxaparina", "dosis": "1 mg/kg por vía subcutánea cada 12 h (ajustar si aclaramiento de creatinina < 30 ml/min)", "fuente": "Braunwald 12.ª ed., cap. 39" },
+    { "farmaco": "Fondaparinux", "dosis": "2,5 mg por vía subcutánea una vez al día", "fuente": "Braunwald 12.ª ed., cap. 39 (ensayo OASIS-5)" }
+  ],
+
+  "glosario": [
+    { "termino": "Puntuación TIMI (SCASEST)", "definicion": "Escala de 7 factores clínicos (1 punto cada uno) que estima el riesgo de muerte, infarto o revascularización urgente a 14 días; sencilla de calcular a pie de cama." },
+    { "termino": "Puntuación GRACE", "definicion": "Escala de riesgo más compleja que la TIMI, con mejor capacidad discriminativa para predecir mortalidad; incorpora más variables clínicas ponderadas." },
+    { "termino": "Estrategia intervencionista temprana", "definicion": "Angiografía coronaria (y revascularización si procede) realizada dentro de las primeras 24 horas, indicada en pacientes de riesgo alto." },
+    { "termino": "DAPT", "definicion": "Doble tratamiento antiagregante (AAS + inhibidor P2Y12); su duración habitual es de 6 a 12 meses, ajustada según el riesgo hemorrágico e isquémico." },
+    { "termino": "Fondaparinux", "definicion": "Inhibidor sintético del factor Xa, de administración subcutánea una vez al día, usado como anticoagulante parenteral en el SCASEST." }
+  ],
+
+  "fuentes": [
+    { "titulo": "Byrne RA, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J. 2023;44(38):3720-3826", "url": "https://doi.org/10.1093/eurheartj/ehad191" },
+    { "titulo": "Collet JP, et al. 2020 ESC Guidelines for the management of acute coronary syndromes in patients presenting without persistent ST-segment elevation. Eur Heart J. 2020;42(14):1289-1367", "url": "" },
+    { "titulo": "Wiviott SD, et al. Prasugrel versus clopidogrel in patients with acute coronary syndromes (TRITON-TIMI 38). N Engl J Med. 2007;357:2001-2015", "url": "" },
+    { "titulo": "Wallentin L, et al. Ticagrelor versus clopidogrel in patients with acute coronary syndromes (PLATO). N Engl J Med. 2009;361:1045-1057", "url": "" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "Un paciente con SCASEST presenta shock cardiogénico y dolor torácico resistente al tratamiento médico. ¿Qué estrategia de tiempo hasta la angiografía corresponde a este escenario de riesgo muy alto?",
+      "opciones": ["Estrategia selectiva, guiada por isquemia", "Estrategia intervencionista temprana (< 24 h)", "Estrategia intervencionista inmediata (< 2 h)", "No realizar angiografía en ningún caso"],
+      "respuesta": 2,
+      "explicacion": "El riesgo muy alto (inestabilidad hemodinámica/shock, dolor refractario, etc.) indica una estrategia intervencionista inmediata, en menos de 2 horas."
+    },
+    {
+      "pregunta": "¿Qué inhibidores del P2Y12 se prefieren generalmente sobre el clopidogrel en el SCASEST, en ausencia de contraindicaciones?",
+      "opciones": ["Aspirina y warfarina", "Ticagrelor o prasugrel", "Solo ácido acetilsalicílico en monoterapia", "Dabigatrán"],
+      "respuesta": 1,
+      "explicacion": "Ticagrelor (PLATO) y prasugrel (TRITON-TIMI 38) mostraron mayor reducción de eventos isquémicos que el clopidogrel y se prefieren salvo contraindicación o alto riesgo hemorrágico."
+    },
+    {
+      "pregunta": "¿Qué fármaco antiagregante P2Y12 está contraindicado en pacientes con antecedente de accidente cerebrovascular o ataque isquémico transitorio?",
+      "opciones": ["Clopidogrel", "Ticagrelor", "Prasugrel", "Ácido acetilsalicílico"],
+      "respuesta": 2,
+      "explicacion": "El prasugrel está contraindicado en pacientes con antecedente de ACV o AIT por el mayor riesgo de hemorragia observado en el ensayo TRITON-TIMI 38."
+    }
+  ]
+}
