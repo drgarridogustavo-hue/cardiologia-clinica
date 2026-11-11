@@ -1,0 +1,91 @@
+{
+  "id": "complicaciones-mecanicas-arritmicas-iam",
+  "titulo": "Complicaciones mecánicas y arrítmicas del infarto, pericarditis postinfarto y alta hospitalaria",
+  "bloque": "complicaciones-prevencion",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Capítulo 38, «Infarto de miocardio con elevación del segmento ST: tratamiento», secciones «Causas mecánicas de insuficiencia cardíaca», «Arritmias», «Otras complicaciones» y «Convalecencia, alta y atención posterior al infarto de miocardio» (Erin A. Bohula, David A. Morrow), p. 694-706"
+  },
+
+  "guias": [
+    { "organizacion": "ACCF/AHA", "nombre": "2013 ACCF/AHA Guideline for the Management of ST-Elevation Myocardial Infarction", "anio": 2013, "url": "" }
+  ],
+
+  "resumen": "Las complicaciones del IAM que no son puramente hemodinámicas (ver tema de shock cardiogénico) se dividen en mecánicas (rotura de estructuras cardíacas) y eléctricas (arritmias), a las que se suman la pericarditis postinfarto y el trombo ventricular izquierdo. Reconocerlas a tiempo —casi siempre con un cambio clínico brusco y ecocardiografía urgente— es lo que más cambia el pronóstico, mucho más que cualquier medida aplicada después del hecho consumado.",
+
+  "diagnostico": "Las tres complicaciones mecánicas clásicas son la rotura de la pared libre del ventrículo (la más letal: mortalidad del 75-90%, suele manifestarse como taponamiento súbito o muerte; incidencia aproximada 0,1-0,3% con reperfusión), la comunicación interventricular o CIV (rotura del tabique, soplo holosistólico nuevo áspero, incidencia 0,2-0,3%) y la rotura del músculo papilar (insuficiencia mitral aguda grave, típica de infartos inferoposteriores por afectar al músculo papilar posteromedial, de irrigación única; soplo a veces leve o ausente pese a la gravedad). El cateterismo derecho ayuda a diferenciar CIV de insuficiencia mitral aguda (la CIV muestra un «salto escalonado» de saturación de O2 entre aurícula y ventrículo derechos, ausente en la insuficiencia mitral). Entre las arritmias, el bloqueo auriculoventricular (AV) se comporta de forma muy distinta según el infarto sea inferior o anterior: en el IAM inferior el bloqueo suele ser proximal (nodal), con QRS estrecho, ritmo de escape relativamente estable (45-60 lpm) y resolución en días, de buen pronóstico; en el IAM anterior el bloqueo es distal (infranodal, del sistema de His-Purkinje), con QRS ancho, ritmo de escape inestable (a menudo < 40 lpm) y mortalidad alta, porque refleja necrosis septal extensa. La fibrilación ventricular (FV) primaria ocurre en las primeras horas por heterogeneidad eléctrica del miocardio isquémico, sin relación clara con arritmias de «aviso» previas. La pericarditis postinfarto puede ser temprana (primeros días, por inflamación epicárdica directa sobre el área transmural) o tardía —síndrome de Dressler, 1 a 8 semanas después, de base inmunitaria, con fiebre, malestar, derrame pericárdico y VSG elevada.",
+
+  "tratamiento": "Complicaciones mecánicas: estabilización inicial con vasodilatadores (nitroglicerina o nitroprusiato si la PAS lo permite) y soporte circulatorio mecánico como puente a la reparación quirúrgica definitiva, que no debe demorarse una vez identificada la lesión corregible; el cierre percutáneo de la CIV es una alternativa en pacientes seleccionados o como puente en pacientes inestables. Arritmias: la FV primaria se trata con desfibrilación inmediata; no se recomienda la profilaxis antiarrítmica sistemática (puede aumentar la mortalidad por bradicardia y asistolia). El bloqueo AV proximal (IAM inferior) rara vez necesita marcapasos temporal; el bloqueo AV distal (IAM anterior) lo necesita con frecuencia, por el riesgo de progresión brusca a bloqueo completo inestable. La fibrilación/aleteo auricular se trata como en otros contextos (control de frecuencia, cardioversión si hay inestabilidad). Pericarditis: AAS en dosis más altas que las antiagregantes (hasta 650 mg cada 4 h) ± colchicina; evitar AINE y glucocorticoides en las primeras 4 semanas, porque interfieren con la cicatrización del infarto y pueden aumentar el riesgo de rotura. Trombo ventricular izquierdo: anticoagulación (reduce su formación en más del 50% en metaanálisis), típicamente por 3-6 meses, sobre todo con acinesia/discinesia apical anterior extensa. Alta y rehabilitación: antes del alta se estratifica el riesgo residual (función ventricular izquierda, isquemia residual, propensión arrítmica) y se deriva a todos los pacientes a un programa de rehabilitación cardíaca supervisada con componente de ejercicio físico y apoyo psicológico, ya que mejora el pronóstico y se asocia a reducción de síntomas depresivos postinfarto.",
+
+  "recomendaciones": [],
+
+  "algoritmo": {
+    "titulo": "Bloqueo auriculoventricular en el IAM según la localización",
+    "nodos": [
+      { "id": "n1", "texto": "Bloqueo AV en el contexto de un IAM" },
+      { "id": "n2", "texto": "IAM inferior: bloqueo proximal (nodal), isquemia del nódulo AV" },
+      { "id": "n3", "texto": "IAM anterior: bloqueo distal (infranodal, sistema His-Purkinje)" },
+      { "id": "n4", "texto": "QRS estrecho, ritmo de escape 45-60 lpm, habitualmente transitorio (2-3 días)" },
+      { "id": "n5", "texto": "QRS ancho, ritmo de escape inestable (a menudo < 40 lpm), refleja necrosis septal extensa" },
+      { "id": "n6", "texto": "Marcapasos temporal rara vez necesario; buen pronóstico" },
+      { "id": "n7", "texto": "Marcapasos temporal indicado con frecuencia; mal pronóstico" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n3", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n4", "etiqueta": "" },
+      { "desde": "n3", "hasta": "n5", "etiqueta": "" },
+      { "desde": "n4", "hasta": "n6", "etiqueta": "" },
+      { "desde": "n5", "hasta": "n7", "etiqueta": "" }
+    ]
+  },
+
+  "dosis": [
+    { "farmaco": "Ácido acetilsalicílico para pericarditis postinfarto", "dosis": "Hasta 650 mg VO cada 4 h (dosis antiinflamatoria, mayor que la antiagregante habitual)", "fuente": "Braunwald 12.ª ed., cap. 38, sección «Pericarditis»" },
+    { "farmaco": "Atropina (bradicardia sinusal o bloqueo AV con compromiso hemodinámico)", "dosis": "1 mg i.v., repetible a intervalos de 3-5 min, hasta una dosis total máxima de 3 mg", "fuente": "Braunwald 12.ª ed., cap. 38" }
+  ],
+
+  "glosario": [
+    { "termino": "CIV postinfarto", "definicion": "Comunicación interventricular por rotura del tabique interventricular necrótico; se manifiesta con un soplo holosistólico nuevo e insuficiencia biventricular de instauración brusca." },
+    { "termino": "Síndrome de Dressler", "definicion": "Pericarditis postinfarto tardía (1-8 semanas), de base inmunitaria, con fiebre, malestar general, derrame pericárdico y VSG elevada." },
+    { "termino": "Bloqueo AV proximal vs. distal", "definicion": "En el IAM inferior el bloqueo AV suele ser proximal (nodal), transitorio y de buen pronóstico; en el IAM anterior suele ser distal (infranodal), inestable y de mal pronóstico por reflejar necrosis extensa." },
+    { "termino": "Trombo ventricular izquierdo", "definicion": "Trombo mural que se forma sobre miocardio infartado, sobre todo en infartos anteriores extensos con acinesia/discinesia apical; se trata con anticoagulación para reducir el riesgo de embolia sistémica." },
+    { "termino": "Rehabilitación cardíaca", "definicion": "Programa supervisado de ejercicio físico progresivo y apoyo psicológico tras un evento coronario, parte estándar de la prevención secundaria al alta." }
+  ],
+
+  "fuentes": [
+    { "titulo": "Antman EM, Anbe DT, Armstrong PW, et al. ACC/AHA guidelines for the management of patients with ST-elevation myocardial infarction. J Am Coll Cardiol. 2004;110(9):e82", "url": "" },
+    { "titulo": "El-Chami MF, Igbinedion O, Mahmoud K, et al. Temporal Trends and Outcomes of Mechanical Complications in Patients With Acute Myocardial Infarction. JACC Cardiovasc Interv. 2019;12:1825-1836", "url": "" },
+    { "titulo": "Dressler W. A post-myocardial-infarction syndrome. JAMA. 1956;160(16):1379-1383", "url": "" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "¿Qué complicación mecánica del IAM tiene la mortalidad más alta si no se trata quirúrgicamente de inmediato?",
+      "opciones": ["Rotura de la pared libre del ventrículo", "Pericarditis temprana", "Fibrilación auricular", "Bloqueo AV de primer grado"],
+      "respuesta": 0,
+      "explicacion": "La rotura de la pared libre tiene una mortalidad del 75-90% sin tratamiento quirúrgico inmediato; suele manifestarse como taponamiento cardíaco súbito."
+    },
+    {
+      "pregunta": "¿Por qué el bloqueo AV complicando un IAM anterior tiene peor pronóstico que el que complica un IAM inferior?",
+      "opciones": [
+        "Porque el IAM anterior siempre produce arritmias ventriculares",
+        "Porque en el IAM anterior el bloqueo suele ser distal (infranodal), con QRS ancho y ritmo de escape inestable, reflejando necrosis septal extensa",
+        "Porque el IAM anterior no se puede tratar con marcapasos",
+        "Porque el bloqueo AV en el IAM inferior siempre requiere cirugía"
+      ],
+      "respuesta": 1,
+      "explicacion": "En el IAM anterior el bloqueo AV es típicamente distal (sistema His-Purkinje), con QRS ancho y ritmo de escape inestable, lo que refleja una necrosis septal extensa y se asocia a peor pronóstico que el bloqueo proximal del IAM inferior."
+    },
+    {
+      "pregunta": "¿Qué fármacos deben evitarse en las primeras 4 semanas tras un IAM en un paciente con pericarditis postinfarto?",
+      "opciones": ["Ácido acetilsalicílico en dosis altas", "AINE y glucocorticoides", "Colchicina", "Paracetamol"],
+      "respuesta": 1,
+      "explicacion": "Los AINE y los glucocorticoides interfieren con la cicatrización del infarto y se han asociado a mayor riesgo de rotura miocárdica si se usan en las primeras semanas."
+    }
+  ]
+}

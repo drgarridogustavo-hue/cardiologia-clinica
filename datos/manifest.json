@@ -71,7 +71,9 @@
       "titulo": "Complicaciones y prevención secundaria",
       "carpeta": "08-complicaciones-prevencion",
       "temas": [
-        "complicaciones-prevencion-secundaria.json"
+        "complicaciones-prevencion-secundaria.json",
+        "complicaciones-mecanicas-arritmicas.json",
+        "angina-microvascular-vasoespastica.json"
       ]
     },
     {

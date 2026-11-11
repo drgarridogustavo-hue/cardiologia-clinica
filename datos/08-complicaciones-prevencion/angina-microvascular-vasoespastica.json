@@ -1,0 +1,94 @@
+{
+  "id": "angina-microvascular-vasoespastica-inoca",
+  "titulo": "Angina e isquemia sin enfermedad coronaria obstructiva: angina microvascular, angina vasoespástica e isquemia silente",
+  "bloque": "complicaciones-prevencion",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Capítulo 40, «Cardiopatía isquémica estable», sección «Otras manifestaciones de la enfermedad arterial coronaria» (David A. Morrow, James de Lemos), p. 777-779. La angina vasoespástica de Prinzmetal remite en el propio capítulo al Capítulo 36 («Flujo sanguíneo coronario e isquemia miocárdica»)."
+  },
+
+  "guias": [
+    { "organizacion": "COVADIS", "nombre": "International standardization of diagnostic criteria for microvascular angina (Ong P, et al.)", "anio": 2018, "url": "" },
+    { "organizacion": "COVADIS", "nombre": "International standardization of diagnostic criteria for vasospastic angina (Beltrame JF, et al.)", "anio": 2017, "url": "" }
+  ],
+
+  "resumen": "INOCA (isquemia con arterias coronarias no obstructivas, por sus siglas en inglés) agrupa dos entidades con angina o dolor torácico isquémico pero sin estenosis epicárdica significativa en la angiografía: la angina microvascular (antes llamada «síndrome X») y la angina vasoespástica o de Prinzmetal. Durante años se consideraron benignas y quedaron infradiagnosticadas; hoy se sabe que se asocian a un riesgo de eventos cardiovasculares mayor que el que sugeriría una angiografía «normal», y son más frecuentes en mujeres, sobre todo premenopáusicas. Es un concepto distinto —aunque relacionado— del MINOCA (infarto, no solo angina, sin obstrucción coronaria; ver tema de IAMCEST, bloque 6): el MINOCA se define ante un infarto agudo confirmado, mientras que INOCA abarca el espectro completo de angina crónica sin obstrucción, con o sin necrosis.",
+
+  "diagnostico": "La angina microvascular se diagnostica según los criterios del Coronary Vasomotion Disorders International Study Group (COVADIS): 1) síntomas de isquemia miocárdica; 2) ausencia de EAC obstructiva (estenosis < 50% o FFR > 0,80); 3) evidencia objetiva de isquemia miocárdica; y 4) evidencia de reserva de flujo coronario (RFC) reducida y/o espasmo microvascular inducible. La evaluación funcional invasiva usa herramientas específicas: la RFF/iFR valora la disfunción hemodinámica global; la RFC con Doppler intracoronario y el índice de resistencia microvascular (IRM) diagnostican disfunción microvascular; la prueba de función endotelial con acetilcolina en dosis bajas evalúa la disfunción endotelial; y la prueba de provocación con acetilcolina o ergonovina en dosis altas, con ECG de 12 derivaciones, identifica el vasoespasmo coronario (epicárdico o microvascular). La angina vasoespástica (de Prinzmetal) se distingue clínicamente por episodios predominantemente en reposo, a menudo nocturnos o de madrugada, con elevación TRANSITORIA del segmento ST documentada durante el dolor (a diferencia de la angina microvascular, donde predominan el descenso del ST o la ausencia de cambios eléctricos), y se confirma con la misma prueba de provocación. La isquemia miocárdica silente (hasta un tercio de los episodios isquémicos registrados en monitorización ambulatoria de pacientes con cardiopatía isquémica estable) tiene una importancia pronóstica comparable a la isquemia sintomática, aunque no se recomienda su cribado sistemático con ECG ambulatorio.",
+
+  "tratamiento": "Angina microvascular: no existe un tratamiento específico validado en grandes ensayos clínicos; se recomienda control agresivo de los factores de riesgo cardiovascular y una prueba terapéutica razonable con betabloqueantes y/o antagonistas del calcio, con respuesta clínica variable entre pacientes; los inhibidores de la ECA tienen efectos favorables sobre la función endotelial; la ranolazina mostró mejoría sintomática en un estudio piloto pequeño en mujeres con angina microvascular, sin beneficio confirmado en estudios posteriores. Angina vasoespástica: los antagonistas del calcio y los nitratos son el tratamiento de elección; deben evitarse los betabloqueantes no selectivos, que pueden empeorar el vasoespasmo al dejar sin oposición el tono alfa-adrenérgico; es esencial eliminar desencadenantes conocidos (tabaco, cocaína). Isquemia silente: no existe un tratamiento específico distinto del tratamiento antiisquémico ya indicado por los síntomas o por los hallazgos objetivos de isquemia.",
+
+  "recomendaciones": [],
+
+  "algoritmo": {
+    "titulo": "Orientación diagnóstica de la angina sin obstrucción coronaria significativa (INOCA)",
+    "nodos": [
+      { "id": "n1", "texto": "Angina o dolor torácico isquémico, sin EAC obstructiva en la angiografía (< 50% o FFR > 0,80)" },
+      { "id": "n2", "texto": "Episodios predominantemente de esfuerzo, sin elevación transitoria del ST documentada" },
+      { "id": "n3", "texto": "Episodios predominantemente en reposo o nocturnos, con elevación transitoria del ST durante el dolor" },
+      { "id": "n4", "texto": "Evaluar función microvascular: RFC, IRM, prueba de acetilcolina en dosis baja" },
+      { "id": "n5", "texto": "Prueba de provocación de espasmo coronario (acetilcolina o ergonovina en dosis alta + ECG de 12 derivaciones)" },
+      { "id": "n6", "texto": "RFC reducida y/o espasmo microvascular inducible → Angina microvascular" },
+      { "id": "n7", "texto": "Espasmo epicárdico documentado → Angina vasoespástica (Prinzmetal)" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "" },
+      { "desde": "n1", "hasta": "n3", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n4", "etiqueta": "" },
+      { "desde": "n3", "hasta": "n5", "etiqueta": "" },
+      { "desde": "n4", "hasta": "n6", "etiqueta": "" },
+      { "desde": "n5", "hasta": "n7", "etiqueta": "" }
+    ]
+  },
+
+  "dosis": [],
+
+  "glosario": [
+    { "termino": "INOCA", "definicion": "Isquemia con arterias coronarias no obstructivas; término paraguas que incluye la angina microvascular y la angina vasoespástica." },
+    { "termino": "Angina microvascular", "definicion": "Angina con isquemia demostrada y arterias coronarias epicárdicas sin obstrucción significativa, causada por disfunción de la microcirculación coronaria (reserva de flujo coronario reducida y/o espasmo microvascular)." },
+    { "termino": "Angina vasoespástica (de Prinzmetal)", "definicion": "Angina por espasmo de una arteria coronaria epicárdica, típicamente en reposo o de madrugada, con elevación transitoria del ST documentada durante el episodio." },
+    { "termino": "Reserva de flujo coronario (RFC)", "definicion": "Cociente entre el flujo coronario máximo (tras vasodilatación) y el flujo en reposo; su reducción, sin estenosis epicárdica significativa, sugiere disfunción microvascular." },
+    { "termino": "Índice de resistencia microvascular (IRM)", "definicion": "Medida invasiva de la resistencia de la microcirculación coronaria, obtenida con guía de presión y sensor de temperatura; ayuda a diagnosticar disfunción microvascular en presencia de EAC epicárdica." }
+  ],
+
+  "fuentes": [
+    { "titulo": "Ong P, Camici PG, Beltrame JF, et al. International standardization of diagnostic criteria for microvascular angina. Int J Cardiol. 2018;250:16-20", "url": "" },
+    { "titulo": "Beltrame JF, Crea F, Kaski JC, et al. International standardization of diagnostic criteria for vasospastic angina. Eur Heart J. 2017;38(33):2565-2568", "url": "" },
+    { "titulo": "Joshi PH, de Lemos JA. Diagnosis and management of stable angina: a review. JAMA. 2021;325(17):1765-1778", "url": "" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "¿Qué hallazgo electrocardiográfico durante el dolor distingue clásicamente a la angina vasoespástica (de Prinzmetal) de la angina microvascular?",
+      "opciones": [
+        "Elevación transitoria del segmento ST en la angina vasoespástica, frente a descenso del ST o ausencia de cambios en la microvascular",
+        "Ambas producen siempre el mismo patrón de ondas T",
+        "La angina vasoespástica nunca se acompaña de cambios en el ECG",
+        "La angina microvascular siempre eleva el segmento ST más que la vasoespástica"
+      ],
+      "respuesta": 0,
+      "explicacion": "La angina vasoespástica se caracteriza por elevación transitoria del ST documentada durante el episodio de dolor, mientras que en la angina microvascular predominan el descenso del ST o la ausencia de cambios eléctricos."
+    },
+    {
+      "pregunta": "¿Qué clase de fármaco debe evitarse en la angina vasoespástica por el riesgo de empeorar el vasoespasmo coronario?",
+      "opciones": ["Antagonistas del calcio", "Nitratos", "Betabloqueantes no selectivos", "Estatinas"],
+      "respuesta": 2,
+      "explicacion": "Los betabloqueantes no selectivos pueden empeorar el vasoespasmo al dejar sin oposición el tono alfa-adrenérgico; se prefieren los antagonistas del calcio y los nitratos."
+    },
+    {
+      "pregunta": "Según los criterios COVADIS, ¿cuál de los siguientes NO es un requisito para el diagnóstico de angina microvascular?",
+      "opciones": [
+        "Síntomas de isquemia miocárdica",
+        "Estenosis coronaria epicárdica ≥ 70% en la angiografía",
+        "Evidencia objetiva de isquemia miocárdica",
+        "Evidencia de reserva de flujo coronario reducida y/o espasmo microvascular inducible"
+      ],
+      "respuesta": 1,
+      "explicacion": "El diagnóstico de angina microvascular requiere precisamente la AUSENCIA de EAC obstructiva significativa (estenosis < 50% o FFR > 0,80); una estenosis ≥ 70% orientaría a EAC epicárdica obstructiva clásica."
+    }
+  ]
+}
