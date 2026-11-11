@@ -1,0 +1,84 @@
+{
+  "id": "biologia-vascular-aterosclerosis",
+  "titulo": "Biología vascular de la aterosclerosis",
+  "bloque": "fisiopatologia-epidemiologia",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Capítulo 24, «Biología vascular de la ateroesclerosis» (Peter Libby), p. 425-441"
+  },
+
+  "guias": [],
+
+  "resumen": "La aterosclerosis es una enfermedad crónica de la pared arterial que combina acumulación de lípidos, inflamación (inmunidad innata y adaptativa) y remodelado de la matriz extracelular. Su evolución no es un proceso lineal: la placa crece durante décadas de forma habitualmente silenciosa, con episodios puntuales de actividad, hasta que una minoría de placas —no necesariamente las más obstructivas— se complica con trombosis y produce un síndrome coronario agudo.",
+
+  "diagnostico": "No es un tema de diagnóstico clínico directo, pero su fisiopatología explica dos observaciones clave para la práctica: (1) la mayoría de los infartos no son precedidos por una estenosis angiográficamente grave, porque la placa suele crecer primero «hacia afuera» (remodelación positiva) sin reducir la luz hasta fases avanzadas; y (2) el riesgo de un evento depende más de la composición y vulnerabilidad de la placa (cubierta fibrosa fina, núcleo necrótico rico en lípidos, infiltrado de macrófagos) que del grado de estenosis por sí solo.",
+
+  "tratamiento": "No aplica como tratamiento específico (ver bloques de tratamiento médico, revascularización y prevención secundaria). La relevancia terapéutica de esta fisiopatología es conceptual: las intervenciones que reducen eventos (estatinas, control de presión arterial, cese tabáquico) actúan principalmente estabilizando la placa (reduciendo inflamación y núcleo lipídico, engrosando la cubierta fibrosa) más que revirtiendo la estenosis.",
+
+  "recomendaciones": [],
+
+  "algoritmo": {
+    "titulo": "De la disfunción endotelial a la trombosis coronaria",
+    "nodos": [
+      { "id": "n1", "texto": "Disfunción endotelial y retención de LDL (incl. LDL oxidada) en la íntima" },
+      { "id": "n2", "texto": "Reclutamiento de leucocitos (VCAM-1, MCP-1) y formación de células espumosas" },
+      { "id": "n3", "texto": "Evolución del ateroma: migración de células musculares lisas, matriz extracelular, angiogénesis y calcificación de la placa" },
+      { "id": "n4", "texto": "Rotura de la placa: cubierta fibrosa fina, núcleo necrótico lipídico, infiltrado de macrófagos" },
+      { "id": "n5", "texto": "Erosión superficial: cubierta fibrosa gruesa, pérdida focal de endotelio, trampas extracelulares de neutrófilos (NET)" },
+      { "id": "n6", "texto": "Trombosis coronaria y síndrome coronario agudo" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n3", "etiqueta": "" },
+      { "desde": "n3", "hasta": "n4", "etiqueta": "~2/3 de los IAM" },
+      { "desde": "n3", "hasta": "n5", "etiqueta": "~1/4 a 1/3 de los IAM" },
+      { "desde": "n4", "hasta": "n6", "etiqueta": "" },
+      { "desde": "n5", "hasta": "n6", "etiqueta": "" }
+    ]
+  },
+
+  "dosis": [],
+
+  "glosario": [
+    { "termino": "CML", "definicion": "Células musculares lisas; migran desde la media hacia la íntima durante la formación de la placa y producen la matriz de la cubierta fibrosa." },
+    { "termino": "Célula espumosa", "definicion": "Macrófago (o célula muscular lisa) cargado de lípidos, formado por captación de lipoproteínas modificadas a través de receptores limpiadores (no el receptor clásico de LDL)." },
+    { "termino": "Placa vulnerable", "definicion": "Placa con cubierta fibrosa fina, núcleo necrótico lipídico grande e infiltrado inflamatorio importante, con alto riesgo de rotura aunque no sea muy estenótica." },
+    { "termino": "Remodelación positiva", "definicion": "Crecimiento de la placa hacia afuera de la luz arterial, que preserva el calibre luminal y retrasa la aparición de estenosis angiográfica." },
+    { "termino": "NET", "definicion": "Trampas extracelulares de neutrófilos; redes de ADN y proteínas liberadas por neutrófilos, implicadas en la trombosis por erosión superficial de la placa." }
+  ],
+
+  "fuentes": [
+    { "titulo": "Libby P. Inflammation in atherosclerosis. Arterioscler Thromb Vasc Biol. 2012;32(9):2045-2051", "url": "" },
+    { "titulo": "Thygesen K, et al. Fourth Universal Definition of Myocardial Infarction (2018). Circulation. 2018;138(20):e618-e651", "url": "https://doi.org/10.1161/CIR.0000000000000617" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "¿Cuál es el mecanismo más frecuente de trombosis coronaria responsable de infarto agudo de miocardio?",
+      "opciones": ["Erosión superficial del endotelio", "Rotura de la placa con cubierta fibrosa fina", "Vasoespasmo sobre arteria sana", "Embolia coronaria de origen valvular"],
+      "respuesta": 1,
+      "explicacion": "Alrededor de dos tercios de los IAM se deben a rotura de placa (cubierta fibrosa fina, núcleo lipídico, macrófagos); la erosión superficial explica aproximadamente entre un cuarto y un tercio de los casos."
+    },
+    {
+      "pregunta": "¿Por qué la mayoría de los infartos de miocardio no están precedidos por una estenosis angiográfica grave conocida?",
+      "opciones": [
+        "Porque las placas vulnerables suelen crecer con remodelación positiva, sin reducir mucho la luz hasta fases avanzadas",
+        "Porque las troponinas no detectan estas lesiones",
+        "Porque las estenosis siempre se desarrollan en minutos",
+        "Porque la angiografía coronaria no visualiza arterias proximales"
+      ],
+      "respuesta": 0,
+      "explicacion": "La remodelación positiva (crecimiento de la placa hacia afuera) permite que muchas placas de alto riesgo no generen estenosis significativa antes de complicarse."
+    },
+    {
+      "pregunta": "En la formación de la célula espumosa, ¿qué receptor es el principal responsable de la captación descontrolada de lípidos por los macrófagos?",
+      "opciones": ["El receptor clásico de LDL", "Los receptores limpiadores (scavenger)", "El receptor de troponina", "El receptor de angiotensina II"],
+      "respuesta": 1,
+      "explicacion": "El receptor clásico de LDL está regulado a la baja por el colesterol intracelular; los receptores limpiadores no tienen ese freno, por lo que permiten la acumulación descontrolada de lípidos."
+    }
+  ]
+}

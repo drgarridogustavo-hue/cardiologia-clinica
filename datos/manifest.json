@@ -5,7 +5,9 @@
       "numero": 1,
       "titulo": "Fisiopatología y epidemiología",
       "carpeta": "01-fisiopatologia-epidemiologia",
-      "temas": []
+      "temas": [
+        "biologia-aterosclerosis.json"
+      ]
     },
     {
       "id": "diagnostico-cronica",
