@@ -2,7 +2,7 @@
 
 Sitio estático de repaso de cardiología clínica, con progreso guardado en el navegador (localStorage). Sin frameworks: HTML, CSS y JavaScript puros.
 
-Foco actual: **cardiopatía isquémica**, organizado en 8 bloques siguiendo la estructura de *Braunwald. Tratado de Cardiología* (12.ª edición, Libby/Bonow/Mann/Tomaselli/Bhatt/Solomon, Elsevier España 2024) y las guías ESC / ACC-AHA vigentes.
+Foco actual: **cardiopatía isquémica**, organizado en 9 bloques siguiendo la estructura de *Braunwald. Tratado de Cardiología* (12.ª edición, Libby/Bonow/Mann/Tomaselli/Bhatt/Solomon, Elsevier España 2024) y las guías ESC / ACC-AHA vigentes.
 
 ## Estructura
 
@@ -16,7 +16,7 @@ datos/_plantilla/tema-plantilla.json  Plantilla vacía del esquema (no se carga 
 datos/otros/               Temas fuera del programa de isquémica (quedan aparte)
 ```
 
-## Los 8 bloques
+## Los 9 bloques
 
 | # | Bloque | Carpeta |
 |---|--------|---------|
@@ -28,8 +28,27 @@ datos/otros/               Temas fuera del programa de isquémica (quedan aparte
 | 6 | IAM con elevación del ST (IAMCEST) | `06-iamcest` |
 | 7 | SCA sin elevación del ST (IAMSEST / angina inestable) | `07-scasest` |
 | 8 | Complicaciones y prevención secundaria | `08-complicaciones-prevencion` |
+| 9 | Prescripción e indicaciones | `09-prescripcion-indicaciones` |
 
 El bloque `otros` (carpeta `otros/`) guarda temas que no son de isquémica (hoy: Insuficiencia Cardíaca, con el esquema anterior más simple).
+
+### Bloque 9: Prescripción e indicaciones
+
+A diferencia de los bloques 1-8 (que explican fisiopatología/diagnóstico/tratamiento), el bloque 9 traduce ese contenido en plantillas de **prescripción por escenario clínico**, patología por patología: Urgencias, Hospitalización/Observación/UCI, Alta, Controles subsecuentes y Consulta ambulatoria, con ajustes según comorbilidad (ERC, diabetes, FA, edad avanzada, etc.). Cada tema de este bloque usa el campo adicional `prescripcion` en su JSON:
+
+```json
+"prescripcion": {
+  "advertencia": "Texto de advertencia de seguridad, mostrado siempre arriba de todo.",
+  "urgencias": { "indicacionesGenerales": "...", "ordenes": [ { "grupo": "...", "farmaco": "...", "dosis": "...", "via": "...", "frecuencia": "...", "duracion": "...", "notas": "...", "fuente": "..." } ] },
+  "hospitalizacion": { "...": "mismo formato" },
+  "alta": { "...": "mismo formato" },
+  "controles": { "...": "mismo formato" },
+  "ambulatorio": { "...": "mismo formato" },
+  "ajustesComorbilidad": [ { "comorbilidad": "...", "ajuste": "..." } ]
+}
+```
+
+Cualquiera de los cinco escenarios (`urgencias`, `hospitalizacion`, `alta`, `controles`, `ambulatorio`) puede omitirse u usarse solo con `indicacionesGenerales` (por ejemplo, para aclarar que ese escenario no aplica a esa patología). **Estas plantillas son material educativo, no recetas listas para transcribir**: cada tema del bloque 9 incluye una `advertencia` recordando que la dosis, la vía y la duración deben verificarse contra el protocolo vigente del centro y adaptarse al paciente real antes de cualquier uso clínico.
 
 ### Mapeo bloque → capítulo de Braunwald (12.ª edición)
 

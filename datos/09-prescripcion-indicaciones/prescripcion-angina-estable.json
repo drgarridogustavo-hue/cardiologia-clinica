@@ -1,0 +1,100 @@
+{
+  "id": "prescripcion-angina-estable",
+  "titulo": "Prescripción e indicaciones: angina estable crónica",
+  "bloque": "prescripcion-indicaciones",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Síntesis propia a partir de los temas de diagnóstico y tratamiento de la cardiopatía isquémica estable (bloques 2 y 3), basados en el Capítulo 40 de Braunwald"
+  },
+
+  "guias": [
+    { "organizacion": "ESC", "nombre": "2024 ESC Guidelines for the management of chronic coronary syndromes", "anio": 2024, "url": "https://doi.org/10.1093/eurheartj/ehae177" },
+    { "organizacion": "ACC/AHA", "nombre": "2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease", "anio": 2023, "url": "https://doi.org/10.1161/CIR.0000000000001168" }
+  ],
+
+  "resumen": "Plantilla de prescripción para un paciente con diagnóstico ya establecido de angina estable crónica, organizada por escenario clínico. No reemplaza el juicio clínico individualizado: cada fármaco y dosis debe confirmarse contra el protocolo vigente del centro y la ficha técnica, y ajustarse según función renal/hepática, peso, edad, alergias e interacciones del paciente concreto. Los valores marcados «VERIFICAR» indican que la dosis exacta no pudo confirmarse contra una fuente verificada en esta sesión y debe completarse antes de su uso real.",
+
+  "diagnostico": "No aplica (ver tema de diagnóstico de cardiopatía isquémica crónica, bloque 2). Esta plantilla asume que el diagnóstico de angina estable ya fue establecido y que se ha descartado un síndrome coronario agudo.",
+
+  "tratamiento": "La angina estable se maneja de forma ambulatoria. Un cambio en el patrón de los síntomas (angina de reciente inicio, en reposo, progresiva, prolongada > 15-20 min o que no cede con nitroglicerina) obliga a reclasificar al paciente como sospecha de síndrome coronario agudo y a derivarlo a Urgencias; no debe manejarse con esta plantilla (ver temas de prescripción de SCASEST e IAMCEST).",
+
+  "recomendaciones": [],
+
+  "prescripcion": {
+    "advertencia": "Plantilla educativa, no una receta lista para transcribir. Verificar siempre dosis, contraindicaciones e interacciones específicas del paciente antes de prescribir.",
+
+    "urgencias": {
+      "indicacionesGenerales": "La angina estable crónica, por definición, no es motivo de manejo en Urgencias. Si el paciente consulta por dolor torácico, se evalúa como sospecha de síndrome coronario agudo (ver prescripción de SCASEST/IAMCEST), no con esta plantilla, hasta descartarlo."
+    },
+
+    "ambulatorio": {
+      "indicacionesGenerales": "Consulta inicial o de ajuste de tratamiento en un paciente con angina estable ya diagnosticada.",
+      "ordenes": [
+        { "grupo": "Antiagregante", "farmaco": "Ácido acetilsalicílico", "dosis": "VERIFICAR dosis de mantenimiento según protocolo local (rango habitual descrito en la literatura: 75-162 mg)", "via": "Oral", "frecuencia": "Una vez al día", "duracion": "Indefinida salvo contraindicación", "notas": "Confirmar ausencia de contraindicación (hemorragia activa, alergia, úlcera péptica activa)" },
+        { "grupo": "Antianginoso de primera línea", "farmaco": "Betabloqueante (p. ej., metoprolol o bisoprolol) o antagonista del calcio", "dosis": "VERIFICAR dosis de inicio según el fármaco elegido", "via": "Oral", "frecuencia": "Según el fármaco (1-2 veces al día)", "duracion": "Continua, con ajuste progresivo según frecuencia cardíaca y tolerancia", "notas": "Elegir según comorbilidades (ver ajustes más abajo); no combinar betabloqueante con verapamilo/diltiazem sin vigilancia estrecha" },
+        { "grupo": "Alivio inmediato / profilaxis", "farmaco": "Nitroglicerina sublingual", "dosis": "VERIFICAR presentación y dosis exacta según formulación local", "via": "Sublingual", "frecuencia": "Ante un episodio de angina o antes de una actividad que habitualmente la desencadena; puede repetirse cada 5 minutos hasta un máximo de 3 dosis", "duracion": "Según necesidad", "notas": "Si el dolor no cede tras 3 dosis o persiste más de 15-20 minutos, indicar al paciente acudir de inmediato a Urgencias" },
+        { "grupo": "Hipolipemiante", "farmaco": "Estatina de alta intensidad (p. ej., atorvastatina)", "dosis": "80 mg", "via": "Oral", "frecuencia": "Una vez al día (preferentemente por la noche)", "duracion": "Indefinida", "notas": "Objetivo de LDL < 55 mg/dl (guía ESC) o < 70 mg/dl (guía ACC/AHA); solicitar perfil lipídico y hepático basal", "fuente": "Dosis verificada en el texto del Capítulo 39 de Braunwald, en el contexto de PROVE-IT-TIMI 22" }
+      ]
+    },
+
+    "controles": {
+      "indicacionesGenerales": "Seguimiento tras el inicio o ajuste del tratamiento antianginoso e hipolipemiante.",
+      "ordenes": [
+        { "grupo": "Control clínico", "farmaco": "Revisión de síntomas, frecuencia cardíaca y presión arterial", "dosis": "-", "via": "-", "frecuencia": "A las 4-6 semanas del inicio/ajuste, luego según estabilidad", "duracion": "-", "notas": "Evaluar adherencia, efectos adversos y necesidad de un segundo antianginoso si persiste la angina" },
+        { "grupo": "Laboratorio", "farmaco": "Perfil lipídico y transaminasas", "dosis": "-", "via": "-", "frecuencia": "A las 4-12 semanas de iniciar o cambiar la estatina", "duracion": "Luego anual si estable", "notas": "Si el LDL no alcanza el objetivo con estatina de alta intensidad, considerar añadir ezetimiba y, si persiste alto, un inhibidor de PCSK9" },
+        { "grupo": "Reevaluación de isquemia", "farmaco": "Prueba de esfuerzo o imagen funcional", "dosis": "-", "via": "-", "frecuencia": "Si cambia el patrón de los síntomas o para reevaluación periódica según criterio clínico", "duracion": "-", "notas": "No se recomienda de rutina en pacientes estables y asintomáticos con tratamiento óptimo (ver tema de diagnóstico, bloque 2)" }
+      ]
+    },
+
+    "ajustesComorbilidad": [
+      { "comorbilidad": "Asma o EPOC grave", "ajuste": "Evitar betabloqueantes no selectivos; preferir un antagonista del calcio o un betabloqueante cardioselectivo con vigilancia estrecha" },
+      { "comorbilidad": "Diabetes mellitus", "ajuste": "Preferir IECA/ARA-II si hay microalbuminuria; vigilar hipoglucemias enmascaradas por betabloqueantes; considerar iSGLT2 o agonistas del receptor de GLP-1 si hay indicación cardiovascular adicional" },
+      { "comorbilidad": "Enfermedad renal crónica", "ajuste": "Ajustar dosis de fármacos de eliminación renal; evitar AINE; vigilar potasio al usar IECA/ARA-II" },
+      { "comorbilidad": "Trastornos de la conducción (bloqueo AV)", "ajuste": "Evitar verapamilo/diltiazem y usar betabloqueantes con cautela; preferir antagonistas del calcio dihidropiridínicos" },
+      { "comorbilidad": "Edad avanzada / fragilidad", "ajuste": "Iniciar con dosis bajas y titular más lentamente; vigilar hipotensión ortostática y función renal" }
+    ]
+  },
+
+  "algoritmo": null,
+  "dosis": [],
+
+  "glosario": [
+    { "termino": "Angina estable", "definicion": "Dolor torácico isquémico desencadenado de forma reproducible por un umbral de esfuerzo o estrés conocido, que cede con el reposo o la nitroglicerina en pocos minutos." },
+    { "termino": "Reclasificación a SCA", "definicion": "Cambio en el patrón de la angina (reposo, progresiva, prolongada) que obliga a abandonar el manejo ambulatorio de la angina estable y derivar a Urgencias como sospecha de síndrome coronario agudo." }
+  ],
+
+  "fuentes": [
+    { "titulo": "Vrints C, et al. 2024 ESC Guidelines for the management of chronic coronary syndromes. Eur Heart J. 2024;45(36):3415-3537", "url": "https://doi.org/10.1093/eurheartj/ehae177" },
+    { "titulo": "Virani SS, et al. 2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease. Circulation. 2023;148(9):e9-e119", "url": "https://doi.org/10.1161/CIR.0000000000001168" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "Un paciente con angina estable conocida consulta por dolor torácico que ahora aparece en reposo y dura 25 minutos. ¿Cómo debe manejarse?",
+      "opciones": [
+        "Con la prescripción ambulatoria habitual de angina estable",
+        "Como sospecha de síndrome coronario agudo, derivándolo a Urgencias",
+        "Aumentando solo la dosis de nitroglicerina sublingual en casa",
+        "Esperando a la próxima consulta programada"
+      ],
+      "respuesta": 1,
+      "explicacion": "Un cambio en el patrón (reposo, duración prolongada) obliga a reclasificar al paciente como sospecha de SCA y derivarlo de inmediato a Urgencias, no a manejarlo con la plantilla de angina estable."
+    },
+    {
+      "pregunta": "¿Cuál es el objetivo de LDL recomendado por la guía ESC 2024 en un paciente con cardiopatía isquémica establecida?",
+      "opciones": ["< 55 mg/dl", "< 190 mg/dl", "< 300 mg/dl", "No hay objetivo definido"],
+      "respuesta": 0,
+      "explicacion": "La guía ESC recomienda un objetivo de LDL < 55 mg/dl en prevención secundaria de alto riesgo; la guía ACC/AHA usa un umbral de < 70 mg/dl."
+    },
+    {
+      "pregunta": "¿Qué dosis de atorvastatina corresponde a una estatina de «alta intensidad», citada explícitamente en el contexto del ensayo PROVE-IT-TIMI 22?",
+      "opciones": ["10 mg", "20 mg", "80 mg", "200 mg"],
+      "respuesta": 2,
+      "explicacion": "La atorvastatina 80 mg/día es la dosis de alta intensidad citada en PROVE-IT-TIMI 22 y usada como referencia de tratamiento hipolipemiante intensivo tras un evento coronario."
+    }
+  ]
+}

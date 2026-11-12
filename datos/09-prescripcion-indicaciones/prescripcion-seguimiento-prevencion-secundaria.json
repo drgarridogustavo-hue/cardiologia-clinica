@@ -1,0 +1,126 @@
+{
+  "id": "prescripcion-seguimiento-prevencion-secundaria",
+  "titulo": "Prescripción e indicaciones: seguimiento y prevención secundaria tras un síndrome coronario agudo",
+  "bloque": "prescripcion-indicaciones",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Síntesis propia a partir de los temas de prevención secundaria del bloque 8 y del tratamiento hipolipemiante citado en el Capítulo 39 de Braunwald"
+  },
+
+  "guias": [
+    { "organizacion": "ESC", "nombre": "2024 ESC Guidelines for the management of chronic coronary syndromes", "anio": 2024, "url": "https://doi.org/10.1093/eurheartj/ehae177" },
+    { "organizacion": "ACC/AHA", "nombre": "2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease", "anio": 2023, "url": "https://doi.org/10.1161/CIR.0000000000001168" }
+  ],
+
+  "resumen": "Plantilla de seguimiento ambulatorio a largo plazo para un paciente que ya tuvo un síndrome coronario agudo (SCASEST o IAMCEST) y fue dado de alta. El objetivo es sostener y ajustar en el tiempo la prevención secundaria iniciada al alta, no tratar un evento agudo nuevo.",
+
+  "diagnostico": "No aplica. Si durante el seguimiento el paciente presenta un cuadro compatible con un nuevo síndrome coronario agudo (dolor torácico típico, cambios en el ECG, inestabilidad), debe derivarse de inmediato a Urgencias y manejarse con las plantillas de SCASEST/IAMCEST, no con esta.",
+
+  "tratamiento": "La prevención secundaria se sostiene en: doble antiagregación por un tiempo definido, estatina de alta intensidad con escalamiento según objetivo de LDL, IECA/ARA-II (y eplerenona si corresponde), betabloqueante, control agresivo de factores de riesgo (tabaco, presión arterial, diabetes, peso, actividad física) y rehabilitación cardíaca. Ningún fármaco de este esquema debe suspenderse sin reevaluar el motivo.",
+
+  "recomendaciones": [],
+
+  "prescripcion": {
+    "advertencia": "Plantilla educativa, no una receta lista para transcribir. Los objetivos terapéuticos y las dosis deben confirmarse contra el protocolo local y ajustarse a la evolución clínica y analítica real del paciente.",
+
+    "urgencias": {
+      "indicacionesGenerales": "No aplica a este tema. Si el paciente en seguimiento presenta un cuadro compatible con un nuevo SCA, debe derivarse a Urgencias y manejarse con las plantillas de prescripción de SCASEST o IAMCEST, no con esta."
+    },
+
+    "ambulatorio": {
+      "indicacionesGenerales": "Primera consulta ambulatoria tras el alta por un SCA (habitualmente 1-2 semanas después, coordinada con el escenario «Controles» de los temas de SCASEST/IAMCEST).",
+      "ordenes": [
+        { "grupo": "Revisión", "farmaco": "Revisar toda la medicación de alta, adherencia y efectos adversos", "dosis": "-", "via": "-", "frecuencia": "En esta visita", "duracion": "-", "notas": "No suspender ni reducir dosis sin una razón clínica clara documentada" },
+        { "grupo": "Control de factores de riesgo", "farmaco": "Presión arterial, frecuencia cardíaca, peso, perímetro de cintura", "dosis": "Objetivo de PA < 130/80 mmHg", "via": "-", "frecuencia": "Cada visita", "duracion": "-", "notas": "Reforzar cese tabáquico, dieta mediterránea y actividad física aeróbica regular" },
+        { "grupo": "Rehabilitación", "farmaco": "Confirmar inscripción en programa de rehabilitación cardíaca supervisada", "dosis": "-", "via": "-", "frecuencia": "-", "duracion": "-", "notas": "" }
+      ]
+    },
+
+    "controles": {
+      "indicacionesGenerales": "Visitas sucesivas de seguimiento a largo plazo (habitualmente a 1, 3, 6 y 12 meses, y luego anuales si el paciente está estable).",
+      "ordenes": [
+        { "grupo": "Escalera hipolipemiante", "farmaco": "Perfil lipídico; si LDL no alcanza el objetivo (< 55 mg/dl ESC o < 70 mg/dl ACC/AHA) con estatina de alta intensidad, añadir ezetimiba; si persiste alto, considerar un inhibidor de PCSK9", "dosis": "Según escalón", "via": "Oral o subcutáneo (PCSK9i)", "frecuencia": "Reevaluar cada 4-12 semanas tras cada cambio", "duracion": "Indefinida", "notas": "No reducir la intensidad del tratamiento hipolipemiante, incluso con LDL muy bajo, en ausencia de efectos adversos" },
+        { "grupo": "Duración de DAPT", "farmaco": "Reevaluar riesgo hemorrágico (ARC-HBR) e isquémico en cada visita", "dosis": "-", "via": "-", "frecuencia": "Cada control hasta definir la duración final", "duracion": "-", "notas": "Ver algoritmo de duración de DAPT, bloque 8" },
+        { "grupo": "Laboratorio general", "farmaco": "Función renal, potasio y HbA1c si diabetes", "dosis": "-", "via": "-", "frecuencia": "Cada 6-12 meses, más frecuente si recibe IECA/ARA-II + eplerenona", "duracion": "-", "notas": "" },
+        { "grupo": "Estudios complementarios", "farmaco": "ECG y, según criterio clínico, ecocardiograma", "dosis": "-", "via": "-", "frecuencia": "Anual o ante cambio clínico", "duracion": "-", "notas": "" },
+        { "grupo": "Vacunación", "farmaco": "Vacuna antigripal anual", "dosis": "-", "via": "-", "frecuencia": "Anual", "duracion": "-", "notas": "Se asoció a reducción de eventos cardiovasculares mayores en metaanálisis de ensayos aleatorizados" }
+      ]
+    },
+
+    "hospitalizacion": {
+      "indicacionesGenerales": "No aplica a este tema de seguimiento ambulatorio; ver las plantillas de SCASEST/IAMCEST para el escenario de hospitalización."
+    },
+
+    "alta": {
+      "indicacionesGenerales": "No aplica a este tema; la «prescripción de alta» inicial corresponde a los temas de SCASEST/IAMCEST. Esta plantilla continúa y ajusta ese tratamiento en el tiempo."
+    },
+
+    "ajustesComorbilidad": [
+      { "comorbilidad": "Diabetes mellitus", "ajuste": "Priorizar iSGLT2 o agonistas del receptor de GLP-1 con beneficio cardiovascular demostrado; objetivo de HbA1c individualizado" },
+      { "comorbilidad": "Enfermedad renal crónica", "ajuste": "Ajustar dosis de fármacos de eliminación renal; vigilar potasio con IECA/ARA-II + eplerenona; algunos iSGLT2 tienen beneficio renal adicional" },
+      { "comorbilidad": "Intolerancia a estatinas", "ajuste": "Considerar cambio a otra estatina a dosis más baja, pauta en días alternos, o combinación con ezetimiba/inhibidor de PCSK9 antes de abandonar el tratamiento hipolipemiante" },
+      { "comorbilidad": "Adultos mayores / polifarmacia", "ajuste": "Revisar interacciones y simplificar el esquema cuando sea posible, sin abandonar los fármacos con beneficio pronóstico demostrado" }
+    ]
+  },
+
+  "algoritmo": {
+    "titulo": "Escalera de tratamiento hipolipemiante en prevención secundaria",
+    "nodos": [
+      { "id": "n1", "texto": "Estatina de alta intensidad (p. ej., atorvastatina 80 mg) desde el evento agudo" },
+      { "id": "n2", "texto": "Reevaluar LDL a las 4-12 semanas" },
+      { "id": "n3", "texto": "LDL en objetivo (< 55 mg/dl ESC o < 70 mg/dl ACC/AHA)" },
+      { "id": "n4", "texto": "LDL por encima del objetivo" },
+      { "id": "n5", "texto": "Mantener estatina de alta intensidad indefinidamente" },
+      { "id": "n6", "texto": "Añadir ezetimiba" },
+      { "id": "n7", "texto": "Reevaluar LDL; si persiste por encima del objetivo, añadir un inhibidor de PCSK9" }
+    ],
+    "conexiones": [
+      { "desde": "n1", "hasta": "n2", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n3", "etiqueta": "" },
+      { "desde": "n2", "hasta": "n4", "etiqueta": "" },
+      { "desde": "n3", "hasta": "n5", "etiqueta": "" },
+      { "desde": "n4", "hasta": "n6", "etiqueta": "" },
+      { "desde": "n6", "hasta": "n7", "etiqueta": "" }
+    ]
+  },
+  "dosis": [],
+
+  "glosario": [
+    { "termino": "Escalera hipolipemiante", "definicion": "Estrategia secuencial de tratamiento del colesterol LDL: estatina de alta intensidad, luego ezetimiba si no se alcanza el objetivo, y luego un inhibidor de PCSK9 si persiste elevado." }
+  ],
+
+  "fuentes": [
+    { "titulo": "Vrints C, et al. 2024 ESC Guidelines for the management of chronic coronary syndromes. Eur Heart J. 2024;45(36):3415-3537", "url": "https://doi.org/10.1093/eurheartj/ehae177" },
+    { "titulo": "Virani SS, et al. 2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease. Circulation. 2023;148(9):e9-e119", "url": "https://doi.org/10.1161/CIR.0000000000001168" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "Un paciente en seguimiento tras un SCA presenta dolor torácico típico de reposo durante la consulta de control. ¿Qué corresponde hacer?",
+      "opciones": [
+        "Continuar con la consulta de rutina y ajustar solo la medicación oral",
+        "Derivarlo de inmediato a Urgencias, como un nuevo SCA, y no manejarlo con esta plantilla de seguimiento",
+        "Indicarle que tome una estatina extra",
+        "Programar un control en 3 meses"
+      ],
+      "respuesta": 1,
+      "explicacion": "Un cuadro compatible con un nuevo SCA durante el seguimiento exige derivación inmediata a Urgencias; la plantilla de seguimiento no es para eventos agudos nuevos."
+    },
+    {
+      "pregunta": "Si un paciente en prevención secundaria no alcanza el objetivo de LDL con estatina de alta intensidad, ¿cuál es el siguiente escalón del tratamiento hipolipemiante?",
+      "opciones": ["Suspender la estatina", "Añadir ezetimiba", "Duplicar la dosis de aspirina", "Iniciar un antibiótico"],
+      "respuesta": 1,
+      "explicacion": "El siguiente escalón tras una estatina de alta intensidad que no alcanza el objetivo de LDL es añadir ezetimiba, y si persiste elevado, considerar un inhibidor de PCSK9."
+    },
+    {
+      "pregunta": "¿Qué intervención no farmacológica anual se ha asociado a una reducción de eventos cardiovasculares mayores en pacientes con cardiopatía isquémica?",
+      "opciones": ["La vacuna antigripal", "Un chequeo dental", "Una radiografía de tórax de rutina", "Un análisis de orina de rutina"],
+      "respuesta": 0,
+      "explicacion": "La vacunación antigripal anual se ha asociado a una reducción significativa de eventos cardiovasculares mayores en metaanálisis de ensayos aleatorizados en pacientes con enfermedad cardiovascular."
+    }
+  ]
+}

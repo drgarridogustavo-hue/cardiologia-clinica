@@ -249,6 +249,64 @@
     return partes.join("");
   }
 
+  function renderOrdenes(ordenes) {
+    if (!ordenes || ordenes.length === 0) return "";
+    return (
+      '<ul class="ordenes-lista">' +
+      ordenes
+        .map(function (o) {
+          var detalle = [o.dosis, o.via, o.frecuencia, o.duracion]
+            .filter(function (campo) { return campo && campo !== "-"; })
+            .join(" · ");
+          return (
+            '<li class="orden-item">' +
+            "<strong>" + escapeHtml(o.farmaco) + "</strong>" +
+            (o.grupo ? ' <span class="orden-grupo">(' + escapeHtml(o.grupo) + ")</span>" : "") +
+            (detalle ? '<div class="orden-detalle">' + escapeHtml(detalle) + "</div>" : "") +
+            (o.notas ? '<div class="orden-nota">' + escapeHtml(o.notas) + "</div>" : "") +
+            "</li>"
+          );
+        })
+        .join("") +
+      "</ul>"
+    );
+  }
+
+  function renderEscenarioPrescripcion(titulo, escenario) {
+    if (!escenario) return "";
+    var html = '<section class="bloque prescripcion-escenario"><h4>' + escapeHtml(titulo) + "</h4>";
+    if (escenario.indicacionesGenerales) {
+      html += '<p class="prescripcion-intro">' + escapeHtml(escenario.indicacionesGenerales) + "</p>";
+    }
+    html += renderOrdenes(escenario.ordenes);
+    html += "</section>";
+    return html;
+  }
+
+  function renderPrescripcion(p) {
+    if (!p) return "";
+    var html = "";
+    if (p.advertencia) {
+      html += '<div class="advertencia-caja"><strong>⚠ Antes de usar esta prescripción:</strong> ' + escapeHtml(p.advertencia) + "</div>";
+    }
+    html += renderEscenarioPrescripcion("Urgencias", p.urgencias);
+    html += renderEscenarioPrescripcion("Hospitalización / Observación / UCI", p.hospitalizacion);
+    html += renderEscenarioPrescripcion("Alta", p.alta);
+    html += renderEscenarioPrescripcion("Controles subsecuentes", p.controles);
+    html += renderEscenarioPrescripcion("Consulta ambulatoria", p.ambulatorio);
+    if (p.ajustesComorbilidad && p.ajustesComorbilidad.length) {
+      html +=
+        '<section class="bloque"><h4>Ajustes según comorbilidad</h4><ul class="puntos-clave">' +
+        p.ajustesComorbilidad
+          .map(function (a) {
+            return "<li><strong>" + escapeHtml(a.comorbilidad) + ":</strong> " + escapeHtml(a.ajuste) + "</li>";
+          })
+          .join("") +
+        "</ul></section>";
+    }
+    return html;
+  }
+
   function renderMetaRevision(tema) {
     var partes = [];
     if (tema.revisor) partes.push("Revisor: " + escapeHtml(tema.revisor));
@@ -272,7 +330,8 @@
       renderBloqueTexto("Diagnóstico", tema.diagnostico) +
       renderBloqueTexto("Tratamiento", tema.tratamiento) +
       renderRecomendaciones(tema.recomendaciones) +
-      renderDosis(tema.dosis);
+      renderDosis(tema.dosis) +
+      renderPrescripcion(tema.prescripcion);
 
     var puntos = (tema.puntosClave || [])
       .map(function (p) {

@@ -371,6 +371,38 @@ main#app {
 .ecg-resultado-caja .btn-primary,
 .ecg-resultado-caja .btn-secondary { margin-top: 0.8rem; }
 
+.advertencia-caja {
+  background: rgba(179,36,46,0.08);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius);
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: var(--color-text);
+}
+.advertencia-caja strong { color: var(--color-primary); }
+
+.prescripcion-escenario {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.8rem 0.9rem;
+}
+.prescripcion-escenario h4 { margin-top: 0; }
+.prescripcion-intro { font-size: 0.85rem; color: var(--color-text-muted); margin: 0 0 0.6rem; }
+
+.ordenes-lista { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.6rem; }
+.orden-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+}
+.orden-grupo { font-size: 0.75rem; color: var(--color-text-muted); font-weight: 400; }
+.orden-detalle { font-size: 0.85rem; margin-top: 0.2rem; }
+.orden-nota { font-size: 0.78rem; color: var(--color-text-muted); margin-top: 0.3rem; font-style: italic; }
+
 .estado-carga {
   text-align: center;
   font-size: 0.8rem;

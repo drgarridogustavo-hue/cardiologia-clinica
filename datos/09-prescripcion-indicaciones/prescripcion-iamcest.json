@@ -1,0 +1,132 @@
+{
+  "id": "prescripcion-iamcest",
+  "titulo": "Prescripción e indicaciones: IAM con elevación del ST (IAMCEST)",
+  "bloque": "prescripcion-indicaciones",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Síntesis propia a partir de los temas de diagnóstico y tratamiento del IAMCEST y de complicaciones (bloques 6 y 8), basados en los Capítulos 37 y 38 de Braunwald"
+  },
+
+  "guias": [
+    { "organizacion": "ACCF/AHA", "nombre": "2013 ACCF/AHA Guideline for the Management of ST-Elevation Myocardial Infarction", "anio": 2013, "url": "" },
+    { "organizacion": "ESC", "nombre": "2023 ESC Guidelines for the management of acute coronary syndromes", "anio": 2023, "url": "https://doi.org/10.1093/eurheartj/ehad191" }
+  ],
+
+  "resumen": "Plantilla de prescripción por escenario clínico para un paciente con IAMCEST. No reemplaza el juicio clínico individualizado: cada fármaco y dosis debe confirmarse contra el protocolo local, el tiempo de evolución del infarto y las condiciones hemodinámicas del paciente. Los valores marcados «VERIFICAR» no pudieron confirmarse contra una fuente verificada en esta sesión.",
+
+  "diagnostico": "No aplica (ver tema de definición, fisiopatología y diagnóstico del IAMCEST, bloque 6).",
+
+  "tratamiento": "El IAMCEST es una urgencia en la que «el tiempo es músculo»: la elección entre ICP primaria y fibrinólisis depende del tiempo estimado hasta la reperfusión, no de esta plantilla (ver algoritmo de reperfusión, bloque 6). Ningún paciente con sospecha de IAMCEST debe evaluarse en consulta ambulatoria programada.",
+
+  "recomendaciones": [],
+
+  "prescripcion": {
+    "advertencia": "Plantilla educativa, no una receta lista para transcribir. La decisión de reperfusión (ICP primaria vs. fibrinólisis) y las dosis exactas de fibrinolíticos/anticoagulantes deben confirmarse con el protocolo de «código infarto» del centro y el peso/función renal reales del paciente.",
+
+    "urgencias": {
+      "indicacionesGenerales": "Órdenes inmediatas ante IAMCEST confirmado, en paralelo a la activación de la vía de reperfusión (ICP primaria o fibrinólisis según el tiempo estimado).",
+      "ordenes": [
+        { "grupo": "Antiagregante", "farmaco": "Ácido acetilsalicílico", "dosis": "162-325 mg VO masticado, dosis de carga única", "via": "Oral", "frecuencia": "Dosis única, luego mantenimiento", "duracion": "Indefinida", "notas": "", "fuente": "Braunwald 12.ª ed., cap. 38" },
+        { "grupo": "Inhibidor P2Y12 (carga)", "farmaco": "Si ICP primaria: ticagrelor 180 mg o prasugrel 60 mg. Si fibrinólisis: clopidogrel 300 mg de carga (< 75 años) o 75 mg sin carga (≥ 75 años)", "dosis": "Ver opciones según la vía de reperfusión", "via": "Oral", "frecuencia": "Dosis de carga única", "duracion": "Mantenimiento posterior", "notas": "El prasugrel está contraindicado con antecedente de ACV/AIT", "fuente": "Braunwald 12.ª ed., cap. 38" },
+        { "grupo": "Fibrinolítico (solo si se opta por fibrinólisis)", "farmaco": "Tenecteplasa", "dosis": "Bolo IV único ajustado por peso: 30 mg (< 60 kg), 35 mg (60-69 kg), 40 mg (70-79 kg), 45 mg (80-89 kg), 50 mg (≥ 90 kg)", "via": "Intravenosa, bolo único", "frecuencia": "Dosis única", "duracion": "-", "notas": "Verificar contraindicaciones absolutas (hemorragia intracraneal previa, ACV isquémico reciente, sospecha de disección aórtica, hemorragia activa)", "fuente": "Braunwald 12.ª ed., cap. 38, tabla 38-4" },
+        { "grupo": "Anticoagulante (acompaña a ICP o fibrinólisis)", "farmaco": "Enoxaparina, heparina no fraccionada o bivalirudina según la estrategia", "dosis": "VERIFICAR dosis exacta según la vía de reperfusión y el protocolo local", "via": "Según el fármaco", "frecuencia": "Según el fármaco", "duracion": "Hasta la revascularización o 48 h-8 días si fibrinólisis", "notas": "" },
+        { "grupo": "Analgesia", "farmaco": "Morfina si dolor persistente", "dosis": "VERIFICAR dosis exacta", "via": "Intravenosa", "frecuencia": "Según dolor", "duracion": "-", "notas": "Vigilar depresión respiratoria e hipotensión" },
+        { "grupo": "Antianginoso", "farmaco": "Nitroglicerina sublingual o IV", "dosis": "VERIFICAR dosis exacta", "via": "Sublingual o IV", "frecuencia": "Según dolor", "duracion": "-", "notas": "Evitar si PAS < 90 mmHg o sospecha de infarto de ventrículo derecho (requieren precarga conservada)" },
+        { "grupo": "Oxígeno", "farmaco": "Oxígeno complementario", "dosis": "Solo si SatO2 < 90%", "via": "Cánula nasal o máscara", "frecuencia": "Continua mientras persista la hipoxemia", "duracion": "-", "notas": "No administrar de rutina en pacientes normóxicos" },
+        { "grupo": "Betabloqueante", "farmaco": "Betabloqueante oral temprano", "dosis": "VERIFICAR dosis de inicio", "via": "Oral", "frecuencia": "Según el fármaco", "duracion": "Continua si tolerado", "notas": "Solo si no hay insuficiencia cardíaca ni los elementos de riesgo de shock (edad > 70, PAS < 120, taquicardia sinusal > 110 o FC < 60, mayor tiempo de evolución)" },
+        { "grupo": "Hipolipemiante", "farmaco": "Estatina de alta intensidad (atorvastatina 80 mg)", "dosis": "80 mg", "via": "Oral", "frecuencia": "Una vez al día", "duracion": "Iniciar precozmente e indefinida", "notas": "" }
+      ]
+    },
+
+    "hospitalizacion": {
+      "indicacionesGenerales": "Órdenes durante la hospitalización, habitualmente en unidad coronaria o UCI, tras la reperfusión.",
+      "ordenes": [
+        { "grupo": "Monitorización", "farmaco": "Telemetría continua y vigilancia de arritmias/bloqueo AV", "dosis": "-", "via": "-", "frecuencia": "Continua", "duracion": "Mínimo 24-48 h o más si hay complicaciones", "notas": "Ver tema de complicaciones mecánicas y arrítmicas, bloque 8" },
+        { "grupo": "Antiagregación/anticoagulación", "farmaco": "Continuar doble antiagregación; suspender anticoagulante parenteral tras la ICP salvo indicación adicional", "dosis": "Según lo iniciado", "via": "-", "frecuencia": "-", "duracion": "-", "notas": "" },
+        { "grupo": "IECA/ARA-II", "farmaco": "Inhibidor de la ECA (o ARA-II si no se tolera)", "dosis": "VERIFICAR dosis de inicio", "via": "Oral", "frecuencia": "Según el fármaco", "duracion": "Iniciar temprano, sobre todo con disfunción VI, IC clínica o infarto anterior; continuar indefinidamente si se tolera", "notas": "Vigilar presión arterial y función renal" },
+        { "grupo": "Antagonista de aldosterona", "farmaco": "Eplerenona", "dosis": "VERIFICAR dosis exacta", "via": "Oral", "frecuencia": "Según protocolo", "duracion": "Si FEVI < 40% con IC clínica o diabetes, sin hiperpotasemia ni insuficiencia renal grave", "notas": "Controlar potasio sérico" },
+        { "grupo": "Movilización", "farmaco": "Reposo relativo las primeras 12-24 h, luego movilización progresiva si no hay complicaciones", "dosis": "-", "via": "-", "frecuencia": "-", "duracion": "-", "notas": "" }
+      ]
+    },
+
+    "alta": {
+      "indicacionesGenerales": "Receta de alta tras IAMCEST con reperfusión exitosa y sin complicaciones mayores.",
+      "ordenes": [
+        { "grupo": "Doble antiagregación", "farmaco": "AAS + inhibidor P2Y12 (el iniciado durante la hospitalización)", "dosis": "AAS VERIFICAR dosis de mantenimiento (rango habitual 75-162 mg); P2Y12 según el fármaco", "via": "Oral", "frecuencia": "Una o dos veces al día según el fármaco", "duracion": "Mínimo 12 meses tras ICP con stent (ver algoritmo de duración, bloque 8)", "notas": "Reevaluar riesgo hemorrágico en cada control" },
+        { "grupo": "Hipolipemiante", "farmaco": "Estatina de alta intensidad (atorvastatina 80 mg)", "dosis": "80 mg", "via": "Oral", "frecuencia": "Una vez al día", "duracion": "Indefinida", "notas": "Objetivo LDL < 55 mg/dl (ESC) o < 70 mg/dl (ACC/AHA); añadir ezetimiba si no se alcanza" },
+        { "grupo": "Betabloqueante", "farmaco": "Betabloqueante oral", "dosis": "VERIFICAR dosis de mantenimiento", "via": "Oral", "frecuencia": "Según el fármaco", "duracion": "Indefinida si se tolera", "notas": "" },
+        { "grupo": "IECA/ARA-II", "farmaco": "Continuar si se inició durante la hospitalización", "dosis": "Según lo iniciado", "via": "Oral", "frecuencia": "-", "duracion": "Indefinida, sobre todo con disfunción VI", "notas": "" },
+        { "grupo": "Alivio sintomático", "farmaco": "Nitroglicerina sublingual de rescate", "dosis": "VERIFICAR presentación", "via": "Sublingual", "frecuencia": "Según necesidad", "duracion": "Uso domiciliario", "notas": "" },
+        { "grupo": "Rehabilitación", "farmaco": "Derivación a programa de rehabilitación cardíaca", "dosis": "-", "via": "-", "frecuencia": "-", "duracion": "-", "notas": "Recomendación estándar tras el IAMCEST" }
+      ]
+    },
+
+    "controles": {
+      "indicacionesGenerales": "Seguimiento ambulatorio tras el alta por IAMCEST.",
+      "ordenes": [
+        { "grupo": "Primera visita", "farmaco": "Control clínico y evaluación de la función ventricular (ecocardiograma si no se realizó)", "dosis": "-", "via": "-", "frecuencia": "2-6 semanas tras el alta", "duracion": "-", "notas": "Evaluar síntomas, adherencia y efectos adversos" },
+        { "grupo": "Laboratorio", "farmaco": "Perfil lipídico, función renal y potasio", "dosis": "-", "via": "-", "frecuencia": "A las 4-12 semanas, luego periódico", "duracion": "-", "notas": "Más frecuente si recibe IECA/ARA-II + eplerenona" },
+        { "grupo": "Estratificación de isquemia residual", "farmaco": "Considerar prueba de esfuerzo o imagen funcional si hay enfermedad multivaso no revascularizada", "dosis": "-", "via": "-", "frecuencia": "Según criterio clínico", "duracion": "-", "notas": "Ver tema de revascularización, bloque 4" },
+        { "grupo": "Rehabilitación y factores de riesgo", "farmaco": "Verificar incorporación al programa de rehabilitación cardíaca", "dosis": "-", "via": "-", "frecuencia": "Continuo", "duracion": "-", "notas": "" }
+      ]
+    },
+
+    "ambulatorio": {
+      "indicacionesGenerales": "Un paciente con sospecha de IAMCEST NUNCA debe evaluarse en consulta ambulatoria programada: debe activarse de inmediato el protocolo de «código infarto» y derivarlo a Urgencias o al centro con capacidad de ICP. Esta plantilla no tiene un escenario «ambulatorio de inicio»; el seguimiento tras el alta corresponde al escenario «Controles subsecuentes» de arriba."
+    },
+
+    "ajustesComorbilidad": [
+      { "comorbilidad": "Infarto de ventrículo derecho", "ajuste": "Evitar nitratos y morfina si hay hipotensión; el tratamiento se centra en mantener una precarga adecuada (volumen) en lugar de diuréticos" },
+      { "comorbilidad": "Enfermedad renal crónica", "ajuste": "Ajustar dosis de anticoagulantes de eliminación renal; precaución con el contraste yodado durante la ICP" },
+      { "comorbilidad": "Diabetes mellitus", "ajuste": "Vigilar glucemia; evaluar revascularización completa o IDAC si hay enfermedad multivaso (ver bloque 4)" },
+      { "comorbilidad": "Edad avanzada / bajo peso", "ajuste": "Ajustar la dosis de prasugrel a 5 mg si edad ≥ 75 años o peso < 60 kg; vigilar riesgo hemorrágico" }
+    ]
+  },
+
+  "algoritmo": null,
+  "dosis": [],
+
+  "glosario": [
+    { "termino": "Código infarto", "definicion": "Protocolo de activación rápida intrahospitalaria/prehospitalaria ante sospecha de IAMCEST, orientado a minimizar el tiempo hasta la reperfusión." }
+  ],
+
+  "fuentes": [
+    { "titulo": "O'Gara PT, Kushner FG, Ascheim DD, et al. 2013 ACCF/AHA Guideline for the Management of ST-Elevation Myocardial Infarction. J Am Coll Cardiol. 2013;61(4):e78-e140", "url": "" },
+    { "titulo": "Byrne RA, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J. 2023;44(38):3720-3826", "url": "https://doi.org/10.1093/eurheartj/ehad191" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "Un paciente con sospecha de IAMCEST se presenta por error en un consultorio ambulatorio. ¿Qué corresponde hacer?",
+      "opciones": [
+        "Indicarle que espere su turno habitual",
+        "Activar de inmediato el protocolo de «código infarto» y derivarlo a Urgencias o a un centro con capacidad de ICP",
+        "Darle una receta de aspirina y enviarlo a su casa",
+        "Programarle un ecocardiograma para la semana siguiente"
+      ],
+      "respuesta": 1,
+      "explicacion": "El IAMCEST es una urgencia que exige activación inmediata de la vía de reperfusión; nunca se maneja como una consulta ambulatoria programada."
+    },
+    {
+      "pregunta": "En un IAMCEST tratado con fibrinólisis en un paciente de 80 años, ¿qué carga de clopidogrel corresponde?",
+      "opciones": ["300 mg de carga, igual que en los más jóvenes", "75 mg, sin dosis de carga", "600 mg de carga", "No se usa clopidogrel tras fibrinólisis"],
+      "respuesta": 1,
+      "explicacion": "En pacientes ≥ 75 años tratados con fibrinólisis se usa clopidogrel 75 mg sin dosis de carga, a diferencia de los más jóvenes, que reciben 300 mg de carga."
+    },
+    {
+      "pregunta": "¿Por qué deben evitarse los nitratos en un paciente con IAMCEST inferior e hipotensión?",
+      "opciones": [
+        "Porque los nitratos siempre son seguros en cualquier contexto",
+        "Porque puede tratarse de un infarto de ventrículo derecho, que depende de una precarga adecuada, y los nitratos reducirían peligrosamente la precarga",
+        "Porque los nitratos interactúan con la aspirina",
+        "Porque los nitratos están prohibidos en todos los IAMCEST sin excepción"
+      ],
+      "respuesta": 1,
+      "explicacion": "El infarto de ventrículo derecho es frecuente en el IAMCEST inferior y depende de mantener una precarga adecuada; los nitratos (y la morfina) pueden provocar una caída peligrosa de la presión arterial en este contexto."
+    }
+  ]
+}

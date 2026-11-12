@@ -79,6 +79,18 @@
       ]
     },
     {
+      "id": "prescripcion-indicaciones",
+      "numero": 9,
+      "titulo": "Prescripción e indicaciones",
+      "carpeta": "09-prescripcion-indicaciones",
+      "temas": [
+        "prescripcion-angina-estable.json",
+        "prescripcion-scasest.json",
+        "prescripcion-iamcest.json",
+        "prescripcion-seguimiento-prevencion-secundaria.json"
+      ]
+    },
+    {
       "id": "otros",
       "numero": 0,
       "titulo": "Otros temas (fuera del programa de isquémica)",

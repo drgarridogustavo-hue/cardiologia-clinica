@@ -1,0 +1,133 @@
+{
+  "id": "prescripcion-scasest",
+  "titulo": "Prescripción e indicaciones: síndrome coronario agudo sin elevación del ST (SCASEST)",
+  "bloque": "prescripcion-indicaciones",
+  "estado": "borrador",
+  "fechaRevision": null,
+  "revisor": null,
+
+  "braunwald": {
+    "edicion": "12.ª edición (Libby, Bonow, Mann, Tomaselli, Bhatt, Solomon; Elsevier España, 2024)",
+    "referencia": "Síntesis propia a partir de los temas de SCASEST y de antiagregación/anticoagulación en profundidad (bloque 7), basados en el Capítulo 39 de Braunwald"
+  },
+
+  "guias": [
+    { "organizacion": "ESC", "nombre": "2023 ESC Guidelines for the management of acute coronary syndromes", "anio": 2023, "url": "https://doi.org/10.1093/eurheartj/ehad191" },
+    { "organizacion": "ACC/AHA", "nombre": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes", "anio": 2025, "url": "https://doi.org/10.1161/CIR.0000000000001309" }
+  ],
+
+  "resumen": "Plantilla de prescripción por escenario clínico para un paciente con diagnóstico de SCASEST (IAMSEST o angina inestable de alto riesgo). No reemplaza el juicio clínico individualizado: cada fármaco y dosis debe confirmarse contra el protocolo vigente del centro y la ficha técnica, y ajustarse según función renal, peso, edad, riesgo hemorrágico (p. ej., ARC-HBR) y comorbilidades del paciente concreto. Los valores marcados «VERIFICAR» no pudieron confirmarse contra una fuente verificada en esta sesión.",
+
+  "diagnostico": "No aplica (ver temas de diagnóstico y estratificación del riesgo del SCASEST, bloque 7). Esta plantilla asume diagnóstico ya establecido de SCASEST.",
+
+  "tratamiento": "El SCASEST es, por definición, una urgencia: no se maneja de inicio en consulta ambulatoria. El momento de la angiografía (inmediata < 2 h, temprana < 24 h, o selectiva) se decide según la estratificación de riesgo (ver tema de bloque 7), no según esta plantilla, que se limita a las órdenes farmacológicas generales.",
+
+  "recomendaciones": [],
+
+  "prescripcion": {
+    "advertencia": "Plantilla educativa, no una receta lista para transcribir. Verificar siempre dosis, contraindicaciones, riesgo hemorrágico individual e interacciones antes de prescribir. La elección exacta de antiagregante/anticoagulante y el momento de la angiografía deben decidirse en conjunto con el equipo de guardia y cardiología intervencionista.",
+
+    "urgencias": {
+      "indicacionesGenerales": "Órdenes iniciales al ingreso por sospecha/confirmación de SCASEST, antes de definir la estrategia invasiva.",
+      "ordenes": [
+        { "grupo": "Antiagregante", "farmaco": "Ácido acetilsalicílico", "dosis": "162-325 mg VO masticado, dosis de carga única", "via": "Oral", "frecuencia": "Dosis única al ingreso, luego mantenimiento", "duracion": "Indefinida", "notas": "Confirmar ausencia de alergia o hemorragia activa", "fuente": "Braunwald 12.ª ed., cap. 38/39" },
+        { "grupo": "Inhibidor P2Y12 (carga)", "farmaco": "Ticagrelor 180 mg O prasugrel 60 mg (si se prevé ICP y sin antecedente de ACV/AIT) O clopidogrel 300-600 mg (si alto riesgo hemorrágico o anticoagulación crónica)", "dosis": "Ver opciones según el fármaco elegido", "via": "Oral", "frecuencia": "Dosis de carga única", "duracion": "Mantenimiento según bloque de prevención secundaria", "notas": "El prasugrel está contraindicado si hay antecedente de ACV/AIT", "fuente": "Braunwald 12.ª ed., cap. 39" },
+        { "grupo": "Anticoagulante parenteral", "farmaco": "Fondaparinux 2,5 mg SC/día O enoxaparina 1 mg/kg SC cada 12 h (ajustar si ClCr < 30 ml/min) O heparina no fraccionada (bolo + infusión, dosis VERIFICAR según protocolo)", "dosis": "Ver opciones", "via": "Subcutánea o intravenosa según el fármaco", "frecuencia": "Según el fármaco", "duracion": "Hasta la angiografía o el alta", "notas": "Elegir según estrategia (invasiva vs. conservadora) y función renal", "fuente": "Braunwald 12.ª ed., cap. 39" },
+        { "grupo": "Antianginoso", "farmaco": "Nitroglicerina sublingual o intravenosa si dolor activo y PAS > 90 mmHg", "dosis": "VERIFICAR dosis exacta de infusión según protocolo local", "via": "Sublingual o IV", "frecuencia": "Según dolor", "duracion": "Hasta control del dolor", "notas": "Evitar si hipotensión o sospecha de infarto de ventrículo derecho" },
+        { "grupo": "Antianginoso", "farmaco": "Betabloqueante oral temprano", "dosis": "VERIFICAR dosis de inicio", "via": "Oral", "frecuencia": "Según el fármaco", "duracion": "Continua si tolerado", "notas": "Solo si el paciente está hemodinámicamente estable, sin signos de insuficiencia cardíaca ni riesgo de shock" },
+        { "grupo": "Oxígeno", "farmaco": "Oxígeno complementario", "dosis": "Solo si SatO2 < 90%", "via": "Cánula nasal o máscara", "frecuencia": "Continua mientras persista la hipoxemia", "duracion": "Hasta normalizar SatO2", "notas": "No administrar de rutina en pacientes normóxicos" },
+        { "grupo": "Hipolipemiante", "farmaco": "Estatina de alta intensidad (atorvastatina 80 mg)", "dosis": "80 mg", "via": "Oral", "frecuencia": "Una vez al día", "duracion": "Iniciar en las primeras 24 h e indefinida", "notas": "No esperar el perfil lipídico para iniciarla" }
+      ]
+    },
+
+    "hospitalizacion": {
+      "indicacionesGenerales": "Órdenes durante la hospitalización (unidad coronaria o UCI según el riesgo), mientras se define y ejecuta la estrategia de revascularización.",
+      "ordenes": [
+        { "grupo": "Monitorización", "farmaco": "Monitorización electrocardiográfica continua y control seriado de troponina", "dosis": "-", "via": "-", "frecuencia": "Continua / según protocolo de troponina seriada", "duracion": "Hasta estabilización", "notas": "Vigilar signos de isquemia recurrente, arritmias o inestabilidad hemodinámica" },
+        { "grupo": "Antiagregación/anticoagulación", "farmaco": "Continuar doble antiagregación y anticoagulante parenteral iniciados en Urgencias", "dosis": "Según lo iniciado", "via": "-", "frecuencia": "-", "duracion": "Hasta la angiografía/ICP", "notas": "Suspender el anticoagulante parenteral tras la ICP salvo indicación adicional" },
+        { "grupo": "IECA/ARA-II", "farmaco": "Inhibidor de la ECA (o ARA-II si no se tolera)", "dosis": "VERIFICAR dosis de inicio", "via": "Oral", "frecuencia": "Según el fármaco", "duracion": "Iniciar si FEVI reducida, diabetes o hipertensión; continuar indefinidamente si se tolera", "notas": "Vigilar presión arterial, función renal y potasio" },
+        { "grupo": "Antagonista de aldosterona", "farmaco": "Eplerenona", "dosis": "VERIFICAR dosis exacta", "via": "Oral", "frecuencia": "Según protocolo", "duracion": "Si FEVI < 40% con insuficiencia cardíaca clínica o diabetes, sin hiperpotasemia ni insuficiencia renal grave", "notas": "Controlar potasio sérico periódicamente" }
+      ]
+    },
+
+    "alta": {
+      "indicacionesGenerales": "Receta de alta tras SCASEST, ya revascularizado o con tratamiento médico definido.",
+      "ordenes": [
+        { "grupo": "Doble antiagregación", "farmaco": "AAS + inhibidor P2Y12 (ticagrelor, prasugrel o clopidogrel según lo iniciado)", "dosis": "AAS VERIFICAR dosis de mantenimiento (rango habitual 75-162 mg); P2Y12 según el fármaco", "via": "Oral", "frecuencia": "Una o dos veces al día según el fármaco", "duracion": "Según riesgo hemorrágico/isquémico (ver algoritmo de duración de DAPT, bloque 8): habitualmente 12 meses tras ICP con stent", "notas": "Reevaluar en cada control si debe acortarse (alto riesgo hemorrágico) o prolongarse" },
+        { "grupo": "Hipolipemiante", "farmaco": "Estatina de alta intensidad (atorvastatina 80 mg)", "dosis": "80 mg", "via": "Oral", "frecuencia": "Una vez al día", "duracion": "Indefinida", "notas": "Objetivo LDL < 55 mg/dl (ESC) o < 70 mg/dl (ACC/AHA); añadir ezetimiba si no se alcanza" },
+        { "grupo": "Betabloqueante", "farmaco": "Betabloqueante oral", "dosis": "VERIFICAR dosis de mantenimiento", "via": "Oral", "frecuencia": "Según el fármaco", "duracion": "Indefinida si se tolera", "notas": "Mantener salvo contraindicación" },
+        { "grupo": "IECA/ARA-II", "farmaco": "Continuar si se inició durante la hospitalización", "dosis": "Según lo iniciado", "via": "Oral", "frecuencia": "-", "duracion": "Indefinida si FEVI reducida, diabetes o HTA", "notas": "" },
+        { "grupo": "Alivio sintomático", "farmaco": "Nitroglicerina sublingual de rescate", "dosis": "VERIFICAR presentación", "via": "Sublingual", "frecuencia": "Según necesidad", "duracion": "Para uso domiciliario", "notas": "Reforzar educación sobre cuándo acudir a Urgencias" },
+        { "grupo": "Rehabilitación", "farmaco": "Derivación a programa de rehabilitación cardíaca", "dosis": "-", "via": "-", "frecuencia": "-", "duracion": "-", "notas": "Recomendación estándar tras cualquier SCA" }
+      ]
+    },
+
+    "controles": {
+      "indicacionesGenerales": "Seguimiento ambulatorio tras el alta por SCASEST.",
+      "ordenes": [
+        { "grupo": "Primera visita", "farmaco": "Control clínico, revisión del sitio de acceso vascular y adherencia", "dosis": "-", "via": "-", "frecuencia": "1-2 semanas tras el alta", "duracion": "-", "notas": "Evaluar efectos adversos de la medicación y síntomas residuales" },
+        { "grupo": "Laboratorio", "farmaco": "Perfil lipídico, función renal y potasio", "dosis": "-", "via": "-", "frecuencia": "A las 4-12 semanas, luego periódico", "duracion": "-", "notas": "Más frecuente si recibe IECA/ARA-II + eplerenona" },
+        { "grupo": "Duración de DAPT", "farmaco": "Reevaluar riesgo hemorrágico (ARC-HBR) e isquémico en cada control", "dosis": "-", "via": "-", "frecuencia": "Cada visita hasta definir la duración final", "duracion": "-", "notas": "Ver algoritmo de duración de DAPT, bloque 8" },
+        { "grupo": "Rehabilitación y factores de riesgo", "farmaco": "Verificar incorporación al programa de rehabilitación cardíaca y control de factores de riesgo", "dosis": "-", "via": "-", "frecuencia": "Continuo", "duracion": "-", "notas": "" }
+      ]
+    },
+
+    "ambulatorio": {
+      "indicacionesGenerales": "Un paciente con sospecha de SCASEST NUNCA debe evaluarse de inicio en una consulta ambulatoria programada: debe derivarse de inmediato a Urgencias. Esta plantilla no tiene un escenario «ambulatorio de inicio»; una vez dado de alta, el seguimiento corresponde al escenario «Controles subsecuentes» de arriba."
+    },
+
+    "ajustesComorbilidad": [
+      { "comorbilidad": "Enfermedad renal crónica avanzada", "ajuste": "Preferir fondaparinux o heparina no fraccionada sobre enoxaparina si ClCr < 30 ml/min; ajustar la dosis de enoxaparina si se usa; precaución con el contraste yodado en la angiografía" },
+      { "comorbilidad": "Fibrilación auricular concomitante", "ajuste": "Aplicar el esquema de triple terapia corta y tratamiento doble posterior (ver tema de antiagregación/anticoagulación en profundidad, bloque 7); preferir anticoagulante oral directo sobre warfarina" },
+      { "comorbilidad": "Diabetes mellitus", "ajuste": "Vigilar glucemia durante la hospitalización; considerar iSGLT2/agonistas GLP-1 al alta si hay indicación cardiovascular adicional; evaluar revascularización con IDAC si hay enfermedad multivaso (ver bloque 4)" },
+      { "comorbilidad": "Edad avanzada / alto riesgo hemorrágico", "ajuste": "Considerar clopidogrel en lugar de ticagrelor/prasugrel, y acortar la duración de la doble antiagregación según el algoritmo de riesgo hemorrágico" }
+    ]
+  },
+
+  "algoritmo": null,
+  "dosis": [],
+
+  "glosario": [
+    { "termino": "ARC-HBR", "definicion": "Academic Research Consortium for High Bleeding Risk; criterios estandarizados para identificar a los pacientes con alto riesgo hemorrágico tras ICP, usados para decidir la duración de la DAPT." }
+  ],
+
+  "fuentes": [
+    { "titulo": "Byrne RA, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J. 2023;44(38):3720-3826", "url": "https://doi.org/10.1093/eurheartj/ehad191" }
+  ],
+
+  "preguntas": [
+    {
+      "pregunta": "Un paciente con SCASEST confirmado consulta en control ambulatorio programado por error administrativo. ¿Qué corresponde hacer?",
+      "opciones": [
+        "Atenderlo en el consultorio con la prescripción de controles habitual",
+        "Derivarlo de inmediato a Urgencias; el SCASEST no se maneja de inicio de forma ambulatoria",
+        "Indicarle que espere a la próxima cita",
+        "Darle solo una receta de aspirina y enviarlo a su domicilio"
+      ],
+      "respuesta": 1,
+      "explicacion": "Todo paciente con sospecha o diagnóstico de SCASEST debe derivarse de inmediato a Urgencias; no corresponde un manejo ambulatorio de inicio."
+    },
+    {
+      "pregunta": "¿Por qué no se debe esperar el resultado del perfil lipídico para iniciar la estatina de alta intensidad en el SCASEST?",
+      "opciones": [
+        "Porque el perfil lipídico nunca es útil",
+        "Porque el beneficio de la estatina de alta intensidad se ha demostrado al iniciarla precozmente tras el evento, independientemente del valor basal de LDL",
+        "Porque las estatinas no tienen ningún efecto en el SCA",
+        "Porque el perfil lipídico tarda meses en procesarse"
+      ],
+      "respuesta": 1,
+      "explicacion": "El tratamiento hipolipemiante intensivo se inicia precozmente tras el SCA independientemente del resultado basal de LDL, dado el beneficio demostrado de iniciarlo temprano."
+    },
+    {
+      "pregunta": "En un paciente con SCASEST y alto riesgo hemorrágico, ¿qué ajuste es razonable considerar en la prescripción al alta?",
+      "opciones": [
+        "Prolongar la DAPT de forma indefinida sin reevaluar",
+        "Considerar clopidogrel en lugar de ticagrelor/prasugrel y acortar la duración de la DAPT según el algoritmo de riesgo hemorrágico",
+        "Suspender toda la antiagregación inmediatamente",
+        "Duplicar la dosis de AAS"
+      ],
+      "respuesta": 1,
+      "explicacion": "En pacientes de alto riesgo hemorrágico es razonable preferir clopidogrel sobre los inhibidores más potentes y acortar la duración de la DAPT, según el algoritmo de duración (bloque 8)."
+    }
+  ]
+}
